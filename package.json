@@ -1,0 +1,25 @@
+{
+  "name": "mahnwesen-cockpit",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "description": "Mahnlauf mit deterministischer Pruefung vor dem Versand. Beispieldaten, keine echten Kundendaten.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "lauf": "node src/lauf.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "pruefen": "npm run typecheck && npm run test && npm run lauf"
+  },
+  "dependencies": {
+    "yaml": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

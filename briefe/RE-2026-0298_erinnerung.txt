@@ -1,0 +1,40 @@
+# BEISPIELBRIEF. Fiktiver Absender, fiktiver Empfänger, erfundene Beträge.
+# Vorgang    RE-2026-0298, Sanitärarbeiten Ausstellungsraum
+# Stufe      Zahlungserinnerung
+# Kontrollen 8 von 8 bestanden
+# Ergebnis   Alle Kontrollen bestanden, freigegeben
+# Erzeugt    npm run lauf, ohne Modellaufruf
+# ------------------------------------------------------------------------
+Musterbetrieb Heizung und Sanitär GmbH
+Beispielweg 4 · 82000 Musterort
+
+
+Möbelhaus Naderer KG
+Industriestraße 17
+82002 Musterau
+
+
+Musterort, 16.09.2026
+
+Zahlungserinnerung zur Rechnung RE-2026-0298
+
+Sehr geehrte Damen und Herren,
+
+zu unserer Rechnung RE-2026-0298 vom 22.08.2026 über 2.145,00 EUR
+(Sanitärarbeiten Ausstellungsraum, Vorgang BV-2026-026) ist bei uns bis
+heute kein Zahlungseingang verbucht. Fällig war der Betrag am
+05.09.2026.
+
+Erfahrungsgemäß hängt das am Rechnungslauf und nicht an unserer Arbeit.
+Wir bitten Sie, den offenen Betrag bis zum 23.09.2026 anzuweisen.
+
+Sollte sich Ihre Zahlung mit diesem Schreiben überschnitten haben,
+betrachten Sie es bitte als gegenstandslos.
+
+Wenn an der Rechnung oder an unserer Arbeit etwas nicht stimmt, rufen
+Sie uns an. Das klären wir am Telefon schneller als auf dem Postweg.
+
+Mit freundlichen Grüßen
+
+Musterbetrieb Heizung und Sanitär GmbH
+Buchhaltung

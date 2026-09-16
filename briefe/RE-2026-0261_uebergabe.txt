@@ -1,0 +1,19 @@
+# BEISPIELBRIEF. Fiktiver Absender, fiktiver Empfänger, erfundene Beträge.
+# Vorgang    RE-2026-0261, Bad-Sanierung, Schlussrechnung
+# Stufe      Übergabe vorbereiten
+# Kontrollen 8 von 8 bestanden
+# Ergebnis   Alle Kontrollen bestanden, liegt einem Menschen zur Freigabe vor
+# Erzeugt    npm run lauf, ohne Modellaufruf
+# ------------------------------------------------------------------------
+Interne Aktennotiz. Kein Schreiben an den Kunden.
+
+Vorgang            RE-2026-0261, Bad-Sanierung, Schlussrechnung
+Kunde              Herr Kirchmaier (K-1019)
+Bauvorhaben        BV-2026-007
+Offener Betrag     3.115,00 EUR
+Fällig seit        28.07.2026 (50 Tage)
+Historie           Zahlungserinnerung am 02.08.2026, 1. Mahnung am 11.08.2026, 2. Mahnung am 22.08.2026
+
+Über das weitere Vorgehen entscheidet die Geschäftsführung. Diese Notiz
+bereitet die Akte vor, sie verschickt nichts und sie beauftragt
+niemanden.

@@ -1,0 +1,36 @@
+{
+  "_hinweis": "BEISPIELDATEN. Was zu einer Rechnung bereits hinausgegangen ist. RE-2026-0262 zeigt eine Lücke: die 2. Mahnung steht darin, die 1. Mahnung nicht. So sieht eine von Hand geführte Historie in der Praxis aus.",
+  "schritte": [
+    { "nummer": "RE-2026-0261", "stufe": "erinnerung", "versendetAm": "2026-08-02", "kanal": "email" },
+    { "nummer": "RE-2026-0261", "stufe": "mahnung_1", "versendetAm": "2026-08-11", "kanal": "email" },
+    { "nummer": "RE-2026-0261", "stufe": "mahnung_2", "versendetAm": "2026-08-22", "kanal": "brief" },
+
+    { "nummer": "RE-2026-0262", "stufe": "erinnerung", "versendetAm": "2026-07-29", "kanal": "email" },
+    { "nummer": "RE-2026-0262", "stufe": "mahnung_2", "versendetAm": "2026-08-20", "kanal": "brief" },
+
+    { "nummer": "RE-2026-0271", "stufe": "erinnerung", "versendetAm": "2026-08-20", "kanal": "email" },
+    { "nummer": "RE-2026-0271", "stufe": "mahnung_1", "versendetAm": "2026-08-29", "kanal": "email" },
+
+    { "nummer": "RE-2026-0272", "stufe": "erinnerung", "versendetAm": "2026-08-17", "kanal": "email" },
+    { "nummer": "RE-2026-0272", "stufe": "mahnung_1", "versendetAm": "2026-08-26", "kanal": "email" },
+
+    { "nummer": "RE-2026-0273", "stufe": "erinnerung", "versendetAm": "2026-08-15", "kanal": "email" },
+    { "nummer": "RE-2026-0273", "stufe": "mahnung_1", "versendetAm": "2026-08-24", "kanal": "email" },
+
+    { "nummer": "RE-2026-0274", "stufe": "erinnerung", "versendetAm": "2026-08-13", "kanal": "email" },
+    { "nummer": "RE-2026-0274", "stufe": "mahnung_1", "versendetAm": "2026-08-22", "kanal": "email" },
+
+    { "nummer": "RE-2026-0281", "stufe": "erinnerung", "versendetAm": "2026-09-02", "kanal": "email" },
+    { "nummer": "RE-2026-0282", "stufe": "erinnerung", "versendetAm": "2026-08-31", "kanal": "email" },
+    { "nummer": "RE-2026-0283", "stufe": "erinnerung", "versendetAm": "2026-08-29", "kanal": "email" },
+    { "nummer": "RE-2026-0284", "stufe": "erinnerung", "versendetAm": "2026-09-13", "kanal": "email" },
+    { "nummer": "RE-2026-0285", "stufe": "erinnerung", "versendetAm": "2026-08-26", "kanal": "email" },
+    { "nummer": "RE-2026-0286", "stufe": "erinnerung", "versendetAm": "2026-08-25", "kanal": "email" },
+    { "nummer": "RE-2026-0287", "stufe": "erinnerung", "versendetAm": "2026-08-24", "kanal": "email" },
+    { "nummer": "RE-2026-0288", "stufe": "erinnerung", "versendetAm": "2026-08-23", "kanal": "email" },
+    { "nummer": "RE-2026-0289", "stufe": "erinnerung", "versendetAm": "2026-08-22", "kanal": "email" },
+    { "nummer": "RE-2026-0290", "stufe": "erinnerung", "versendetAm": "2026-08-21", "kanal": "email" },
+    { "nummer": "RE-2026-0291", "stufe": "erinnerung", "versendetAm": "2026-09-06", "kanal": "email" },
+    { "nummer": "RE-2026-0292", "stufe": "erinnerung", "versendetAm": "2026-09-05", "kanal": "email" }
+  ]
+}

@@ -1,0 +1,42 @@
+# BEISPIELBRIEF. Fiktiver Absender, fiktiver Empfänger, erfundene Beträge.
+# Vorgang    RE-2026-0288, Fußbodenheizung Neubau, 1. Abschlag
+# Stufe      1. Mahnung
+# Kontrollen 8 von 8 bestanden
+# Ergebnis   Alle Kontrollen bestanden, freigegeben
+# Erzeugt    npm run lauf, ohne Modellaufruf
+# ------------------------------------------------------------------------
+Musterbetrieb Heizung und Sanitär GmbH
+Beispielweg 4 · 82000 Musterort
+
+
+Familie Brunnbauer
+Ahornstraße 18
+82000 Musterort
+
+
+Musterort, 16.09.2026
+
+1. Mahnung zur Rechnung RE-2026-0288
+
+Sehr geehrte Familie Brunnbauer,
+
+unsere Zahlungserinnerung vom 23.08.2026 zur Rechnung RE-2026-0288 vom
+04.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über
+2.480,00 EUR (Fußbodenheizung Neubau, 1. Abschlag, Vorgang BV-2026-024)
+war am 18.08.2026 fällig, das sind inzwischen 29 Tage.
+
+Wir bitten Sie, den offenen Betrag bis zum 23.09.2026 auszugleichen. Für
+den zusätzlichen Aufwand berechnen wir nach unseren Zahlungsbedingungen
+eine Mahngebühr von 5,00 EUR.
+
+  Offener Rechnungsbetrag    2.480,00 EUR
+  Mahngebühr                     5,00 EUR
+  Zu zahlen                  2.485,00 EUR
+
+Falls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei
+uns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.
+
+Mit freundlichen Grüßen
+
+Musterbetrieb Heizung und Sanitär GmbH
+Buchhaltung

@@ -1,0 +1,4290 @@
+{
+  "beispieldaten": true,
+  "stichtag": "2026-09-16",
+  "erzeugtVon": "npm run lauf, ohne Netzzugriff und ohne Modellaufruf",
+  "zahlen": {
+    "rechnungen": 42,
+    "offeneRechnungen": 37,
+    "entwuerfe": 28,
+    "freigegeben": 15,
+    "zurFreigabe": 5,
+    "gestoppt": 8,
+    "eskaliert": 2,
+    "kontrollenAusgefuehrt": 224
+  },
+  "vorgaenge": [
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0262",
+        "kundeId": "K-1034",
+        "kundeName": "Familie Zehetmair",
+        "projekt": "N-2026-048",
+        "leistung": "Notdienst, Heizungsausfall",
+        "stufe": {
+          "schluessel": "uebergabe",
+          "name": "Übergabe vorbereiten",
+          "ab_tagen_nach_faelligkeit": 45,
+          "gebuehr": 0,
+          "zahlbar_in_tagen": 0,
+          "kanal": "keiner",
+          "freigabe": "mensch"
+        },
+        "tageUeberfaellig": 54,
+        "briefbetrag": 1275,
+        "gebuehr": 0,
+        "zuZahlen": 1275,
+        "zahlbarBis": "2026-09-16",
+        "brief": "Interne Aktennotiz. Kein Schreiben an den Kunden.\n\nVorgang            RE-2026-0262, Notdienst, Heizungsausfall\nKunde              Familie Zehetmair (K-1034)\nBauvorhaben        N-2026-048\nOffener Betrag     1.275,00 EUR\nFällig seit        24.07.2026 (54 Tage)\nHistorie           Zahlungserinnerung am 29.07.2026, 2. Mahnung am 20.08.2026\n\nÜber das weitere Vorgehen entscheidet die Geschäftsführung. Diese Notiz\nbereitet die Akte vor, sie verschickt nichts und sie beauftragt\nniemanden.",
+        "briefDatei": "briefe/RE-2026-0262_uebergabe.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 1.275,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 1.275,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "1.275,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu N-2026-048."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1034 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Letzte Stufe vor 27 Tagen, Wartezeit 7 Tage."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": false,
+          "text": "In der Historie fehlt 1. Mahnung. Eine Stufe zu überspringen, deren Vorstufe niemand belegen kann, ist genau der Vorgang, den später niemand mehr erklären kann."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "Interne Notiz, es geht nichts hinaus."
+        }
+      ],
+      "ergebnis": "gestoppt",
+      "grund": "Reihenfolge",
+      "eskaliert": true,
+      "naechsterSchritt": "Vorlage zur Freigabe, Grund: Reihenfolge",
+      "zustaendig": "Geschäftsführung"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0261",
+        "kundeId": "K-1019",
+        "kundeName": "Herr Kirchmaier",
+        "projekt": "BV-2026-007",
+        "leistung": "Bad-Sanierung, Schlussrechnung",
+        "stufe": {
+          "schluessel": "uebergabe",
+          "name": "Übergabe vorbereiten",
+          "ab_tagen_nach_faelligkeit": 45,
+          "gebuehr": 0,
+          "zahlbar_in_tagen": 0,
+          "kanal": "keiner",
+          "freigabe": "mensch"
+        },
+        "tageUeberfaellig": 50,
+        "briefbetrag": 3115,
+        "gebuehr": 0,
+        "zuZahlen": 3115,
+        "zahlbarBis": "2026-09-16",
+        "brief": "Interne Aktennotiz. Kein Schreiben an den Kunden.\n\nVorgang            RE-2026-0261, Bad-Sanierung, Schlussrechnung\nKunde              Herr Kirchmaier (K-1019)\nBauvorhaben        BV-2026-007\nOffener Betrag     3.115,00 EUR\nFällig seit        28.07.2026 (50 Tage)\nHistorie           Zahlungserinnerung am 02.08.2026, 1. Mahnung am 11.08.2026, 2. Mahnung am 22.08.2026\n\nÜber das weitere Vorgehen entscheidet die Geschäftsführung. Diese Notiz\nbereitet die Akte vor, sie verschickt nichts und sie beauftragt\nniemanden.",
+        "briefDatei": "briefe/RE-2026-0261_uebergabe.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 3.115,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 3.115,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "3.115,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu BV-2026-007."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1019 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Letzte Stufe vor 25 Tagen, Wartezeit 7 Tage."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Dokumentiert: Zahlungserinnerung, 1. Mahnung, 2. Mahnung."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "Interne Notiz, es geht nichts hinaus."
+        }
+      ],
+      "ergebnis": "zur_freigabe",
+      "grund": "Diese Stufe gibt immer ein Mensch frei",
+      "eskaliert": true,
+      "naechsterSchritt": "Akte liegt der Geschäftsführung vor, es geht nichts hinaus",
+      "zustaendig": "Geschäftsführung"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0274",
+        "kundeId": "K-1045",
+        "kundeName": "Möbelhaus Naderer KG",
+        "projekt": "BV-2026-026",
+        "leistung": "Sanitärbereich Ausstellung, Montage",
+        "stufe": {
+          "schluessel": "mahnung_2",
+          "name": "2. Mahnung",
+          "ab_tagen_nach_faelligkeit": 28,
+          "gebuehr": 10,
+          "zahlbar_in_tagen": 14,
+          "kanal": "brief",
+          "freigabe": "mensch"
+        },
+        "tageUeberfaellig": 39,
+        "briefbetrag": 1805,
+        "gebuehr": 10,
+        "zuZahlen": 1815,
+        "zahlbarBis": "2026-09-30",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nMöbelhaus Naderer KG\nIndustriestraße 17\n82002 Musterau\n\n\nMusterort, 16.09.2026\n\n2. Mahnung zur Rechnung RE-2026-0274\n\nSehr geehrte Damen und Herren,\n\nzur Rechnung RE-2026-0274 vom 25.07.2026 über 1.805,00 EUR\n(Sanitärbereich Ausstellung, Montage, Vorgang BV-2026-026) haben wir\nIhnen am 13.08.2026 eine Zahlungserinnerung und am 22.08.2026 eine erste\nMahnung geschickt. Ein Zahlungseingang ist bis heute nicht verbucht, die\nRechnung ist seit 39 Tagen überfällig.\n\nWir bitten Sie, den offenen Betrag bis zum 30.09.2026 zu begleichen.\n\n  Offener Rechnungsbetrag    1.805,00 EUR\n  Mahngebühr                    10,00 EUR\n  Zu zahlen                  1.815,00 EUR\n\nSollten bis dahin weder eine Zahlung noch eine Rückmeldung von Ihnen\nvorliegen, geben wir den Vorgang zur weiteren Klärung an die\nGeschäftsführung. Ein Anruf genügt, wenn Sie das vermeiden möchten.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0274_mahnung_2.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 1.805,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 1.805,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "1.805,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu BV-2026-026."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1045 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Letzte Stufe vor 25 Tagen, Wartezeit 7 Tage."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Dokumentiert: Zahlungserinnerung, 1. Mahnung."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "Vollständige Anschrift hinterlegt."
+        }
+      ],
+      "ergebnis": "zur_freigabe",
+      "grund": "Diese Stufe gibt immer ein Mensch frei",
+      "eskaliert": false,
+      "naechsterSchritt": "Nach Freigabe Versand per brief",
+      "zustaendig": "Buchhaltung"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0273",
+        "kundeId": "K-1054",
+        "kundeName": "Schreinerei Wallner GmbH",
+        "projekt": "BV-2026-031",
+        "leistung": "Reparatur Heizkreisverteiler",
+        "stufe": {
+          "schluessel": "mahnung_2",
+          "name": "2. Mahnung",
+          "ab_tagen_nach_faelligkeit": 28,
+          "gebuehr": 10,
+          "zahlbar_in_tagen": 14,
+          "kanal": "brief",
+          "freigabe": "mensch"
+        },
+        "tageUeberfaellig": 37,
+        "briefbetrag": 515,
+        "gebuehr": 10,
+        "zuZahlen": 525,
+        "zahlbarBis": "2026-09-30",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nSchreinerei Wallner GmbH\nHandwerkerstraße 4\n82001 Beispielried\n\n\nMusterort, 16.09.2026\n\n2. Mahnung zur Rechnung RE-2026-0273\n\nSehr geehrte Damen und Herren,\n\nzur Rechnung RE-2026-0273 vom 27.07.2026 über 515,00 EUR (Reparatur\nHeizkreisverteiler, Vorgang BV-2026-031) haben wir Ihnen am 15.08.2026\neine Zahlungserinnerung und am 24.08.2026 eine erste Mahnung geschickt.\nEin Zahlungseingang ist bis heute nicht verbucht, die Rechnung ist seit\n37 Tagen überfällig.\n\nWir bitten Sie, den offenen Betrag bis zum 30.09.2026 zu begleichen.\n\n  Offener Rechnungsbetrag    515,00 EUR\n  Mahngebühr                  10,00 EUR\n  Zu zahlen                  525,00 EUR\n\nSollten bis dahin weder eine Zahlung noch eine Rückmeldung von Ihnen\nvorliegen, geben wir den Vorgang zur weiteren Klärung an die\nGeschäftsführung. Ein Anruf genügt, wenn Sie das vermeiden möchten.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0273_mahnung_2.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 515,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 515,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "515,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu BV-2026-031."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1054 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Letzte Stufe vor 23 Tagen, Wartezeit 7 Tage."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Dokumentiert: Zahlungserinnerung, 1. Mahnung."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "Vollständige Anschrift hinterlegt."
+        }
+      ],
+      "ergebnis": "zur_freigabe",
+      "grund": "Diese Stufe gibt immer ein Mensch frei",
+      "eskaliert": false,
+      "naechsterSchritt": "Nach Freigabe Versand per brief",
+      "zustaendig": "Buchhaltung"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0272",
+        "kundeId": "K-1031",
+        "kundeName": "Herr Stallinger",
+        "projekt": "BV-2026-043",
+        "leistung": "Wärmepumpe Altbau, 2. Abschlag",
+        "stufe": {
+          "schluessel": "mahnung_2",
+          "name": "2. Mahnung",
+          "ab_tagen_nach_faelligkeit": 28,
+          "gebuehr": 10,
+          "zahlbar_in_tagen": 14,
+          "kanal": "brief",
+          "freigabe": "mensch"
+        },
+        "tageUeberfaellig": 35,
+        "briefbetrag": 2940,
+        "gebuehr": 10,
+        "zuZahlen": 2950,
+        "zahlbarBis": "2026-09-30",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nHerr Stallinger\nMusterstraße 33\n82000 Musterort\n\n\nMusterort, 16.09.2026\n\n2. Mahnung zur Rechnung RE-2026-0272\n\nSehr geehrter Herr Stallinger,\n\nzur Rechnung RE-2026-0272 vom 29.07.2026 über 2.940,00 EUR (Wärmepumpe\nAltbau, 2. Abschlag, Vorgang BV-2026-043) haben wir Ihnen am 17.08.2026\neine Zahlungserinnerung und am 26.08.2026 eine erste Mahnung geschickt.\nEin Zahlungseingang ist bis heute nicht verbucht, die Rechnung ist seit\n35 Tagen überfällig.\n\nWir bitten Sie, den offenen Betrag bis zum 30.09.2026 zu begleichen.\n\n  Offener Rechnungsbetrag    2.940,00 EUR\n  Mahngebühr                    10,00 EUR\n  Zu zahlen                  2.950,00 EUR\n\nSollten bis dahin weder eine Zahlung noch eine Rückmeldung von Ihnen\nvorliegen, geben wir den Vorgang zur weiteren Klärung an die\nGeschäftsführung. Ein Anruf genügt, wenn Sie das vermeiden möchten.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0272_mahnung_2.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 2.940,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 2.940,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "2.940,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu BV-2026-043."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1031 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Letzte Stufe vor 21 Tagen, Wartezeit 7 Tage."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Dokumentiert: Zahlungserinnerung, 1. Mahnung."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "Vollständige Anschrift hinterlegt."
+        }
+      ],
+      "ergebnis": "zur_freigabe",
+      "grund": "Diese Stufe gibt immer ein Mensch frei",
+      "eskaliert": false,
+      "naechsterSchritt": "Nach Freigabe Versand per brief",
+      "zustaendig": "Buchhaltung"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0271",
+        "kundeId": "K-1016",
+        "kundeName": "Familie Hasenöhrl",
+        "projekt": "BV-2026-004",
+        "leistung": "Heizungstausch, Restbetrag",
+        "stufe": {
+          "schluessel": "mahnung_2",
+          "name": "2. Mahnung",
+          "ab_tagen_nach_faelligkeit": 28,
+          "gebuehr": 10,
+          "zahlbar_in_tagen": 14,
+          "kanal": "brief",
+          "freigabe": "mensch"
+        },
+        "tageUeberfaellig": 32,
+        "briefbetrag": 1690,
+        "gebuehr": 10,
+        "zuZahlen": 1700,
+        "zahlbarBis": "2026-09-30",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nFamilie Hasenöhrl\nKirchfeldweg 11\n82002 Musterau\n\n\nMusterort, 16.09.2026\n\n2. Mahnung zur Rechnung RE-2026-0271\n\nSehr geehrte Familie Hasenöhrl,\n\nzur Rechnung RE-2026-0271 vom 01.08.2026 über 1.690,00 EUR\n(Heizungstausch, Restbetrag, Vorgang BV-2026-004) haben wir Ihnen am\n20.08.2026 eine Zahlungserinnerung und am 29.08.2026 eine erste Mahnung\ngeschickt. Ein Zahlungseingang ist bis heute nicht verbucht, die\nRechnung ist seit 32 Tagen überfällig.\n\nWir bitten Sie, den offenen Betrag bis zum 30.09.2026 zu begleichen.\n\n  Offener Rechnungsbetrag    1.690,00 EUR\n  Mahngebühr                    10,00 EUR\n  Zu zahlen                  1.700,00 EUR\n\nSollten bis dahin weder eine Zahlung noch eine Rückmeldung von Ihnen\nvorliegen, geben wir den Vorgang zur weiteren Klärung an die\nGeschäftsführung. Ein Anruf genügt, wenn Sie das vermeiden möchten.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0271_mahnung_2.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 1.690,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 1.690,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "1.690,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu BV-2026-004."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1016 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Letzte Stufe vor 18 Tagen, Wartezeit 7 Tage."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Dokumentiert: Zahlungserinnerung, 1. Mahnung."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "Vollständige Anschrift hinterlegt."
+        }
+      ],
+      "ergebnis": "zur_freigabe",
+      "grund": "Diese Stufe gibt immer ein Mensch frei",
+      "eskaliert": false,
+      "naechsterSchritt": "Nach Freigabe Versand per brief",
+      "zustaendig": "Buchhaltung"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0290",
+        "kundeId": "K-1040",
+        "kundeName": "Gasthof zur Alten Post",
+        "projekt": "N-2026-051",
+        "leistung": "Reparatur Warmwasserleitung",
+        "stufe": {
+          "schluessel": "mahnung_1",
+          "name": "1. Mahnung",
+          "ab_tagen_nach_faelligkeit": 14,
+          "gebuehr": 5,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 31,
+        "briefbetrag": 648,
+        "gebuehr": 5,
+        "zuZahlen": 653,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nGasthof zur Alten Post\nMarktplatz 1\n82001 Beispielried\n\n\nMusterort, 16.09.2026\n\n1. Mahnung zur Rechnung RE-2026-0290\n\nSehr geehrte Damen und Herren,\n\nunsere Zahlungserinnerung vom 21.08.2026 zur Rechnung RE-2026-0290 vom\n02.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über 648,00\nEUR (Reparatur Warmwasserleitung, Vorgang N-2026-051) war am 16.08.2026\nfällig, das sind inzwischen 31 Tage.\n\nWir bitten Sie, den offenen Betrag bis zum 23.09.2026 auszugleichen. Für\nden zusätzlichen Aufwand berechnen wir nach unseren Zahlungsbedingungen\neine Mahngebühr von 5,00 EUR.\n\n  Offener Rechnungsbetrag    648,00 EUR\n  Mahngebühr                   5,00 EUR\n  Zu zahlen                  653,00 EUR\n\nFalls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei\nuns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0290_mahnung_1.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 648,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 648,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "648,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu N-2026-051."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1040 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Letzte Stufe vor 26 Tagen, Wartezeit 7 Tage."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Dokumentiert: Zahlungserinnerung."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "freigegeben",
+      "grund": "8 von 8 Kontrollen bestanden",
+      "eskaliert": false,
+      "naechsterSchritt": "Versand per email am 16.09.2026",
+      "zustaendig": "Automatisch"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0289",
+        "kundeId": "K-1025",
+        "kundeName": "Frau Obermaier",
+        "projekt": "BV-2026-041",
+        "leistung": "Bad-Sanierung, 1. Abschlag",
+        "stufe": {
+          "schluessel": "mahnung_1",
+          "name": "1. Mahnung",
+          "ab_tagen_nach_faelligkeit": 14,
+          "gebuehr": 5,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 30,
+        "briefbetrag": 1330,
+        "gebuehr": 5,
+        "zuZahlen": 1335,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nFrau Obermaier\nBeispielweg 41\n82001 Beispielried\n\n\nMusterort, 16.09.2026\n\n1. Mahnung zur Rechnung RE-2026-0289\n\nSehr geehrte Frau Obermaier,\n\nunsere Zahlungserinnerung vom 22.08.2026 zur Rechnung RE-2026-0289 vom\n03.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über\n1.330,00 EUR (Bad-Sanierung, 1. Abschlag, Vorgang BV-2026-041) war am\n17.08.2026 fällig, das sind inzwischen 30 Tage.\n\nWir bitten Sie, den offenen Betrag bis zum 23.09.2026 auszugleichen. Für\nden zusätzlichen Aufwand berechnen wir nach unseren Zahlungsbedingungen\neine Mahngebühr von 5,00 EUR.\n\n  Offener Rechnungsbetrag    1.330,00 EUR\n  Mahngebühr                     5,00 EUR\n  Zu zahlen                  1.335,00 EUR\n\nFalls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei\nuns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0289_mahnung_1.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 1.330,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 1.330,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "1.330,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu BV-2026-041."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1025 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Letzte Stufe vor 25 Tagen, Wartezeit 7 Tage."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Dokumentiert: Zahlungserinnerung."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "freigegeben",
+      "grund": "8 von 8 Kontrollen bestanden",
+      "eskaliert": false,
+      "naechsterSchritt": "Versand per email am 16.09.2026",
+      "zustaendig": "Automatisch"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0288",
+        "kundeId": "K-1004",
+        "kundeName": "Familie Brunnbauer",
+        "projekt": "BV-2026-024",
+        "leistung": "Fußbodenheizung Neubau, 1. Abschlag",
+        "stufe": {
+          "schluessel": "mahnung_1",
+          "name": "1. Mahnung",
+          "ab_tagen_nach_faelligkeit": 14,
+          "gebuehr": 5,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 29,
+        "briefbetrag": 2480,
+        "gebuehr": 5,
+        "zuZahlen": 2485,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nFamilie Brunnbauer\nAhornstraße 18\n82000 Musterort\n\n\nMusterort, 16.09.2026\n\n1. Mahnung zur Rechnung RE-2026-0288\n\nSehr geehrte Familie Brunnbauer,\n\nunsere Zahlungserinnerung vom 23.08.2026 zur Rechnung RE-2026-0288 vom\n04.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über\n2.480,00 EUR (Fußbodenheizung Neubau, 1. Abschlag, Vorgang BV-2026-024)\nwar am 18.08.2026 fällig, das sind inzwischen 29 Tage.\n\nWir bitten Sie, den offenen Betrag bis zum 23.09.2026 auszugleichen. Für\nden zusätzlichen Aufwand berechnen wir nach unseren Zahlungsbedingungen\neine Mahngebühr von 5,00 EUR.\n\n  Offener Rechnungsbetrag    2.480,00 EUR\n  Mahngebühr                     5,00 EUR\n  Zu zahlen                  2.485,00 EUR\n\nFalls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei\nuns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0288_mahnung_1.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 2.480,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 2.480,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "2.480,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu BV-2026-024."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1004 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Letzte Stufe vor 24 Tagen, Wartezeit 7 Tage."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Dokumentiert: Zahlungserinnerung."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "freigegeben",
+      "grund": "8 von 8 Kontrollen bestanden",
+      "eskaliert": false,
+      "naechsterSchritt": "Versand per email am 16.09.2026",
+      "zustaendig": "Automatisch"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0287",
+        "kundeId": "K-1028",
+        "kundeName": "Familie Reithmeier",
+        "projekt": "BV-2026-038",
+        "leistung": "Austausch Warmwasserspeicher",
+        "stufe": {
+          "schluessel": "mahnung_1",
+          "name": "1. Mahnung",
+          "ab_tagen_nach_faelligkeit": 14,
+          "gebuehr": 5,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 28,
+        "briefbetrag": 995,
+        "gebuehr": 5,
+        "zuZahlen": 1000,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nFamilie Reithmeier\nObere Dorfstraße 6\n82002 Musterau\n\n\nMusterort, 16.09.2026\n\n1. Mahnung zur Rechnung RE-2026-0287\n\nSehr geehrte Familie Reithmeier,\n\nunsere Zahlungserinnerung vom 24.08.2026 zur Rechnung RE-2026-0287 vom\n05.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über 995,00\nEUR (Austausch Warmwasserspeicher, Vorgang BV-2026-038) war am\n19.08.2026 fällig, das sind inzwischen 28 Tage.\n\nWir bitten Sie, den offenen Betrag bis zum 23.09.2026 auszugleichen. Für\nden zusätzlichen Aufwand berechnen wir nach unseren Zahlungsbedingungen\neine Mahngebühr von 5,00 EUR.\n\n  Offener Rechnungsbetrag      995,00 EUR\n  Mahngebühr                     5,00 EUR\n  Zu zahlen                  1.000,00 EUR\n\nFalls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei\nuns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0287_mahnung_1.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 995,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 995,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "995,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu BV-2026-038."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1028 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Letzte Stufe vor 23 Tagen, Wartezeit 7 Tage."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Dokumentiert: Zahlungserinnerung."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "freigegeben",
+      "grund": "8 von 8 Kontrollen bestanden",
+      "eskaliert": false,
+      "naechsterSchritt": "Versand per email am 16.09.2026",
+      "zustaendig": "Automatisch"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0286",
+        "kundeId": "K-1042",
+        "kundeName": "Hausverwaltung Beispielhof GmbH",
+        "projekt": "BV-2026-036",
+        "leistung": "Strangsanierung Objekt Parkstraße, 2. Abschlag",
+        "stufe": {
+          "schluessel": "mahnung_1",
+          "name": "1. Mahnung",
+          "ab_tagen_nach_faelligkeit": 14,
+          "gebuehr": 5,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 27,
+        "briefbetrag": 6850,
+        "gebuehr": 5,
+        "zuZahlen": 6855,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nHausverwaltung Beispielhof GmbH\nParkstraße 8\n82000 Musterort\n\n\nMusterort, 16.09.2026\n\n1. Mahnung zur Rechnung RE-2026-0286\n\nSehr geehrte Damen und Herren,\n\nunsere Zahlungserinnerung vom 25.08.2026 zur Rechnung RE-2026-0286 vom\n06.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über\n6.850,00 EUR (Strangsanierung Objekt Parkstraße, 2. Abschlag, Vorgang\nBV-2026-036) war am 20.08.2026 fällig, das sind inzwischen 27 Tage.\n\nWir bitten Sie, den offenen Betrag bis zum 23.09.2026 auszugleichen. Für\nden zusätzlichen Aufwand berechnen wir nach unseren Zahlungsbedingungen\neine Mahngebühr von 5,00 EUR.\n\n  Offener Rechnungsbetrag    6.850,00 EUR\n  Mahngebühr                     5,00 EUR\n  Zu zahlen                  6.855,00 EUR\n\nFalls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei\nuns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0286_mahnung_1.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 6.850,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 6.850,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "6.850,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu BV-2026-036."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": false,
+          "text": "Hausverwaltung Beispielhof GmbH steht auf der Kulanzliste. Solche Kunden gehen immer über den Schreibtisch, nie automatisch hinaus."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Letzte Stufe vor 22 Tagen, Wartezeit 7 Tage."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Dokumentiert: Zahlungserinnerung."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "gestoppt",
+      "grund": "Kulanzliste",
+      "eskaliert": false,
+      "naechsterSchritt": "Vorlage zur Freigabe, Grund: Kulanzliste",
+      "zustaendig": "Buchhaltung"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0285",
+        "kundeId": "K-1048",
+        "kundeName": "Seniorenresidenz Musterau gGmbH",
+        "projekt": "BV-2026-029",
+        "leistung": "Sanitärinstallation Pflegebad",
+        "stufe": {
+          "schluessel": "mahnung_1",
+          "name": "1. Mahnung",
+          "ab_tagen_nach_faelligkeit": 14,
+          "gebuehr": 5,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 26,
+        "briefbetrag": 3320,
+        "gebuehr": 5,
+        "zuZahlen": 3325,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nSeniorenresidenz Musterau gGmbH\nRosenweg 20\n82002 Musterau\n\n\nMusterort, 16.09.2026\n\n1. Mahnung zur Rechnung RE-2026-0285\n\nSehr geehrte Damen und Herren,\n\nunsere Zahlungserinnerung vom 26.08.2026 zur Rechnung RE-2026-0285 vom\n07.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über\n3.320,00 EUR (Sanitärinstallation Pflegebad, Vorgang BV-2026-029) war am\n21.08.2026 fällig, das sind inzwischen 26 Tage.\n\nWir bitten Sie, den offenen Betrag bis zum 23.09.2026 auszugleichen. Für\nden zusätzlichen Aufwand berechnen wir nach unseren Zahlungsbedingungen\neine Mahngebühr von 5,00 EUR.\n\n  Offener Rechnungsbetrag    3.320,00 EUR\n  Mahngebühr                     5,00 EUR\n  Zu zahlen                  3.325,00 EUR\n\nFalls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei\nuns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0285_mahnung_1.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 3.320,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 3.320,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "3.320,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": false,
+          "text": "REK-2026-017 ist seit dem 01.09.2026 offen: Duschrinne im Pflegebad zieht nicht ab, Nachbesserung angekündigt. Wer auf eine Nachbesserung wartet, bekommt keine Mahnung."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1048 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Letzte Stufe vor 21 Tagen, Wartezeit 7 Tage."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Dokumentiert: Zahlungserinnerung."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "gestoppt",
+      "grund": "Reklamation",
+      "eskaliert": false,
+      "naechsterSchritt": "Vorlage zur Freigabe, Grund: Reklamation",
+      "zustaendig": "Buchhaltung"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0284",
+        "kundeId": "K-1022",
+        "kundeName": "Familie Lindmoser",
+        "projekt": "BV-2026-018",
+        "leistung": "Heizkörpertausch Erdgeschoss",
+        "stufe": {
+          "schluessel": "mahnung_1",
+          "name": "1. Mahnung",
+          "ab_tagen_nach_faelligkeit": 14,
+          "gebuehr": 5,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 25,
+        "briefbetrag": 780,
+        "gebuehr": 5,
+        "zuZahlen": 785,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nFamilie Lindmoser\nWiesenweg 3\n82000 Musterort\n\n\nMusterort, 16.09.2026\n\n1. Mahnung zur Rechnung RE-2026-0284\n\nSehr geehrte Familie Lindmoser,\n\nunsere Zahlungserinnerung vom 13.09.2026 zur Rechnung RE-2026-0284 vom\n08.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über 780,00\nEUR (Heizkörpertausch Erdgeschoss, Vorgang BV-2026-018) war am\n22.08.2026 fällig, das sind inzwischen 25 Tage.\n\nWir bitten Sie, den offenen Betrag bis zum 23.09.2026 auszugleichen. Für\nden zusätzlichen Aufwand berechnen wir nach unseren Zahlungsbedingungen\neine Mahngebühr von 5,00 EUR.\n\n  Offener Rechnungsbetrag    780,00 EUR\n  Mahngebühr                   5,00 EUR\n  Zu zahlen                  785,00 EUR\n\nFalls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei\nuns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0284_mahnung_1.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 780,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 780,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "780,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu BV-2026-018."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1022 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": false,
+          "text": "Die letzte Stufe ging erst vor 3 Tagen hinaus, die Hausregel verlangt 7 Tage Abstand. Zwei Schreiben in einer Woche sehen nach Maschine aus."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Dokumentiert: Zahlungserinnerung."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "gestoppt",
+      "grund": "Wartezeit",
+      "eskaliert": false,
+      "naechsterSchritt": "Vorlage zur Freigabe, Grund: Wartezeit",
+      "zustaendig": "Buchhaltung"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0283",
+        "kundeId": "K-1037",
+        "kundeName": "Bauzentrum Aigner GmbH",
+        "projekt": "BV-2026-021",
+        "leistung": "Strangsanierung, 1. Abschlag",
+        "stufe": {
+          "schluessel": "mahnung_1",
+          "name": "1. Mahnung",
+          "ab_tagen_nach_faelligkeit": 14,
+          "gebuehr": 5,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 23,
+        "briefbetrag": 4260,
+        "gebuehr": 5,
+        "zuZahlen": 4265,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nBauzentrum Aigner GmbH\nGewerbering 2\n82000 Musterort\n\n\nMusterort, 16.09.2026\n\n1. Mahnung zur Rechnung RE-2026-0283\n\nSehr geehrte Damen und Herren,\n\nunsere Zahlungserinnerung vom 29.08.2026 zur Rechnung RE-2026-0283 vom\n10.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über\n4.260,00 EUR (Strangsanierung, 1. Abschlag, Vorgang BV-2026-021) war am\n24.08.2026 fällig, das sind inzwischen 23 Tage.\n\nWir bitten Sie, den offenen Betrag bis zum 23.09.2026 auszugleichen. Für\nden zusätzlichen Aufwand berechnen wir nach unseren Zahlungsbedingungen\neine Mahngebühr von 5,00 EUR.\n\n  Offener Rechnungsbetrag    4.260,00 EUR\n  Mahngebühr                     5,00 EUR\n  Zu zahlen                  4.265,00 EUR\n\nFalls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei\nuns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0283_mahnung_1.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 4.260,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 4.260,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "4.260,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu BV-2026-021."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1037 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Letzte Stufe vor 18 Tagen, Wartezeit 7 Tage."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Dokumentiert: Zahlungserinnerung."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "freigegeben",
+      "grund": "8 von 8 Kontrollen bestanden",
+      "eskaliert": false,
+      "naechsterSchritt": "Versand per email am 16.09.2026",
+      "zustaendig": "Automatisch"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0282",
+        "kundeId": "K-1013",
+        "kundeName": "Frau Grabmeier",
+        "projekt": "BV-2026-016",
+        "leistung": "Austausch Duschwanne",
+        "stufe": {
+          "schluessel": "mahnung_1",
+          "name": "1. Mahnung",
+          "ab_tagen_nach_faelligkeit": 14,
+          "gebuehr": 5,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 21,
+        "briefbetrag": 1140,
+        "gebuehr": 5,
+        "zuZahlen": 1145,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nFrau Grabmeier\nMustergasse 5\n82000 Musterort\n\n\nMusterort, 16.09.2026\n\n1. Mahnung zur Rechnung RE-2026-0282\n\nSehr geehrte Frau Grabmeier,\n\nunsere Zahlungserinnerung vom 31.08.2026 zur Rechnung RE-2026-0282 vom\n12.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über\n1.140,00 EUR (Austausch Duschwanne, Vorgang BV-2026-016) war am\n26.08.2026 fällig, das sind inzwischen 21 Tage.\n\nWir bitten Sie, den offenen Betrag bis zum 23.09.2026 auszugleichen. Für\nden zusätzlichen Aufwand berechnen wir nach unseren Zahlungsbedingungen\neine Mahngebühr von 5,00 EUR.\n\n  Offener Rechnungsbetrag    1.140,00 EUR\n  Mahngebühr                     5,00 EUR\n  Zu zahlen                  1.145,00 EUR\n\nFalls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei\nuns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0282_mahnung_1.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 1.140,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 1.140,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "1.140,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu BV-2026-016."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1013 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Letzte Stufe vor 16 Tagen, Wartezeit 7 Tage."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Dokumentiert: Zahlungserinnerung."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "freigegeben",
+      "grund": "8 von 8 Kontrollen bestanden",
+      "eskaliert": false,
+      "naechsterSchritt": "Versand per email am 16.09.2026",
+      "zustaendig": "Automatisch"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0281",
+        "kundeId": "K-1010",
+        "kundeName": "Familie Eichinger",
+        "projekt": "BV-2026-012",
+        "leistung": "Wärmepumpe Altbau, 1. Abschlag",
+        "stufe": {
+          "schluessel": "mahnung_1",
+          "name": "1. Mahnung",
+          "ab_tagen_nach_faelligkeit": 14,
+          "gebuehr": 5,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 19,
+        "briefbetrag": 2380,
+        "gebuehr": 5,
+        "zuZahlen": 2385,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nFamilie Eichinger\nBeispielweg 24\n82001 Beispielried\n\n\nMusterort, 16.09.2026\n\n1. Mahnung zur Rechnung RE-2026-0281\n\nSehr geehrte Familie Eichinger,\n\nunsere Zahlungserinnerung vom 02.09.2026 zur Rechnung RE-2026-0281 vom\n14.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über\n2.380,00 EUR (Wärmepumpe Altbau, 1. Abschlag, Vorgang BV-2026-012) war\nam 28.08.2026 fällig, das sind inzwischen 19 Tage.\n\nWir bitten Sie, den offenen Betrag bis zum 23.09.2026 auszugleichen. Für\nden zusätzlichen Aufwand berechnen wir nach unseren Zahlungsbedingungen\neine Mahngebühr von 5,00 EUR.\n\n  Offener Rechnungsbetrag    2.380,00 EUR\n  Mahngebühr                     5,00 EUR\n  Zu zahlen                  2.385,00 EUR\n\nFalls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei\nuns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0281_mahnung_1.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 2.380,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 2.380,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "2.380,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu BV-2026-012."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1010 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Letzte Stufe vor 14 Tagen, Wartezeit 7 Tage."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Dokumentiert: Zahlungserinnerung."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "freigegeben",
+      "grund": "8 von 8 Kontrollen bestanden",
+      "eskaliert": false,
+      "naechsterSchritt": "Versand per email am 16.09.2026",
+      "zustaendig": "Automatisch"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0292",
+        "kundeId": "K-1013",
+        "kundeName": "Frau Grabmeier",
+        "projekt": "BV-2026-016",
+        "leistung": "Heizungstausch Einfamilienhaus",
+        "stufe": {
+          "schluessel": "mahnung_1",
+          "name": "1. Mahnung",
+          "ab_tagen_nach_faelligkeit": 14,
+          "gebuehr": 5,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 16,
+        "briefbetrag": 1560,
+        "gebuehr": 5,
+        "zuZahlen": 1565,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nFrau Grabmeier\nMustergasse 5\n82000 Musterort\n\n\nMusterort, 16.09.2026\n\n1. Mahnung zur Rechnung RE-2026-0292\n\nSehr geehrte Frau Grabmeier,\n\nunsere Zahlungserinnerung vom 05.09.2026 zur Rechnung RE-2026-0292 vom\n17.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über\n1.560,00 EUR (Heizungstausch Einfamilienhaus, Vorgang BV-2026-016) war\nam 31.08.2026 fällig, das sind inzwischen 16 Tage.\n\nWir bitten Sie, den offenen Betrag bis zum 23.09.2026 auszugleichen. Für\nden zusätzlichen Aufwand berechnen wir nach unseren Zahlungsbedingungen\neine Mahngebühr von 5,00 EUR.\n\n  Offener Rechnungsbetrag    1.560,00 EUR\n  Mahngebühr                     5,00 EUR\n  Zu zahlen                  1.565,00 EUR\n\nFalls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei\nuns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0292_mahnung_1.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 1.560,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 1.560,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "1.560,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu BV-2026-016."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1013 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Letzte Stufe vor 11 Tagen, Wartezeit 7 Tage."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Dokumentiert: Zahlungserinnerung."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "freigegeben",
+      "grund": "8 von 8 Kontrollen bestanden",
+      "eskaliert": false,
+      "naechsterSchritt": "Versand per email am 16.09.2026",
+      "zustaendig": "Automatisch"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0291",
+        "kundeId": "K-1001",
+        "kundeName": "Familie Achleitner",
+        "projekt": "W-2026-102",
+        "leistung": "Wartung Solarthermie",
+        "stufe": {
+          "schluessel": "mahnung_1",
+          "name": "1. Mahnung",
+          "ab_tagen_nach_faelligkeit": 14,
+          "gebuehr": 5,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 15,
+        "briefbetrag": 430,
+        "gebuehr": 5,
+        "zuZahlen": 435,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nFamilie Achleitner\nLindenweg 7\n82000 Musterort\n\n\nMusterort, 16.09.2026\n\n1. Mahnung zur Rechnung RE-2026-0291\n\nSehr geehrte Familie Achleitner,\n\nunsere Zahlungserinnerung vom 06.09.2026 zur Rechnung RE-2026-0291 vom\n18.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über 430,00\nEUR (Wartung Solarthermie, Vorgang W-2026-102) war am 01.09.2026 fällig,\ndas sind inzwischen 15 Tage.\n\nWir bitten Sie, den offenen Betrag bis zum 23.09.2026 auszugleichen. Für\nden zusätzlichen Aufwand berechnen wir nach unseren Zahlungsbedingungen\neine Mahngebühr von 5,00 EUR.\n\n  Offener Rechnungsbetrag    430,00 EUR\n  Mahngebühr                   5,00 EUR\n  Zu zahlen                  435,00 EUR\n\nFalls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei\nuns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0291_mahnung_1.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 430,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 430,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "430,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu W-2026-102."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1001 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Letzte Stufe vor 10 Tagen, Wartezeit 7 Tage."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Dokumentiert: Zahlungserinnerung."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "freigegeben",
+      "grund": "8 von 8 Kontrollen bestanden",
+      "eskaliert": false,
+      "naechsterSchritt": "Versand per email am 16.09.2026",
+      "zustaendig": "Automatisch"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0293",
+        "kundeId": "K-1007",
+        "kundeName": "Herr Dorfmeister",
+        "projekt": "BV-2026-034",
+        "leistung": "Austausch Gastherme",
+        "stufe": {
+          "schluessel": "erinnerung",
+          "name": "Zahlungserinnerung",
+          "ab_tagen_nach_faelligkeit": 5,
+          "gebuehr": 0,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 14,
+        "briefbetrag": 655,
+        "gebuehr": 0,
+        "zuZahlen": 655,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nHerr Dorfmeister\nAm Bachgrund 2\n82001 Beispielried\n\n\nMusterort, 16.09.2026\n\nZahlungserinnerung zur Rechnung RE-2026-0293\n\nSehr geehrter Herr Dorfmeister,\n\nzu unserer Rechnung RE-2026-0293 vom 19.08.2026 über 655,00 EUR\n(Austausch Gastherme, Vorgang BV-2026-034) ist bei uns bis heute kein\nZahlungseingang verbucht. Fällig war der Betrag am 02.09.2026.\n\nVermutlich ist die Rechnung im Alltag untergegangen. Wir bitten Sie, den\noffenen Betrag bis zum 23.09.2026 zu überweisen.\n\nSollte sich Ihre Zahlung mit diesem Schreiben überschnitten haben,\nbetrachten Sie es bitte als gegenstandslos.\n\nWenn an der Rechnung oder an unserer Arbeit etwas nicht stimmt, rufen\nSie uns an. Das klären wir am Telefon schneller als auf dem Postweg.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0293_erinnerung.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 655,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 655,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "655,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu BV-2026-034."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1007 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Noch nichts versendet, keine Wartezeit zu beachten."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Erste Stufe, es gibt nichts davor."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": false,
+          "text": "Für diesen Kunden ist keine E-Mail-Adresse hinterlegt. Der Brief hätte niemanden erreicht und niemand hätte es bemerkt."
+        }
+      ],
+      "ergebnis": "gestoppt",
+      "grund": "Kontaktdaten",
+      "eskaliert": false,
+      "naechsterSchritt": "Vorlage zur Freigabe, Grund: Kontaktdaten",
+      "zustaendig": "Buchhaltung"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0294",
+        "kundeId": "K-1004",
+        "kundeName": "Familie Brunnbauer",
+        "projekt": "BV-2026-024",
+        "leistung": "Bad-Sanierung, Schlussrechnung",
+        "stufe": {
+          "schluessel": "erinnerung",
+          "name": "Zahlungserinnerung",
+          "ab_tagen_nach_faelligkeit": 5,
+          "gebuehr": 0,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 13,
+        "briefbetrag": 1960,
+        "gebuehr": 0,
+        "zuZahlen": 1960,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nFamilie Brunnbauer\nAhornstraße 18\n82000 Musterort\n\n\nMusterort, 16.09.2026\n\nZahlungserinnerung zur Rechnung RE-2026-0294\n\nSehr geehrte Familie Brunnbauer,\n\nzu unserer Rechnung RE-2026-0294 vom 20.08.2026 über 1.960,00 EUR\n(Bad-Sanierung, Schlussrechnung, Vorgang BV-2026-024) ist bei uns bis\nheute kein Zahlungseingang verbucht. Fällig war der Betrag am\n03.09.2026.\n\nVermutlich ist die Rechnung im Alltag untergegangen. Wir bitten Sie, den\noffenen Betrag bis zum 23.09.2026 zu überweisen.\n\nSollte sich Ihre Zahlung mit diesem Schreiben überschnitten haben,\nbetrachten Sie es bitte als gegenstandslos.\n\nWenn an der Rechnung oder an unserer Arbeit etwas nicht stimmt, rufen\nSie uns an. Das klären wir am Telefon schneller als auf dem Postweg.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0294_erinnerung.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 760,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": false,
+          "text": "Der Brief nennt 1.960,00 EUR, der Zahlungsstand 760,00 EUR, Abweichung 1.200,00 EUR. Ein Eingang über 1.200,00 EUR vom 14.09.2026 ist noch nicht in der Rechnungsliste."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "760,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu BV-2026-024."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1004 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Noch nichts versendet, keine Wartezeit zu beachten."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Erste Stufe, es gibt nichts davor."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "gestoppt",
+      "grund": "Betragsabgleich",
+      "eskaliert": false,
+      "naechsterSchritt": "Vorlage zur Freigabe, Grund: Betragsabgleich",
+      "zustaendig": "Buchhaltung"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0299",
+        "kundeId": "K-1025",
+        "kundeName": "Frau Obermaier",
+        "projekt": "N-2026-053",
+        "leistung": "Kleinreparatur Eckventil",
+        "stufe": {
+          "schluessel": "erinnerung",
+          "name": "Zahlungserinnerung",
+          "ab_tagen_nach_faelligkeit": 5,
+          "gebuehr": 0,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 12,
+        "briefbetrag": 12.4,
+        "gebuehr": 0,
+        "zuZahlen": 12.4,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nFrau Obermaier\nBeispielweg 41\n82001 Beispielried\n\n\nMusterort, 16.09.2026\n\nZahlungserinnerung zur Rechnung RE-2026-0299\n\nSehr geehrte Frau Obermaier,\n\nzu unserer Rechnung RE-2026-0299 vom 21.08.2026 über 12,40 EUR\n(Kleinreparatur Eckventil, Vorgang N-2026-053) ist bei uns bis heute\nkein Zahlungseingang verbucht. Fällig war der Betrag am 04.09.2026.\n\nVermutlich ist die Rechnung im Alltag untergegangen. Wir bitten Sie, den\noffenen Betrag bis zum 23.09.2026 zu überweisen.\n\nSollte sich Ihre Zahlung mit diesem Schreiben überschnitten haben,\nbetrachten Sie es bitte als gegenstandslos.\n\nWenn an der Rechnung oder an unserer Arbeit etwas nicht stimmt, rufen\nSie uns an. Das klären wir am Telefon schneller als auf dem Postweg.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0299_erinnerung.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 12,40 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 12,40 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": false,
+          "text": "12,40 EUR liegt unter dem Mindestbetrag von 15,00 EUR. Der Vorgang gehört auf die Sammelliste, nicht in eine Mahnung."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu N-2026-053."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1025 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Noch nichts versendet, keine Wartezeit zu beachten."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Erste Stufe, es gibt nichts davor."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "gestoppt",
+      "grund": "Mindestbetrag",
+      "eskaliert": false,
+      "naechsterSchritt": "Vorlage zur Freigabe, Grund: Mindestbetrag",
+      "zustaendig": "Buchhaltung"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0298",
+        "kundeId": "K-1045",
+        "kundeName": "Möbelhaus Naderer KG",
+        "projekt": "BV-2026-026",
+        "leistung": "Sanitärarbeiten Ausstellungsraum",
+        "stufe": {
+          "schluessel": "erinnerung",
+          "name": "Zahlungserinnerung",
+          "ab_tagen_nach_faelligkeit": 5,
+          "gebuehr": 0,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 11,
+        "briefbetrag": 2145,
+        "gebuehr": 0,
+        "zuZahlen": 2145,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nMöbelhaus Naderer KG\nIndustriestraße 17\n82002 Musterau\n\n\nMusterort, 16.09.2026\n\nZahlungserinnerung zur Rechnung RE-2026-0298\n\nSehr geehrte Damen und Herren,\n\nzu unserer Rechnung RE-2026-0298 vom 22.08.2026 über 2.145,00 EUR\n(Sanitärarbeiten Ausstellungsraum, Vorgang BV-2026-026) ist bei uns bis\nheute kein Zahlungseingang verbucht. Fällig war der Betrag am\n05.09.2026.\n\nErfahrungsgemäß hängt das am Rechnungslauf und nicht an unserer Arbeit.\nWir bitten Sie, den offenen Betrag bis zum 23.09.2026 anzuweisen.\n\nSollte sich Ihre Zahlung mit diesem Schreiben überschnitten haben,\nbetrachten Sie es bitte als gegenstandslos.\n\nWenn an der Rechnung oder an unserer Arbeit etwas nicht stimmt, rufen\nSie uns an. Das klären wir am Telefon schneller als auf dem Postweg.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0298_erinnerung.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 2.145,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 2.145,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "2.145,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu BV-2026-026."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1045 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Noch nichts versendet, keine Wartezeit zu beachten."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Erste Stufe, es gibt nichts davor."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "freigegeben",
+      "grund": "8 von 8 Kontrollen bestanden",
+      "eskaliert": false,
+      "naechsterSchritt": "Versand per email am 16.09.2026",
+      "zustaendig": "Automatisch"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0295",
+        "kundeId": "K-1051",
+        "kundeName": "Autohaus Riedlbauer GmbH",
+        "projekt": "W-2026-106",
+        "leistung": "Wartung Heizzentrale",
+        "stufe": {
+          "schluessel": "erinnerung",
+          "name": "Zahlungserinnerung",
+          "ab_tagen_nach_faelligkeit": 5,
+          "gebuehr": 0,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 10,
+        "briefbetrag": 890,
+        "gebuehr": 0,
+        "zuZahlen": 890,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nAutohaus Riedlbauer GmbH\nGewerbering 15\n82000 Musterort\n\n\nMusterort, 16.09.2026\n\nZahlungserinnerung zur Rechnung RE-2026-0295\n\nSehr geehrte Damen und Herren,\n\nzu unserer Rechnung RE-2026-0295 vom 23.08.2026 über 890,00 EUR (Wartung\nHeizzentrale, Vorgang W-2026-106) ist bei uns bis heute kein\nZahlungseingang verbucht. Fällig war der Betrag am 06.09.2026.\n\nErfahrungsgemäß hängt das am Rechnungslauf und nicht an unserer Arbeit.\nWir bitten Sie, den offenen Betrag bis zum 23.09.2026 anzuweisen.\n\nSollte sich Ihre Zahlung mit diesem Schreiben überschnitten haben,\nbetrachten Sie es bitte als gegenstandslos.\n\nWenn an der Rechnung oder an unserer Arbeit etwas nicht stimmt, rufen\nSie uns an. Das klären wir am Telefon schneller als auf dem Postweg.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0295_erinnerung.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": false,
+          "text": "Der Zahlungsstand weist die Rechnung am 15.09.2026 als ausgeglichen aus, die Rechnungsliste zeigt noch 890,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Kein offener Betrag, der Fall gehört zur Kontrolle Zahlungsstand."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "0,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu W-2026-106."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1051 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Noch nichts versendet, keine Wartezeit zu beachten."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Erste Stufe, es gibt nichts davor."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "gestoppt",
+      "grund": "Zahlungsstand",
+      "eskaliert": false,
+      "naechsterSchritt": "Vorlage zur Freigabe, Grund: Zahlungsstand",
+      "zustaendig": "Buchhaltung"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0306",
+        "kundeId": "K-1016",
+        "kundeName": "Familie Hasenöhrl",
+        "projekt": "BV-2026-004",
+        "leistung": "Heizungstausch, 1. Abschlag",
+        "stufe": {
+          "schluessel": "erinnerung",
+          "name": "Zahlungserinnerung",
+          "ab_tagen_nach_faelligkeit": 5,
+          "gebuehr": 0,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 9,
+        "briefbetrag": 3640,
+        "gebuehr": 0,
+        "zuZahlen": 3640,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nFamilie Hasenöhrl\nKirchfeldweg 11\n82002 Musterau\n\n\nMusterort, 16.09.2026\n\nZahlungserinnerung zur Rechnung RE-2026-0306\n\nSehr geehrte Familie Hasenöhrl,\n\nzu unserer Rechnung RE-2026-0306 vom 24.08.2026 über 3.640,00 EUR\n(Heizungstausch, 1. Abschlag, Vorgang BV-2026-004) ist bei uns bis heute\nkein Zahlungseingang verbucht. Fällig war der Betrag am 07.09.2026.\n\nVermutlich ist die Rechnung im Alltag untergegangen. Wir bitten Sie, den\noffenen Betrag bis zum 23.09.2026 zu überweisen.\n\nSollte sich Ihre Zahlung mit diesem Schreiben überschnitten haben,\nbetrachten Sie es bitte als gegenstandslos.\n\nWenn an der Rechnung oder an unserer Arbeit etwas nicht stimmt, rufen\nSie uns an. Das klären wir am Telefon schneller als auf dem Postweg.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0306_erinnerung.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 3.640,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 3.640,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "3.640,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu BV-2026-004."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1016 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Noch nichts versendet, keine Wartezeit zu beachten."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Erste Stufe, es gibt nichts davor."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "freigegeben",
+      "grund": "8 von 8 Kontrollen bestanden",
+      "eskaliert": false,
+      "naechsterSchritt": "Versand per email am 16.09.2026",
+      "zustaendig": "Automatisch"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0297",
+        "kundeId": "K-1016",
+        "kundeName": "Familie Hasenöhrl",
+        "projekt": "W-2026-108",
+        "leistung": "Wartung Fußbodenheizung",
+        "stufe": {
+          "schluessel": "erinnerung",
+          "name": "Zahlungserinnerung",
+          "ab_tagen_nach_faelligkeit": 5,
+          "gebuehr": 0,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 8,
+        "briefbetrag": 312.4,
+        "gebuehr": 0,
+        "zuZahlen": 312.4,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nFamilie Hasenöhrl\nKirchfeldweg 11\n82002 Musterau\n\n\nMusterort, 16.09.2026\n\nZahlungserinnerung zur Rechnung RE-2026-0297\n\nSehr geehrte Familie Hasenöhrl,\n\nzu unserer Rechnung RE-2026-0297 vom 25.08.2026 über 312,40 EUR (Wartung\nFußbodenheizung, Vorgang W-2026-108) ist bei uns bis heute kein\nZahlungseingang verbucht. Fällig war der Betrag am 08.09.2026.\n\nVermutlich ist die Rechnung im Alltag untergegangen. Wir bitten Sie, den\noffenen Betrag bis zum 23.09.2026 zu überweisen.\n\nSollte sich Ihre Zahlung mit diesem Schreiben überschnitten haben,\nbetrachten Sie es bitte als gegenstandslos.\n\nWenn an der Rechnung oder an unserer Arbeit etwas nicht stimmt, rufen\nSie uns an. Das klären wir am Telefon schneller als auf dem Postweg.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0297_erinnerung.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 312,40 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 312,40 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "312,40 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu W-2026-108."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1016 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Noch nichts versendet, keine Wartezeit zu beachten."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Erste Stufe, es gibt nichts davor."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "freigegeben",
+      "grund": "8 von 8 Kontrollen bestanden",
+      "eskaliert": false,
+      "naechsterSchritt": "Versand per email am 16.09.2026",
+      "zustaendig": "Automatisch"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0296",
+        "kundeId": "K-1001",
+        "kundeName": "Familie Achleitner",
+        "projekt": "BV-2026-009",
+        "leistung": "Austausch Heizkessel",
+        "stufe": {
+          "schluessel": "erinnerung",
+          "name": "Zahlungserinnerung",
+          "ab_tagen_nach_faelligkeit": 5,
+          "gebuehr": 0,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 7,
+        "briefbetrag": 1480,
+        "gebuehr": 0,
+        "zuZahlen": 1480,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nFamilie Achleitner\nLindenweg 7\n82000 Musterort\n\n\nMusterort, 16.09.2026\n\nZahlungserinnerung zur Rechnung RE-2026-0296\n\nSehr geehrte Familie Achleitner,\n\nzu unserer Rechnung RE-2026-0296 vom 26.08.2026 über 1.480,00 EUR\n(Austausch Heizkessel, Vorgang BV-2026-009) ist bei uns bis heute kein\nZahlungseingang verbucht. Fällig war der Betrag am 09.09.2026.\n\nVermutlich ist die Rechnung im Alltag untergegangen. Wir bitten Sie, den\noffenen Betrag bis zum 23.09.2026 zu überweisen.\n\nSollte sich Ihre Zahlung mit diesem Schreiben überschnitten haben,\nbetrachten Sie es bitte als gegenstandslos.\n\nWenn an der Rechnung oder an unserer Arbeit etwas nicht stimmt, rufen\nSie uns an. Das klären wir am Telefon schneller als auf dem Postweg.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0296_erinnerung.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 1.480,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 1.480,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "1.480,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu BV-2026-009."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1001 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Noch nichts versendet, keine Wartezeit zu beachten."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Erste Stufe, es gibt nichts davor."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "freigegeben",
+      "grund": "8 von 8 Kontrollen bestanden",
+      "eskaliert": false,
+      "naechsterSchritt": "Versand per email am 16.09.2026",
+      "zustaendig": "Automatisch"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0304",
+        "kundeId": "K-1037",
+        "kundeName": "Bauzentrum Aigner GmbH",
+        "projekt": "BV-2026-021",
+        "leistung": "Strangsanierung, 2. Abschlag",
+        "stufe": {
+          "schluessel": "erinnerung",
+          "name": "Zahlungserinnerung",
+          "ab_tagen_nach_faelligkeit": 5,
+          "gebuehr": 0,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 6,
+        "briefbetrag": 2870,
+        "gebuehr": 0,
+        "zuZahlen": 2870,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nBauzentrum Aigner GmbH\nGewerbering 2\n82000 Musterort\n\n\nMusterort, 16.09.2026\n\nZahlungserinnerung zur Rechnung RE-2026-0304\n\nSehr geehrte Damen und Herren,\n\nzu unserer Rechnung RE-2026-0304 vom 27.08.2026 über 2.870,00 EUR\n(Strangsanierung, 2. Abschlag, Vorgang BV-2026-021) ist bei uns bis\nheute kein Zahlungseingang verbucht. Fällig war der Betrag am\n10.09.2026.\n\nErfahrungsgemäß hängt das am Rechnungslauf und nicht an unserer Arbeit.\nWir bitten Sie, den offenen Betrag bis zum 23.09.2026 anzuweisen.\n\nSollte sich Ihre Zahlung mit diesem Schreiben überschnitten haben,\nbetrachten Sie es bitte als gegenstandslos.\n\nWenn an der Rechnung oder an unserer Arbeit etwas nicht stimmt, rufen\nSie uns an. Das klären wir am Telefon schneller als auf dem Postweg.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0304_erinnerung.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 2.870,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 2.870,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "2.870,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu BV-2026-021."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1037 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Noch nichts versendet, keine Wartezeit zu beachten."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Erste Stufe, es gibt nichts davor."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "freigegeben",
+      "grund": "8 von 8 Kontrollen bestanden",
+      "eskaliert": false,
+      "naechsterSchritt": "Versand per email am 16.09.2026",
+      "zustaendig": "Automatisch"
+    },
+    {
+      "entwurf": {
+        "nummer": "RE-2026-0305",
+        "kundeId": "K-1051",
+        "kundeName": "Autohaus Riedlbauer GmbH",
+        "projekt": "N-2026-057",
+        "leistung": "Reparatur Druckminderer",
+        "stufe": {
+          "schluessel": "erinnerung",
+          "name": "Zahlungserinnerung",
+          "ab_tagen_nach_faelligkeit": 5,
+          "gebuehr": 0,
+          "zahlbar_in_tagen": 7,
+          "kanal": "email",
+          "freigabe": "automatisch_nach_pruefung"
+        },
+        "tageUeberfaellig": 5,
+        "briefbetrag": 415,
+        "gebuehr": 0,
+        "zuZahlen": 415,
+        "zahlbarBis": "2026-09-23",
+        "brief": "Musterbetrieb Heizung und Sanitär GmbH\nBeispielweg 4 · 82000 Musterort\n\n\nAutohaus Riedlbauer GmbH\nGewerbering 15\n82000 Musterort\n\n\nMusterort, 16.09.2026\n\nZahlungserinnerung zur Rechnung RE-2026-0305\n\nSehr geehrte Damen und Herren,\n\nzu unserer Rechnung RE-2026-0305 vom 28.08.2026 über 415,00 EUR\n(Reparatur Druckminderer, Vorgang N-2026-057) ist bei uns bis heute kein\nZahlungseingang verbucht. Fällig war der Betrag am 11.09.2026.\n\nErfahrungsgemäß hängt das am Rechnungslauf und nicht an unserer Arbeit.\nWir bitten Sie, den offenen Betrag bis zum 23.09.2026 anzuweisen.\n\nSollte sich Ihre Zahlung mit diesem Schreiben überschnitten haben,\nbetrachten Sie es bitte als gegenstandslos.\n\nWenn an der Rechnung oder an unserer Arbeit etwas nicht stimmt, rufen\nSie uns an. Das klären wir am Telefon schneller als auf dem Postweg.\n\nMit freundlichen Grüßen\n\nMusterbetrieb Heizung und Sanitär GmbH\nBuchhaltung",
+        "briefDatei": "briefe/RE-2026-0305_erinnerung.txt"
+      },
+      "befunde": [
+        {
+          "kontrolle": "ZAHLUNGSSTAND",
+          "titel": "Zahlungsstand",
+          "bestanden": true,
+          "text": "Offen laut Zahlungsstand: 415,00 EUR."
+        },
+        {
+          "kontrolle": "BETRAGSABGLEICH",
+          "titel": "Betragsabgleich",
+          "bestanden": true,
+          "text": "Brief und Zahlungsstand nennen 415,00 EUR."
+        },
+        {
+          "kontrolle": "MINDESTBETRAG",
+          "titel": "Mindestbetrag",
+          "bestanden": true,
+          "text": "415,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+        },
+        {
+          "kontrolle": "REKLAMATION",
+          "titel": "Reklamation",
+          "bestanden": true,
+          "text": "Keine offene Reklamation zu N-2026-057."
+        },
+        {
+          "kontrolle": "KULANZLISTE",
+          "titel": "Kulanzliste",
+          "bestanden": true,
+          "text": "K-1051 steht nicht auf der Kulanzliste."
+        },
+        {
+          "kontrolle": "WARTEZEIT",
+          "titel": "Wartezeit",
+          "bestanden": true,
+          "text": "Noch nichts versendet, keine Wartezeit zu beachten."
+        },
+        {
+          "kontrolle": "REIHENFOLGE",
+          "titel": "Reihenfolge",
+          "bestanden": true,
+          "text": "Erste Stufe, es gibt nichts davor."
+        },
+        {
+          "kontrolle": "KONTAKTDATEN",
+          "titel": "Kontaktdaten",
+          "bestanden": true,
+          "text": "E-Mail-Adresse hinterlegt."
+        }
+      ],
+      "ergebnis": "freigegeben",
+      "grund": "8 von 8 Kontrollen bestanden",
+      "eskaliert": false,
+      "naechsterSchritt": "Versand per email am 16.09.2026",
+      "zustaendig": "Automatisch"
+    }
+  ],
+  "protokoll": [
+    {
+      "schritt": 1,
+      "nummer": "RE-2026-0262",
+      "stufe": "Übergabe vorbereiten",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 1.275,00 EUR."
+    },
+    {
+      "schritt": 1,
+      "nummer": "RE-2026-0262",
+      "stufe": "Übergabe vorbereiten",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 1.275,00 EUR."
+    },
+    {
+      "schritt": 1,
+      "nummer": "RE-2026-0262",
+      "stufe": "Übergabe vorbereiten",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "1.275,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 1,
+      "nummer": "RE-2026-0262",
+      "stufe": "Übergabe vorbereiten",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu N-2026-048."
+    },
+    {
+      "schritt": 1,
+      "nummer": "RE-2026-0262",
+      "stufe": "Übergabe vorbereiten",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1034 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 1,
+      "nummer": "RE-2026-0262",
+      "stufe": "Übergabe vorbereiten",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Letzte Stufe vor 27 Tagen, Wartezeit 7 Tage."
+    },
+    {
+      "schritt": 1,
+      "nummer": "RE-2026-0262",
+      "stufe": "Übergabe vorbereiten",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": false,
+      "text": "In der Historie fehlt 1. Mahnung. Eine Stufe zu überspringen, deren Vorstufe niemand belegen kann, ist genau der Vorgang, den später niemand mehr erklären kann."
+    },
+    {
+      "schritt": 1,
+      "nummer": "RE-2026-0262",
+      "stufe": "Übergabe vorbereiten",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "Interne Notiz, es geht nichts hinaus."
+    },
+    {
+      "schritt": 2,
+      "nummer": "RE-2026-0261",
+      "stufe": "Übergabe vorbereiten",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 3.115,00 EUR."
+    },
+    {
+      "schritt": 2,
+      "nummer": "RE-2026-0261",
+      "stufe": "Übergabe vorbereiten",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 3.115,00 EUR."
+    },
+    {
+      "schritt": 2,
+      "nummer": "RE-2026-0261",
+      "stufe": "Übergabe vorbereiten",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "3.115,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 2,
+      "nummer": "RE-2026-0261",
+      "stufe": "Übergabe vorbereiten",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu BV-2026-007."
+    },
+    {
+      "schritt": 2,
+      "nummer": "RE-2026-0261",
+      "stufe": "Übergabe vorbereiten",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1019 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 2,
+      "nummer": "RE-2026-0261",
+      "stufe": "Übergabe vorbereiten",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Letzte Stufe vor 25 Tagen, Wartezeit 7 Tage."
+    },
+    {
+      "schritt": 2,
+      "nummer": "RE-2026-0261",
+      "stufe": "Übergabe vorbereiten",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Dokumentiert: Zahlungserinnerung, 1. Mahnung, 2. Mahnung."
+    },
+    {
+      "schritt": 2,
+      "nummer": "RE-2026-0261",
+      "stufe": "Übergabe vorbereiten",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "Interne Notiz, es geht nichts hinaus."
+    },
+    {
+      "schritt": 3,
+      "nummer": "RE-2026-0274",
+      "stufe": "2. Mahnung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 1.805,00 EUR."
+    },
+    {
+      "schritt": 3,
+      "nummer": "RE-2026-0274",
+      "stufe": "2. Mahnung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 1.805,00 EUR."
+    },
+    {
+      "schritt": 3,
+      "nummer": "RE-2026-0274",
+      "stufe": "2. Mahnung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "1.805,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 3,
+      "nummer": "RE-2026-0274",
+      "stufe": "2. Mahnung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu BV-2026-026."
+    },
+    {
+      "schritt": 3,
+      "nummer": "RE-2026-0274",
+      "stufe": "2. Mahnung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1045 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 3,
+      "nummer": "RE-2026-0274",
+      "stufe": "2. Mahnung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Letzte Stufe vor 25 Tagen, Wartezeit 7 Tage."
+    },
+    {
+      "schritt": 3,
+      "nummer": "RE-2026-0274",
+      "stufe": "2. Mahnung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Dokumentiert: Zahlungserinnerung, 1. Mahnung."
+    },
+    {
+      "schritt": 3,
+      "nummer": "RE-2026-0274",
+      "stufe": "2. Mahnung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "Vollständige Anschrift hinterlegt."
+    },
+    {
+      "schritt": 4,
+      "nummer": "RE-2026-0273",
+      "stufe": "2. Mahnung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 515,00 EUR."
+    },
+    {
+      "schritt": 4,
+      "nummer": "RE-2026-0273",
+      "stufe": "2. Mahnung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 515,00 EUR."
+    },
+    {
+      "schritt": 4,
+      "nummer": "RE-2026-0273",
+      "stufe": "2. Mahnung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "515,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 4,
+      "nummer": "RE-2026-0273",
+      "stufe": "2. Mahnung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu BV-2026-031."
+    },
+    {
+      "schritt": 4,
+      "nummer": "RE-2026-0273",
+      "stufe": "2. Mahnung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1054 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 4,
+      "nummer": "RE-2026-0273",
+      "stufe": "2. Mahnung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Letzte Stufe vor 23 Tagen, Wartezeit 7 Tage."
+    },
+    {
+      "schritt": 4,
+      "nummer": "RE-2026-0273",
+      "stufe": "2. Mahnung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Dokumentiert: Zahlungserinnerung, 1. Mahnung."
+    },
+    {
+      "schritt": 4,
+      "nummer": "RE-2026-0273",
+      "stufe": "2. Mahnung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "Vollständige Anschrift hinterlegt."
+    },
+    {
+      "schritt": 5,
+      "nummer": "RE-2026-0272",
+      "stufe": "2. Mahnung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 2.940,00 EUR."
+    },
+    {
+      "schritt": 5,
+      "nummer": "RE-2026-0272",
+      "stufe": "2. Mahnung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 2.940,00 EUR."
+    },
+    {
+      "schritt": 5,
+      "nummer": "RE-2026-0272",
+      "stufe": "2. Mahnung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "2.940,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 5,
+      "nummer": "RE-2026-0272",
+      "stufe": "2. Mahnung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu BV-2026-043."
+    },
+    {
+      "schritt": 5,
+      "nummer": "RE-2026-0272",
+      "stufe": "2. Mahnung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1031 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 5,
+      "nummer": "RE-2026-0272",
+      "stufe": "2. Mahnung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Letzte Stufe vor 21 Tagen, Wartezeit 7 Tage."
+    },
+    {
+      "schritt": 5,
+      "nummer": "RE-2026-0272",
+      "stufe": "2. Mahnung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Dokumentiert: Zahlungserinnerung, 1. Mahnung."
+    },
+    {
+      "schritt": 5,
+      "nummer": "RE-2026-0272",
+      "stufe": "2. Mahnung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "Vollständige Anschrift hinterlegt."
+    },
+    {
+      "schritt": 6,
+      "nummer": "RE-2026-0271",
+      "stufe": "2. Mahnung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 1.690,00 EUR."
+    },
+    {
+      "schritt": 6,
+      "nummer": "RE-2026-0271",
+      "stufe": "2. Mahnung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 1.690,00 EUR."
+    },
+    {
+      "schritt": 6,
+      "nummer": "RE-2026-0271",
+      "stufe": "2. Mahnung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "1.690,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 6,
+      "nummer": "RE-2026-0271",
+      "stufe": "2. Mahnung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu BV-2026-004."
+    },
+    {
+      "schritt": 6,
+      "nummer": "RE-2026-0271",
+      "stufe": "2. Mahnung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1016 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 6,
+      "nummer": "RE-2026-0271",
+      "stufe": "2. Mahnung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Letzte Stufe vor 18 Tagen, Wartezeit 7 Tage."
+    },
+    {
+      "schritt": 6,
+      "nummer": "RE-2026-0271",
+      "stufe": "2. Mahnung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Dokumentiert: Zahlungserinnerung, 1. Mahnung."
+    },
+    {
+      "schritt": 6,
+      "nummer": "RE-2026-0271",
+      "stufe": "2. Mahnung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "Vollständige Anschrift hinterlegt."
+    },
+    {
+      "schritt": 7,
+      "nummer": "RE-2026-0290",
+      "stufe": "1. Mahnung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 648,00 EUR."
+    },
+    {
+      "schritt": 7,
+      "nummer": "RE-2026-0290",
+      "stufe": "1. Mahnung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 648,00 EUR."
+    },
+    {
+      "schritt": 7,
+      "nummer": "RE-2026-0290",
+      "stufe": "1. Mahnung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "648,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 7,
+      "nummer": "RE-2026-0290",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu N-2026-051."
+    },
+    {
+      "schritt": 7,
+      "nummer": "RE-2026-0290",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1040 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 7,
+      "nummer": "RE-2026-0290",
+      "stufe": "1. Mahnung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Letzte Stufe vor 26 Tagen, Wartezeit 7 Tage."
+    },
+    {
+      "schritt": 7,
+      "nummer": "RE-2026-0290",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Dokumentiert: Zahlungserinnerung."
+    },
+    {
+      "schritt": 7,
+      "nummer": "RE-2026-0290",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    },
+    {
+      "schritt": 8,
+      "nummer": "RE-2026-0289",
+      "stufe": "1. Mahnung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 1.330,00 EUR."
+    },
+    {
+      "schritt": 8,
+      "nummer": "RE-2026-0289",
+      "stufe": "1. Mahnung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 1.330,00 EUR."
+    },
+    {
+      "schritt": 8,
+      "nummer": "RE-2026-0289",
+      "stufe": "1. Mahnung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "1.330,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 8,
+      "nummer": "RE-2026-0289",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu BV-2026-041."
+    },
+    {
+      "schritt": 8,
+      "nummer": "RE-2026-0289",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1025 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 8,
+      "nummer": "RE-2026-0289",
+      "stufe": "1. Mahnung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Letzte Stufe vor 25 Tagen, Wartezeit 7 Tage."
+    },
+    {
+      "schritt": 8,
+      "nummer": "RE-2026-0289",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Dokumentiert: Zahlungserinnerung."
+    },
+    {
+      "schritt": 8,
+      "nummer": "RE-2026-0289",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    },
+    {
+      "schritt": 9,
+      "nummer": "RE-2026-0288",
+      "stufe": "1. Mahnung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 2.480,00 EUR."
+    },
+    {
+      "schritt": 9,
+      "nummer": "RE-2026-0288",
+      "stufe": "1. Mahnung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 2.480,00 EUR."
+    },
+    {
+      "schritt": 9,
+      "nummer": "RE-2026-0288",
+      "stufe": "1. Mahnung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "2.480,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 9,
+      "nummer": "RE-2026-0288",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu BV-2026-024."
+    },
+    {
+      "schritt": 9,
+      "nummer": "RE-2026-0288",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1004 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 9,
+      "nummer": "RE-2026-0288",
+      "stufe": "1. Mahnung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Letzte Stufe vor 24 Tagen, Wartezeit 7 Tage."
+    },
+    {
+      "schritt": 9,
+      "nummer": "RE-2026-0288",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Dokumentiert: Zahlungserinnerung."
+    },
+    {
+      "schritt": 9,
+      "nummer": "RE-2026-0288",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    },
+    {
+      "schritt": 10,
+      "nummer": "RE-2026-0287",
+      "stufe": "1. Mahnung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 995,00 EUR."
+    },
+    {
+      "schritt": 10,
+      "nummer": "RE-2026-0287",
+      "stufe": "1. Mahnung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 995,00 EUR."
+    },
+    {
+      "schritt": 10,
+      "nummer": "RE-2026-0287",
+      "stufe": "1. Mahnung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "995,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 10,
+      "nummer": "RE-2026-0287",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu BV-2026-038."
+    },
+    {
+      "schritt": 10,
+      "nummer": "RE-2026-0287",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1028 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 10,
+      "nummer": "RE-2026-0287",
+      "stufe": "1. Mahnung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Letzte Stufe vor 23 Tagen, Wartezeit 7 Tage."
+    },
+    {
+      "schritt": 10,
+      "nummer": "RE-2026-0287",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Dokumentiert: Zahlungserinnerung."
+    },
+    {
+      "schritt": 10,
+      "nummer": "RE-2026-0287",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    },
+    {
+      "schritt": 11,
+      "nummer": "RE-2026-0286",
+      "stufe": "1. Mahnung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 6.850,00 EUR."
+    },
+    {
+      "schritt": 11,
+      "nummer": "RE-2026-0286",
+      "stufe": "1. Mahnung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 6.850,00 EUR."
+    },
+    {
+      "schritt": 11,
+      "nummer": "RE-2026-0286",
+      "stufe": "1. Mahnung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "6.850,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 11,
+      "nummer": "RE-2026-0286",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu BV-2026-036."
+    },
+    {
+      "schritt": 11,
+      "nummer": "RE-2026-0286",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": false,
+      "text": "Hausverwaltung Beispielhof GmbH steht auf der Kulanzliste. Solche Kunden gehen immer über den Schreibtisch, nie automatisch hinaus."
+    },
+    {
+      "schritt": 11,
+      "nummer": "RE-2026-0286",
+      "stufe": "1. Mahnung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Letzte Stufe vor 22 Tagen, Wartezeit 7 Tage."
+    },
+    {
+      "schritt": 11,
+      "nummer": "RE-2026-0286",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Dokumentiert: Zahlungserinnerung."
+    },
+    {
+      "schritt": 11,
+      "nummer": "RE-2026-0286",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    },
+    {
+      "schritt": 12,
+      "nummer": "RE-2026-0285",
+      "stufe": "1. Mahnung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 3.320,00 EUR."
+    },
+    {
+      "schritt": 12,
+      "nummer": "RE-2026-0285",
+      "stufe": "1. Mahnung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 3.320,00 EUR."
+    },
+    {
+      "schritt": 12,
+      "nummer": "RE-2026-0285",
+      "stufe": "1. Mahnung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "3.320,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 12,
+      "nummer": "RE-2026-0285",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": false,
+      "text": "REK-2026-017 ist seit dem 01.09.2026 offen: Duschrinne im Pflegebad zieht nicht ab, Nachbesserung angekündigt. Wer auf eine Nachbesserung wartet, bekommt keine Mahnung."
+    },
+    {
+      "schritt": 12,
+      "nummer": "RE-2026-0285",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1048 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 12,
+      "nummer": "RE-2026-0285",
+      "stufe": "1. Mahnung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Letzte Stufe vor 21 Tagen, Wartezeit 7 Tage."
+    },
+    {
+      "schritt": 12,
+      "nummer": "RE-2026-0285",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Dokumentiert: Zahlungserinnerung."
+    },
+    {
+      "schritt": 12,
+      "nummer": "RE-2026-0285",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    },
+    {
+      "schritt": 13,
+      "nummer": "RE-2026-0284",
+      "stufe": "1. Mahnung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 780,00 EUR."
+    },
+    {
+      "schritt": 13,
+      "nummer": "RE-2026-0284",
+      "stufe": "1. Mahnung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 780,00 EUR."
+    },
+    {
+      "schritt": 13,
+      "nummer": "RE-2026-0284",
+      "stufe": "1. Mahnung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "780,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 13,
+      "nummer": "RE-2026-0284",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu BV-2026-018."
+    },
+    {
+      "schritt": 13,
+      "nummer": "RE-2026-0284",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1022 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 13,
+      "nummer": "RE-2026-0284",
+      "stufe": "1. Mahnung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": false,
+      "text": "Die letzte Stufe ging erst vor 3 Tagen hinaus, die Hausregel verlangt 7 Tage Abstand. Zwei Schreiben in einer Woche sehen nach Maschine aus."
+    },
+    {
+      "schritt": 13,
+      "nummer": "RE-2026-0284",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Dokumentiert: Zahlungserinnerung."
+    },
+    {
+      "schritt": 13,
+      "nummer": "RE-2026-0284",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    },
+    {
+      "schritt": 14,
+      "nummer": "RE-2026-0283",
+      "stufe": "1. Mahnung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 4.260,00 EUR."
+    },
+    {
+      "schritt": 14,
+      "nummer": "RE-2026-0283",
+      "stufe": "1. Mahnung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 4.260,00 EUR."
+    },
+    {
+      "schritt": 14,
+      "nummer": "RE-2026-0283",
+      "stufe": "1. Mahnung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "4.260,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 14,
+      "nummer": "RE-2026-0283",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu BV-2026-021."
+    },
+    {
+      "schritt": 14,
+      "nummer": "RE-2026-0283",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1037 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 14,
+      "nummer": "RE-2026-0283",
+      "stufe": "1. Mahnung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Letzte Stufe vor 18 Tagen, Wartezeit 7 Tage."
+    },
+    {
+      "schritt": 14,
+      "nummer": "RE-2026-0283",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Dokumentiert: Zahlungserinnerung."
+    },
+    {
+      "schritt": 14,
+      "nummer": "RE-2026-0283",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    },
+    {
+      "schritt": 15,
+      "nummer": "RE-2026-0282",
+      "stufe": "1. Mahnung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 1.140,00 EUR."
+    },
+    {
+      "schritt": 15,
+      "nummer": "RE-2026-0282",
+      "stufe": "1. Mahnung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 1.140,00 EUR."
+    },
+    {
+      "schritt": 15,
+      "nummer": "RE-2026-0282",
+      "stufe": "1. Mahnung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "1.140,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 15,
+      "nummer": "RE-2026-0282",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu BV-2026-016."
+    },
+    {
+      "schritt": 15,
+      "nummer": "RE-2026-0282",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1013 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 15,
+      "nummer": "RE-2026-0282",
+      "stufe": "1. Mahnung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Letzte Stufe vor 16 Tagen, Wartezeit 7 Tage."
+    },
+    {
+      "schritt": 15,
+      "nummer": "RE-2026-0282",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Dokumentiert: Zahlungserinnerung."
+    },
+    {
+      "schritt": 15,
+      "nummer": "RE-2026-0282",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    },
+    {
+      "schritt": 16,
+      "nummer": "RE-2026-0281",
+      "stufe": "1. Mahnung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 2.380,00 EUR."
+    },
+    {
+      "schritt": 16,
+      "nummer": "RE-2026-0281",
+      "stufe": "1. Mahnung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 2.380,00 EUR."
+    },
+    {
+      "schritt": 16,
+      "nummer": "RE-2026-0281",
+      "stufe": "1. Mahnung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "2.380,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 16,
+      "nummer": "RE-2026-0281",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu BV-2026-012."
+    },
+    {
+      "schritt": 16,
+      "nummer": "RE-2026-0281",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1010 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 16,
+      "nummer": "RE-2026-0281",
+      "stufe": "1. Mahnung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Letzte Stufe vor 14 Tagen, Wartezeit 7 Tage."
+    },
+    {
+      "schritt": 16,
+      "nummer": "RE-2026-0281",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Dokumentiert: Zahlungserinnerung."
+    },
+    {
+      "schritt": 16,
+      "nummer": "RE-2026-0281",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    },
+    {
+      "schritt": 17,
+      "nummer": "RE-2026-0292",
+      "stufe": "1. Mahnung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 1.560,00 EUR."
+    },
+    {
+      "schritt": 17,
+      "nummer": "RE-2026-0292",
+      "stufe": "1. Mahnung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 1.560,00 EUR."
+    },
+    {
+      "schritt": 17,
+      "nummer": "RE-2026-0292",
+      "stufe": "1. Mahnung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "1.560,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 17,
+      "nummer": "RE-2026-0292",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu BV-2026-016."
+    },
+    {
+      "schritt": 17,
+      "nummer": "RE-2026-0292",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1013 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 17,
+      "nummer": "RE-2026-0292",
+      "stufe": "1. Mahnung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Letzte Stufe vor 11 Tagen, Wartezeit 7 Tage."
+    },
+    {
+      "schritt": 17,
+      "nummer": "RE-2026-0292",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Dokumentiert: Zahlungserinnerung."
+    },
+    {
+      "schritt": 17,
+      "nummer": "RE-2026-0292",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    },
+    {
+      "schritt": 18,
+      "nummer": "RE-2026-0291",
+      "stufe": "1. Mahnung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 430,00 EUR."
+    },
+    {
+      "schritt": 18,
+      "nummer": "RE-2026-0291",
+      "stufe": "1. Mahnung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 430,00 EUR."
+    },
+    {
+      "schritt": 18,
+      "nummer": "RE-2026-0291",
+      "stufe": "1. Mahnung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "430,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 18,
+      "nummer": "RE-2026-0291",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu W-2026-102."
+    },
+    {
+      "schritt": 18,
+      "nummer": "RE-2026-0291",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1001 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 18,
+      "nummer": "RE-2026-0291",
+      "stufe": "1. Mahnung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Letzte Stufe vor 10 Tagen, Wartezeit 7 Tage."
+    },
+    {
+      "schritt": 18,
+      "nummer": "RE-2026-0291",
+      "stufe": "1. Mahnung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Dokumentiert: Zahlungserinnerung."
+    },
+    {
+      "schritt": 18,
+      "nummer": "RE-2026-0291",
+      "stufe": "1. Mahnung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    },
+    {
+      "schritt": 19,
+      "nummer": "RE-2026-0293",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 655,00 EUR."
+    },
+    {
+      "schritt": 19,
+      "nummer": "RE-2026-0293",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 655,00 EUR."
+    },
+    {
+      "schritt": 19,
+      "nummer": "RE-2026-0293",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "655,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 19,
+      "nummer": "RE-2026-0293",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu BV-2026-034."
+    },
+    {
+      "schritt": 19,
+      "nummer": "RE-2026-0293",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1007 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 19,
+      "nummer": "RE-2026-0293",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Noch nichts versendet, keine Wartezeit zu beachten."
+    },
+    {
+      "schritt": 19,
+      "nummer": "RE-2026-0293",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Erste Stufe, es gibt nichts davor."
+    },
+    {
+      "schritt": 19,
+      "nummer": "RE-2026-0293",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": false,
+      "text": "Für diesen Kunden ist keine E-Mail-Adresse hinterlegt. Der Brief hätte niemanden erreicht und niemand hätte es bemerkt."
+    },
+    {
+      "schritt": 20,
+      "nummer": "RE-2026-0294",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 760,00 EUR."
+    },
+    {
+      "schritt": 20,
+      "nummer": "RE-2026-0294",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": false,
+      "text": "Der Brief nennt 1.960,00 EUR, der Zahlungsstand 760,00 EUR, Abweichung 1.200,00 EUR. Ein Eingang über 1.200,00 EUR vom 14.09.2026 ist noch nicht in der Rechnungsliste."
+    },
+    {
+      "schritt": 20,
+      "nummer": "RE-2026-0294",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "760,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 20,
+      "nummer": "RE-2026-0294",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu BV-2026-024."
+    },
+    {
+      "schritt": 20,
+      "nummer": "RE-2026-0294",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1004 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 20,
+      "nummer": "RE-2026-0294",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Noch nichts versendet, keine Wartezeit zu beachten."
+    },
+    {
+      "schritt": 20,
+      "nummer": "RE-2026-0294",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Erste Stufe, es gibt nichts davor."
+    },
+    {
+      "schritt": 20,
+      "nummer": "RE-2026-0294",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    },
+    {
+      "schritt": 21,
+      "nummer": "RE-2026-0299",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 12,40 EUR."
+    },
+    {
+      "schritt": 21,
+      "nummer": "RE-2026-0299",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 12,40 EUR."
+    },
+    {
+      "schritt": 21,
+      "nummer": "RE-2026-0299",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": false,
+      "text": "12,40 EUR liegt unter dem Mindestbetrag von 15,00 EUR. Der Vorgang gehört auf die Sammelliste, nicht in eine Mahnung."
+    },
+    {
+      "schritt": 21,
+      "nummer": "RE-2026-0299",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu N-2026-053."
+    },
+    {
+      "schritt": 21,
+      "nummer": "RE-2026-0299",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1025 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 21,
+      "nummer": "RE-2026-0299",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Noch nichts versendet, keine Wartezeit zu beachten."
+    },
+    {
+      "schritt": 21,
+      "nummer": "RE-2026-0299",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Erste Stufe, es gibt nichts davor."
+    },
+    {
+      "schritt": 21,
+      "nummer": "RE-2026-0299",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    },
+    {
+      "schritt": 22,
+      "nummer": "RE-2026-0298",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 2.145,00 EUR."
+    },
+    {
+      "schritt": 22,
+      "nummer": "RE-2026-0298",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 2.145,00 EUR."
+    },
+    {
+      "schritt": 22,
+      "nummer": "RE-2026-0298",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "2.145,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 22,
+      "nummer": "RE-2026-0298",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu BV-2026-026."
+    },
+    {
+      "schritt": 22,
+      "nummer": "RE-2026-0298",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1045 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 22,
+      "nummer": "RE-2026-0298",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Noch nichts versendet, keine Wartezeit zu beachten."
+    },
+    {
+      "schritt": 22,
+      "nummer": "RE-2026-0298",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Erste Stufe, es gibt nichts davor."
+    },
+    {
+      "schritt": 22,
+      "nummer": "RE-2026-0298",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    },
+    {
+      "schritt": 23,
+      "nummer": "RE-2026-0295",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": false,
+      "text": "Der Zahlungsstand weist die Rechnung am 15.09.2026 als ausgeglichen aus, die Rechnungsliste zeigt noch 890,00 EUR."
+    },
+    {
+      "schritt": 23,
+      "nummer": "RE-2026-0295",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Kein offener Betrag, der Fall gehört zur Kontrolle Zahlungsstand."
+    },
+    {
+      "schritt": 23,
+      "nummer": "RE-2026-0295",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "0,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 23,
+      "nummer": "RE-2026-0295",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu W-2026-106."
+    },
+    {
+      "schritt": 23,
+      "nummer": "RE-2026-0295",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1051 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 23,
+      "nummer": "RE-2026-0295",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Noch nichts versendet, keine Wartezeit zu beachten."
+    },
+    {
+      "schritt": 23,
+      "nummer": "RE-2026-0295",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Erste Stufe, es gibt nichts davor."
+    },
+    {
+      "schritt": 23,
+      "nummer": "RE-2026-0295",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    },
+    {
+      "schritt": 24,
+      "nummer": "RE-2026-0306",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 3.640,00 EUR."
+    },
+    {
+      "schritt": 24,
+      "nummer": "RE-2026-0306",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 3.640,00 EUR."
+    },
+    {
+      "schritt": 24,
+      "nummer": "RE-2026-0306",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "3.640,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 24,
+      "nummer": "RE-2026-0306",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu BV-2026-004."
+    },
+    {
+      "schritt": 24,
+      "nummer": "RE-2026-0306",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1016 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 24,
+      "nummer": "RE-2026-0306",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Noch nichts versendet, keine Wartezeit zu beachten."
+    },
+    {
+      "schritt": 24,
+      "nummer": "RE-2026-0306",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Erste Stufe, es gibt nichts davor."
+    },
+    {
+      "schritt": 24,
+      "nummer": "RE-2026-0306",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    },
+    {
+      "schritt": 25,
+      "nummer": "RE-2026-0297",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 312,40 EUR."
+    },
+    {
+      "schritt": 25,
+      "nummer": "RE-2026-0297",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 312,40 EUR."
+    },
+    {
+      "schritt": 25,
+      "nummer": "RE-2026-0297",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "312,40 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 25,
+      "nummer": "RE-2026-0297",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu W-2026-108."
+    },
+    {
+      "schritt": 25,
+      "nummer": "RE-2026-0297",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1016 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 25,
+      "nummer": "RE-2026-0297",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Noch nichts versendet, keine Wartezeit zu beachten."
+    },
+    {
+      "schritt": 25,
+      "nummer": "RE-2026-0297",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Erste Stufe, es gibt nichts davor."
+    },
+    {
+      "schritt": 25,
+      "nummer": "RE-2026-0297",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    },
+    {
+      "schritt": 26,
+      "nummer": "RE-2026-0296",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 1.480,00 EUR."
+    },
+    {
+      "schritt": 26,
+      "nummer": "RE-2026-0296",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 1.480,00 EUR."
+    },
+    {
+      "schritt": 26,
+      "nummer": "RE-2026-0296",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "1.480,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 26,
+      "nummer": "RE-2026-0296",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu BV-2026-009."
+    },
+    {
+      "schritt": 26,
+      "nummer": "RE-2026-0296",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1001 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 26,
+      "nummer": "RE-2026-0296",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Noch nichts versendet, keine Wartezeit zu beachten."
+    },
+    {
+      "schritt": 26,
+      "nummer": "RE-2026-0296",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Erste Stufe, es gibt nichts davor."
+    },
+    {
+      "schritt": 26,
+      "nummer": "RE-2026-0296",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    },
+    {
+      "schritt": 27,
+      "nummer": "RE-2026-0304",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 2.870,00 EUR."
+    },
+    {
+      "schritt": 27,
+      "nummer": "RE-2026-0304",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 2.870,00 EUR."
+    },
+    {
+      "schritt": 27,
+      "nummer": "RE-2026-0304",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "2.870,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 27,
+      "nummer": "RE-2026-0304",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu BV-2026-021."
+    },
+    {
+      "schritt": 27,
+      "nummer": "RE-2026-0304",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1037 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 27,
+      "nummer": "RE-2026-0304",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Noch nichts versendet, keine Wartezeit zu beachten."
+    },
+    {
+      "schritt": 27,
+      "nummer": "RE-2026-0304",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Erste Stufe, es gibt nichts davor."
+    },
+    {
+      "schritt": 27,
+      "nummer": "RE-2026-0304",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    },
+    {
+      "schritt": 28,
+      "nummer": "RE-2026-0305",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "ZAHLUNGSSTAND",
+      "titel": "Zahlungsstand",
+      "bestanden": true,
+      "text": "Offen laut Zahlungsstand: 415,00 EUR."
+    },
+    {
+      "schritt": 28,
+      "nummer": "RE-2026-0305",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "BETRAGSABGLEICH",
+      "titel": "Betragsabgleich",
+      "bestanden": true,
+      "text": "Brief und Zahlungsstand nennen 415,00 EUR."
+    },
+    {
+      "schritt": 28,
+      "nummer": "RE-2026-0305",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "MINDESTBETRAG",
+      "titel": "Mindestbetrag",
+      "bestanden": true,
+      "text": "415,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+    },
+    {
+      "schritt": 28,
+      "nummer": "RE-2026-0305",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "REKLAMATION",
+      "titel": "Reklamation",
+      "bestanden": true,
+      "text": "Keine offene Reklamation zu N-2026-057."
+    },
+    {
+      "schritt": 28,
+      "nummer": "RE-2026-0305",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "KULANZLISTE",
+      "titel": "Kulanzliste",
+      "bestanden": true,
+      "text": "K-1051 steht nicht auf der Kulanzliste."
+    },
+    {
+      "schritt": 28,
+      "nummer": "RE-2026-0305",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "WARTEZEIT",
+      "titel": "Wartezeit",
+      "bestanden": true,
+      "text": "Noch nichts versendet, keine Wartezeit zu beachten."
+    },
+    {
+      "schritt": 28,
+      "nummer": "RE-2026-0305",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "REIHENFOLGE",
+      "titel": "Reihenfolge",
+      "bestanden": true,
+      "text": "Erste Stufe, es gibt nichts davor."
+    },
+    {
+      "schritt": 28,
+      "nummer": "RE-2026-0305",
+      "stufe": "Zahlungserinnerung",
+      "kontrolle": "KONTAKTDATEN",
+      "titel": "Kontaktdaten",
+      "bestanden": true,
+      "text": "E-Mail-Adresse hinterlegt."
+    }
+  ],
+  "zusammenfassung": [
+    "Mahnlauf 16.09.2026: 28 Entwürfe aus 42 Rechnungen.",
+    "15 nach Prüfung freigegeben, 5 zur Freigabe vorgelegt, 8 gestoppt.",
+    "8 Kontrollen je Entwurf, 224 Kontrollen insgesamt ausgeführt.",
+    "Gestoppt: RE-2026-0262, Übergabe vorbereiten, 1.275,00 EUR, Grund Reihenfolge.",
+    "Gestoppt: RE-2026-0286, 1. Mahnung, 6.850,00 EUR, Grund Kulanzliste.",
+    "Gestoppt: RE-2026-0285, 1. Mahnung, 3.320,00 EUR, Grund Reklamation.",
+    "Gestoppt: RE-2026-0284, 1. Mahnung, 780,00 EUR, Grund Wartezeit.",
+    "Gestoppt: RE-2026-0293, Zahlungserinnerung, 655,00 EUR, Grund Kontaktdaten.",
+    "Gestoppt: RE-2026-0294, Zahlungserinnerung, 1.960,00 EUR, Grund Betragsabgleich.",
+    "Gestoppt: RE-2026-0299, Zahlungserinnerung, 12,40 EUR, Grund Mindestbetrag.",
+    "Gestoppt: RE-2026-0295, Zahlungserinnerung, 890,00 EUR, Grund Zahlungsstand.",
+    "Eskaliert an die Geschäftsführung: RE-2026-0262, 54 Tage überfällig, 1.275,00 EUR.",
+    "Eskaliert an die Geschäftsführung: RE-2026-0261, 50 Tage überfällig, 3.115,00 EUR."
+  ]
+}

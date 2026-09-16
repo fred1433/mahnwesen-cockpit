@@ -1,0 +1,25 @@
+{
+  "_hinweis": "BEISPIELDATEN. Alle Namen, Anschriften und Adressen sind erfunden. Die E-Mail-Domain beispiel.invalid ist nach RFC 2606 nicht zustellbar.",
+  "kunden": [
+    { "id": "K-1001", "name": "Familie Achleitner", "anrede": "familie", "art": "privat", "email": "achleitner@beispiel.invalid", "strasse": "Lindenweg 7", "ort": "82000 Musterort" },
+    { "id": "K-1004", "name": "Familie Brunnbauer", "anrede": "familie", "art": "privat", "email": "brunnbauer@beispiel.invalid", "strasse": "Ahornstraße 18", "ort": "82000 Musterort" },
+    { "id": "K-1007", "name": "Herr Dorfmeister", "anrede": "herr", "art": "privat", "email": null, "strasse": "Am Bachgrund 2", "ort": "82001 Beispielried" },
+    { "id": "K-1010", "name": "Familie Eichinger", "anrede": "familie", "art": "privat", "email": "eichinger@beispiel.invalid", "strasse": "Beispielweg 24", "ort": "82001 Beispielried" },
+    { "id": "K-1013", "name": "Frau Grabmeier", "anrede": "frau", "art": "privat", "email": "grabmeier@beispiel.invalid", "strasse": "Mustergasse 5", "ort": "82000 Musterort" },
+    { "id": "K-1016", "name": "Familie Hasenöhrl", "anrede": "familie", "art": "privat", "email": "hasenoehrl@beispiel.invalid", "strasse": "Kirchfeldweg 11", "ort": "82002 Musterau" },
+    { "id": "K-1019", "name": "Herr Kirchmaier", "anrede": "herr", "art": "privat", "email": "kirchmaier@beispiel.invalid", "strasse": "Hangstraße 9", "ort": "82002 Musterau" },
+    { "id": "K-1022", "name": "Familie Lindmoser", "anrede": "familie", "art": "privat", "email": "lindmoser@beispiel.invalid", "strasse": "Wiesenweg 3", "ort": "82000 Musterort" },
+    { "id": "K-1025", "name": "Frau Obermaier", "anrede": "frau", "art": "privat", "email": "obermaier@beispiel.invalid", "strasse": "Beispielweg 41", "ort": "82001 Beispielried" },
+    { "id": "K-1028", "name": "Familie Reithmeier", "anrede": "familie", "art": "privat", "email": "reithmeier@beispiel.invalid", "strasse": "Obere Dorfstraße 6", "ort": "82002 Musterau" },
+    { "id": "K-1031", "name": "Herr Stallinger", "anrede": "herr", "art": "privat", "email": "stallinger@beispiel.invalid", "strasse": "Musterstraße 33", "ort": "82000 Musterort" },
+    { "id": "K-1034", "name": "Familie Zehetmair", "anrede": "familie", "art": "privat", "email": "zehetmair@beispiel.invalid", "strasse": "Ringweg 14", "ort": "82001 Beispielried" },
+    { "id": "K-1037", "name": "Bauzentrum Aigner GmbH", "anrede": "firma", "art": "gewerblich", "email": "rechnung@beispiel.invalid", "strasse": "Gewerbering 2", "ort": "82000 Musterort" },
+    { "id": "K-1040", "name": "Gasthof zur Alten Post", "anrede": "firma", "art": "gewerblich", "email": "buero@beispiel.invalid", "strasse": "Marktplatz 1", "ort": "82001 Beispielried" },
+    { "id": "K-1042", "name": "Hausverwaltung Beispielhof GmbH", "anrede": "firma", "art": "gewerblich", "email": "verwaltung@beispiel.invalid", "strasse": "Parkstraße 8", "ort": "82000 Musterort" },
+    { "id": "K-1045", "name": "Möbelhaus Naderer KG", "anrede": "firma", "art": "gewerblich", "email": "kreditoren@beispiel.invalid", "strasse": "Industriestraße 17", "ort": "82002 Musterau" },
+    { "id": "K-1048", "name": "Seniorenresidenz Musterau gGmbH", "anrede": "firma", "art": "gewerblich", "email": "verwaltung2@beispiel.invalid", "strasse": "Rosenweg 20", "ort": "82002 Musterau" },
+    { "id": "K-1051", "name": "Autohaus Riedlbauer GmbH", "anrede": "firma", "art": "gewerblich", "email": "buchhaltung@beispiel.invalid", "strasse": "Gewerbering 15", "ort": "82000 Musterort" },
+    { "id": "K-1054", "name": "Schreinerei Wallner GmbH", "anrede": "firma", "art": "gewerblich", "email": "info2@beispiel.invalid", "strasse": "Handwerkerstraße 4", "ort": "82001 Beispielried" },
+    { "id": "K-1057", "name": "Wohnbau Musterried GmbH", "anrede": "firma", "art": "gewerblich", "email": "rechnungen@beispiel.invalid", "strasse": "Bahnhofstraße 30", "ort": "82002 Musterau" }
+  ]
+}

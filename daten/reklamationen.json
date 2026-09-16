@@ -1,0 +1,8 @@
+{
+  "_hinweis": "BEISPIELDATEN. Reklamationen aus dem Service, je Baustelle. Eine offene Reklamation auf derselben Baustelle stoppt die Mahnung, weil sonst gemahnt wird, während der Kunde auf eine Nachbesserung wartet.",
+  "reklamationen": [
+    { "id": "REK-2026-017", "projekt": "BV-2026-029", "kundeId": "K-1048", "eroeffnet": "2026-09-01", "status": "offen", "betreff": "Duschrinne im Pflegebad zieht nicht ab, Nachbesserung angekündigt" },
+    { "id": "REK-2026-011", "projekt": "BV-2026-016", "kundeId": "K-1013", "eroeffnet": "2026-07-22", "status": "geschlossen", "betreff": "Silikonfuge nachgearbeitet, Kunde einverstanden" },
+    { "id": "REK-2026-014", "projekt": "N-2026-051", "kundeId": "K-1040", "eroeffnet": "2026-08-06", "status": "geschlossen", "betreff": "Zweiter Anfahrtsweg berechnet, gutgeschrieben" }
+  ]
+}

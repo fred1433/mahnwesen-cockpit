@@ -1,0 +1,42 @@
+# BEISPIELBRIEF. Fiktiver Absender, fiktiver Empfänger, erfundene Beträge.
+# Vorgang    RE-2026-0283, Strangsanierung, 1. Abschlag
+# Stufe      1. Mahnung
+# Kontrollen 8 von 8 bestanden
+# Ergebnis   Alle Kontrollen bestanden, freigegeben
+# Erzeugt    npm run lauf, ohne Modellaufruf
+# ------------------------------------------------------------------------
+Musterbetrieb Heizung und Sanitär GmbH
+Beispielweg 4 · 82000 Musterort
+
+
+Bauzentrum Aigner GmbH
+Gewerbering 2
+82000 Musterort
+
+
+Musterort, 16.09.2026
+
+1. Mahnung zur Rechnung RE-2026-0283
+
+Sehr geehrte Damen und Herren,
+
+unsere Zahlungserinnerung vom 29.08.2026 zur Rechnung RE-2026-0283 vom
+10.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über
+4.260,00 EUR (Strangsanierung, 1. Abschlag, Vorgang BV-2026-021) war am
+24.08.2026 fällig, das sind inzwischen 23 Tage.
+
+Wir bitten Sie, den offenen Betrag bis zum 23.09.2026 auszugleichen. Für
+den zusätzlichen Aufwand berechnen wir nach unseren Zahlungsbedingungen
+eine Mahngebühr von 5,00 EUR.
+
+  Offener Rechnungsbetrag    4.260,00 EUR
+  Mahngebühr                     5,00 EUR
+  Zu zahlen                  4.265,00 EUR
+
+Falls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei
+uns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.
+
+Mit freundlichen Grüßen
+
+Musterbetrieb Heizung und Sanitär GmbH
+Buchhaltung

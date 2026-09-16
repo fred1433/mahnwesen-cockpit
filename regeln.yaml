@@ -1,0 +1,70 @@
+# ---------------------------------------------------------------------------
+# Hausregeln für den Mahnlauf.
+#
+# ACHTUNG: Alle Werte hier sind BEISPIELWERTE einer Demonstration und KEINE
+# Rechtsauskunft. Fristen, Stufen und Gebühren legt jeder Betrieb selbst fest,
+# in Abstimmung mit seiner Steuerberatung oder seinem Anwalt. Diese Datei ist
+# der einzige Ort, an dem sie stehen: im Code steht keine Frist und kein Betrag.
+# ---------------------------------------------------------------------------
+
+stichtag: "2026-09-16"
+
+waehrung: EUR
+
+stufen:
+  - schluessel: erinnerung
+    name: "Zahlungserinnerung"
+    ab_tagen_nach_faelligkeit: 5
+    gebuehr: 0.00
+    zahlbar_in_tagen: 7
+    kanal: email
+    freigabe: automatisch_nach_pruefung
+
+  - schluessel: mahnung_1
+    name: "1. Mahnung"
+    ab_tagen_nach_faelligkeit: 14
+    gebuehr: 5.00
+    zahlbar_in_tagen: 7
+    kanal: email
+    freigabe: automatisch_nach_pruefung
+
+  - schluessel: mahnung_2
+    name: "2. Mahnung"
+    ab_tagen_nach_faelligkeit: 28
+    gebuehr: 10.00
+    zahlbar_in_tagen: 14
+    kanal: brief
+    freigabe: mensch
+
+  - schluessel: uebergabe
+    name: "Übergabe vorbereiten"
+    ab_tagen_nach_faelligkeit: 45
+    gebuehr: 0.00
+    zahlbar_in_tagen: 0
+    # Die Übergabe entscheidet immer ein Mensch. Der Lauf legt nur die Akte an
+    # und verschickt nichts.
+    kanal: keiner
+    freigabe: mensch
+
+sperren:
+  # Unter diesem offenen Betrag wird nicht gemahnt.
+  mindestbetrag: 15.00
+  # So viel Zeit muss zwischen zwei Stufen desselben Vorgangs liegen.
+  wartezeit_zwischen_stufen_tage: 7
+  # Größte erlaubte Abweichung zwischen Briefbetrag und Zahlungsstand.
+  toleranz_betrag: 0.01
+  # Offene Reklamation auf derselben Baustelle stoppt den Vorgang.
+  reklamation_stoppt: true
+  # Keine Stufe darf übersprungen werden.
+  reihenfolge_erzwingen: true
+  # Diese Kunden werden nie automatisch gemahnt, sondern immer vorgelegt.
+  kulanzliste:
+    - K-1042
+    - K-1057
+
+eskalation:
+  # Ab hier bekommt die Geschäftsführung den Vorgang auf den Tisch.
+  an_geschaeftsfuehrung_ab_tagen: 45
+  # Tägliche Zusammenfassung.
+  zusammenfassung_um: "07:30"
+  zusammenfassung_an: "Buchhaltung"

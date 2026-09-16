@@ -1,0 +1,39 @@
+# BEISPIELBRIEF. Fiktiver Absender, fiktiver Empfänger, erfundene Beträge.
+# Vorgang    RE-2026-0295, Wartung Heizzentrale
+# Stufe      Zahlungserinnerung
+# Kontrollen 7 von 8 bestanden
+# Ergebnis   GESTOPPT durch die Kontrolle Zahlungsstand, nicht versendet
+# Erzeugt    npm run lauf, ohne Modellaufruf
+# ------------------------------------------------------------------------
+Musterbetrieb Heizung und Sanitär GmbH
+Beispielweg 4 · 82000 Musterort
+
+
+Autohaus Riedlbauer GmbH
+Gewerbering 15
+82000 Musterort
+
+
+Musterort, 16.09.2026
+
+Zahlungserinnerung zur Rechnung RE-2026-0295
+
+Sehr geehrte Damen und Herren,
+
+zu unserer Rechnung RE-2026-0295 vom 23.08.2026 über 890,00 EUR (Wartung
+Heizzentrale, Vorgang W-2026-106) ist bei uns bis heute kein
+Zahlungseingang verbucht. Fällig war der Betrag am 06.09.2026.
+
+Erfahrungsgemäß hängt das am Rechnungslauf und nicht an unserer Arbeit.
+Wir bitten Sie, den offenen Betrag bis zum 23.09.2026 anzuweisen.
+
+Sollte sich Ihre Zahlung mit diesem Schreiben überschnitten haben,
+betrachten Sie es bitte als gegenstandslos.
+
+Wenn an der Rechnung oder an unserer Arbeit etwas nicht stimmt, rufen
+Sie uns an. Das klären wir am Telefon schneller als auf dem Postweg.
+
+Mit freundlichen Grüßen
+
+Musterbetrieb Heizung und Sanitär GmbH
+Buchhaltung
