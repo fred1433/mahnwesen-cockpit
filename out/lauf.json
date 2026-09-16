@@ -2686,7 +2686,7 @@
       "fassung": "quelle_v1",
       "quelleVorher": "quelle_v1",
       "quelleNachher": "quelle_v2",
-      "ereignis": "Zahlungseingang 1.140,00 EUR am 16.09.2026 (SEPA-Ueberweisung)",
+      "ereignis": "Zahlungseingang 1.140,00 EUR am 16.09.2026 (SEPA-Überweisung)",
       "befundeVorher": [
         {
           "kontrolle": "QUELLE",
@@ -2958,7 +2958,7 @@
       "fassung": "quelle_v1",
       "stufe": "1. Mahnung",
       "kanal": "email",
-      "anEmpfaenger": "Test-Postausgang (kein Versand nach draussen)",
+      "anEmpfaenger": "Test-Postausgang (kein Versand nach draußen)",
       "abgelegtAm": "2026-09-16T11:10:00+02:00",
       "datei": "postausgang_test/RE-2026-0288_mahnung_1.txt"
     },
@@ -2967,7 +2967,7 @@
       "fassung": "quelle_v1",
       "stufe": "1. Mahnung",
       "kanal": "email",
-      "anEmpfaenger": "Test-Postausgang (kein Versand nach draussen)",
+      "anEmpfaenger": "Test-Postausgang (kein Versand nach draußen)",
       "abgelegtAm": "2026-09-16T11:10:00+02:00",
       "datei": "postausgang_test/RE-2026-0281_mahnung_1.txt"
     }
@@ -2976,11 +2976,11 @@
     {
       "aufgabe": "AUF-2026-0041",
       "nummer": "RE-2026-0285",
-      "betreff": "Reklamation REK-2026-017 mit der Bauleitung klaeren",
+      "betreff": "Reklamation REK-2026-017 mit der Bauleitung klären",
       "verantwortlich": "Bauleitung",
       "faelligAm": "2026-09-05",
       "tageUeberfaellig": 11,
-      "anEmpfaenger": "Test-Eskalation an die Geschaeftsfuehrung",
+      "anEmpfaenger": "Test-Eskalation an die Geschäftsführung",
       "datei": "postausgang_test/eskalation_AUF-2026-0041.txt"
     }
   ],
@@ -5533,7 +5533,7 @@
     "Angehalten: RE-2026-0295, Zahlungserinnerung, 890,00 EUR, Erledigt / Keine Mahnung, Grund Zahlungsstand.",
     "Angehalten: RE-2026-0304, Zahlungserinnerung, 2.870,00 EUR, Daten prüfen, Grund Agentenausgabe.",
     "Nachprüfung auf Quelle quelle_v2: 3 freigegebene Entwürfe erneut geprüft, 1 Freigabe verfallen, 2 im Test-Postausgang.",
-    "Freigabe verfallen: RE-2026-0282, Zahlungseingang 1.140,00 EUR am 16.09.2026 (SEPA-Ueberweisung), nichts abgelegt.",
+    "Freigabe verfallen: RE-2026-0282, Zahlungseingang 1.140,00 EUR am 16.09.2026 (SEPA-Überweisung), nichts abgelegt.",
     "Eskaliert: Aufgabe AUF-2026-0041 zu RE-2026-0285 liegt seit 11 Tagen bei Bauleitung."
   ]
 }

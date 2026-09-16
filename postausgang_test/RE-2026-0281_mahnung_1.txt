@@ -1,4 +1,4 @@
-# TEST-POSTAUSGANG. Dieser Ordner ist der einzige Empfänger: es geht nichts nach draussen.
+# TEST-POSTAUSGANG. Dieser Ordner ist der einzige Empfänger: es geht nichts nach draußen.
 # Vorgang      RE-2026-0281, 1. Mahnung
 # Freigabe     Mensch, Fassung quelle_v1
 # Nachprüfung  10 von 10 Kontrollen auf Quelle quelle_v2 bestanden

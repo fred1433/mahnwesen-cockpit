@@ -40,8 +40,8 @@ import type {
   Warteschlange,
 } from './typen.ts';
 
-const TEST_EMPFAENGER = 'Test-Postausgang (kein Versand nach draussen)';
-const TEST_LEITUNG = 'Test-Eskalation an die Geschaeftsfuehrung';
+const TEST_EMPFAENGER = 'Test-Postausgang (kein Versand nach draußen)';
+const TEST_LEITUNG = 'Test-Eskalation an die Geschäftsführung';
 
 export const WARTESCHLANGEN: Record<Warteschlange, string> = {
   erledigt: 'Erledigt / Keine Mahnung',
@@ -402,7 +402,7 @@ export function schreibeLauf(lauf: Lauf): void {
     const vorgang = lauf.vorgaenge.find((v) => v.entwurf.nummer === satz.nummer)!;
     const nach = nachIndex.get(satz.nummer)!;
     const kopf = [
-      '# TEST-POSTAUSGANG. Dieser Ordner ist der einzige Empfänger: es geht nichts nach draussen.',
+      '# TEST-POSTAUSGANG. Dieser Ordner ist der einzige Empfänger: es geht nichts nach draußen.',
       `# Vorgang      ${satz.nummer}, ${satz.stufe}`,
       `# Freigabe     Mensch, Fassung ${satz.fassung}`,
       `# Nachprüfung  ${nach.befundeNachher.length} von ${nach.befundeNachher.length} Kontrollen auf Quelle ${nach.quelleNachher} bestanden`,
@@ -419,7 +419,7 @@ export function schreibeLauf(lauf: Lauf): void {
 
   for (const e of lauf.eskalationen) {
     const text = [
-      '# TEST-ESKALATION. Interne Nachricht, fiktive Daten, kein Versand nach draussen.',
+      '# TEST-ESKALATION. Interne Nachricht, fiktive Daten, kein Versand nach draußen.',
       `# An           ${e.anEmpfaenger}`,
       `# ${'-'.repeat(72)}`,
       '',
@@ -466,7 +466,7 @@ export function main(): void {
   }
   for (const zeile of lauf.zusammenfassung) console.log(zeile);
   console.log(
-    `\n${lauf.vorgaenge.length} Entwuerfe in entwuerfe/, ${lauf.postausgang.length} Schreiben und ${lauf.eskalationen.length} Eskalationen in postausgang_test/, vollstaendiger Lauf in out/lauf.json.`,
+    `\n${lauf.vorgaenge.length} Entwürfe in entwuerfe/, ${lauf.postausgang.length} Schreiben und ${lauf.eskalationen.length} Eskalationen in postausgang_test/, vollstaendiger Lauf in out/lauf.json.`,
   );
 }
 

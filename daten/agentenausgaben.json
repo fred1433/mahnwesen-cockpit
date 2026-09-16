@@ -1,5 +1,5 @@
 {
-  "_hinweis": "BEISPIELDATEN. EINGEFRORENE Ausgaben eines Entwurfsagenten, hier als Datei hinterlegt. Diese Demonstration ruft KEIN Modell auf. Die Ausgaben werden genau so geprueft, wie eine echte Modellausgabe geprueft wuerde: Betrag, Empfaenger, Bankverbindung und Wortlaut gegen die Quelle und gegen die Hausregeln. Drei der vier Ausgaben sind absichtlich fehlerhaft.",
+  "_hinweis": "BEISPIELDATEN. EINGEFRORENE Ausgaben eines Entwurfsagenten, hier als Datei hinterlegt. Diese Demonstration ruft KEIN Modell auf. Die Ausgaben werden genau so geprüft, wie eine echte Modellausgabe geprüft würde: Betrag, Empfänger, Bankverbindung und Wortlaut gegen die Quelle und gegen die Hausregeln. Drei der vier Ausgaben sind absichtlich fehlerhaft.",
   "ausgaben": [
     {
       "nummer": "RE-2026-0283",
@@ -7,7 +7,7 @@
       "betragBehauptet": 4260.0,
       "empfaengerBehauptet": "Bauzentrum Aigner GmbH",
       "bankverbindung": "DE00 0000 0000 0000 0000 00",
-      "freitext": "Wir bitten Sie um Ausgleich des offenen Betrags und stehen fuer Rueckfragen zur Verfuegung."
+      "freitext": "Wir bitten Sie um Ausgleich des offenen Betrags und stehen für Rückfragen zur Verfügung."
     },
     {
       "nummer": "RE-2026-0289",

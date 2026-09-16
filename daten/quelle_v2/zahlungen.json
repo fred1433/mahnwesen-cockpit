@@ -1,5 +1,5 @@
 {
-  "_hinweis": "BEISPIELDATEN. Buchhaltungsquelle, Fassung v2. Die Feldnamen folgen dem oeffentlich dokumentierten Datenmodell von Lexware Office: GET /v1/payments/{voucherId} liefert openAmount, voucherStatus und paymentItems. Quelle: https://developers.lexware.io/docs/ . belegstatus bildet voucherStatus ab: ein offener Betrag von null kann auch eine stornierte Rechnung sein und nicht nur eine bezahlte.",
+  "_hinweis": "BEISPIELDATEN. Buchhaltungsquelle, Fassung v2. Die Feldnamen folgen dem öffentlich dokumentierten Datenmodell von Lexware Office: GET /v1/payments/{voucherId} liefert openAmount, voucherStatus und paymentItems. Quelle: https://developers.lexware.io/docs/ . belegstatus bildet voucherStatus ab: ein offener Betrag von null kann auch eine stornierte Rechnung sein und nicht nur eine bezahlte.",
   "zahlungen": [
     {
       "nummer": "RE-2026-0261",
@@ -73,7 +73,7 @@
         {
           "datum": "2026-09-16",
           "betrag": 1140.0,
-          "art": "SEPA-Ueberweisung"
+          "art": "SEPA-Überweisung"
         }
       ]
     },
