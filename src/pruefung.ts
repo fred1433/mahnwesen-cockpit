@@ -72,7 +72,10 @@ export const KONTROLLEN: Kontrolle[] = [
     pruefe: (_entwurf, { zahlung, regeln }) => {
       const offen = cent(zahlung.offenerBetrag);
       const grenze = regeln.sperren.mindestbetrag;
-      if (offen <= 0 || offen >= grenze) {
+      if (offen <= 0) {
+        return { bestanden: true, text: 'Kein offener Betrag, das entscheidet die Kontrolle Zahlungsstand.' };
+      }
+      if (offen >= grenze) {
         return { bestanden: true, text: `${euro(offen)} erreicht den Mindestbetrag von ${euro(grenze)}.` };
       }
       return {

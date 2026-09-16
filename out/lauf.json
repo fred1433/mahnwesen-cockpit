@@ -1814,7 +1814,7 @@
           "kontrolle": "MINDESTBETRAG",
           "titel": "Mindestbetrag",
           "bestanden": true,
-          "text": "0,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+          "text": "Kein offener Betrag, das entscheidet die Kontrolle Zahlungsstand."
         },
         {
           "kontrolle": "REKLAMATION",
@@ -3864,7 +3864,7 @@
       "kontrolle": "MINDESTBETRAG",
       "titel": "Mindestbetrag",
       "bestanden": true,
-      "text": "0,00 EUR erreicht den Mindestbetrag von 15,00 EUR."
+      "text": "Kein offener Betrag, das entscheidet die Kontrolle Zahlungsstand."
     },
     {
       "schritt": 23,
