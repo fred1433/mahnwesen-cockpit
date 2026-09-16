@@ -1,0 +1,36 @@
+# ENTWURF, NICHT VERSENDET. Fiktiver Absender, fiktiver Empfänger, erfundene Beträge.
+# Vorgang    RE-2026-0284, Heizkörpertausch Erdgeschoss
+# Stufe      1. Mahnung
+# Kontrollen 9 von 10 bestanden
+# Ergebnis   ANGEHALTEN durch die Kontrolle Wartezeit, Warteschlange Klärung erforderlich
+# Erzeugt    npm run lauf, ohne Modellaufruf
+# ------------------------------------------------------------------------
+Musterbetrieb Heizung und Sanitär GmbH
+Beispielweg 4 · 82000 Musterort
+
+
+Familie Lindmoser
+Wiesenweg 3
+82000 Musterort
+
+
+Musterort, 16.09.2026
+
+1. Mahnung zur Rechnung RE-2026-0284
+
+Sehr geehrte Familie Lindmoser,
+
+unsere Zahlungserinnerung vom 13.09.2026 zur Rechnung RE-2026-0284 vom
+08.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über 780,00
+EUR (Heizkörpertausch Erdgeschoss, Vorgang BV-2026-018) war am
+22.08.2026 fällig, das sind inzwischen 25 Tage.
+
+Wir bitten Sie um Ausgleich des offenen Betrags.
+
+Falls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei
+uns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.
+
+Mit freundlichen Grüßen
+
+Musterbetrieb Heizung und Sanitär GmbH
+Buchhaltung

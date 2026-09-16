@@ -1,0 +1,39 @@
+# ENTWURF, NICHT VERSENDET. Fiktiver Absender, fiktiver Empfänger, erfundene Beträge.
+# Vorgang    RE-2026-0306, Heizungstausch, 1. Abschlag
+# Stufe      Zahlungserinnerung
+# Kontrollen 10 von 10 bestanden
+# Ergebnis   Alle Kontrollen bestanden, liegt einem Menschen zur Freigabe vor
+# Erzeugt    npm run lauf, ohne Modellaufruf
+# ------------------------------------------------------------------------
+Musterbetrieb Heizung und Sanitär GmbH
+Beispielweg 4 · 82000 Musterort
+
+
+Familie Hasenöhrl
+Kirchfeldweg 11
+82002 Musterau
+
+
+Musterort, 16.09.2026
+
+Zahlungserinnerung zur Rechnung RE-2026-0306
+
+Sehr geehrte Familie Hasenöhrl,
+
+zu unserer Rechnung RE-2026-0306 vom 24.08.2026 über 3.640,00 EUR
+(Heizungstausch, 1. Abschlag, Vorgang BV-2026-004) ist bei uns bis heute
+kein Zahlungseingang verbucht. Fällig war der Betrag am 07.09.2026.
+
+Vermutlich ist die Rechnung im Alltag untergegangen. Wir bitten Sie um
+Ausgleich des offenen Betrags.
+
+Sollte sich Ihre Zahlung mit diesem Schreiben überschnitten haben,
+betrachten Sie es bitte als gegenstandslos.
+
+Wenn an der Rechnung oder an unserer Arbeit etwas nicht stimmt, rufen
+Sie uns an. Das klären wir am Telefon schneller als auf dem Postweg.
+
+Mit freundlichen Grüßen
+
+Musterbetrieb Heizung und Sanitär GmbH
+Buchhaltung

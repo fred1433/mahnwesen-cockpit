@@ -1,0 +1,37 @@
+{
+  "_hinweis": "BEISPIELDATEN. Interne Aufgaben aus frueheren Laeufen. Wer eine Aufgabe zu lange liegen laesst, soll nicht darauf hoffen muessen, dass es jemandem auffaellt: der Lauf eskaliert sie.",
+  "aufgaben": [
+    {
+      "id": "AUF-2026-0041",
+      "nummer": "RE-2026-0285",
+      "betreff": "Reklamation REK-2026-017 mit der Bauleitung klaeren",
+      "verantwortlich": "Bauleitung",
+      "faelligAm": "2026-09-05",
+      "erledigt": false
+    },
+    {
+      "id": "AUF-2026-0044",
+      "nummer": "RE-2026-0286",
+      "betreff": "Kulanzentscheidung zum Vorgang treffen",
+      "verantwortlich": "Geschaeftsfuehrung",
+      "faelligAm": "2026-09-14",
+      "erledigt": false
+    },
+    {
+      "id": "AUF-2026-0047",
+      "nummer": "RE-2026-0294",
+      "betreff": "Teilzahlung in der Rechnungsliste nachtragen",
+      "verantwortlich": "Buchhaltung",
+      "faelligAm": "2026-09-15",
+      "erledigt": false
+    },
+    {
+      "id": "AUF-2026-0039",
+      "nummer": "RE-2026-0273",
+      "betreff": "Ansprechpartner der Hausverwaltung bestaetigen",
+      "verantwortlich": "Buchhaltung",
+      "faelligAm": "2026-09-02",
+      "erledigt": true
+    }
+  ]
+}

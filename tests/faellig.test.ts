@@ -46,7 +46,7 @@ describe('Fälligkeit', () => {
       schritt('erinnerung', '2026-07-01'),
       schritt('mahnung_1', '2026-07-10'),
       schritt('mahnung_2', '2026-07-20'),
-      schritt('uebergabe', '2026-08-01'),
+      schritt('vorlage_leitung', '2026-08-01'),
     ];
     expect(naechsteStufe(REGELN, schritte)).toBeNull();
     expect(faelligeStufe(REGELN, rechnung({ faelligkeit: '2026-06-01' }), schritte, STICHTAG)).toBeNull();
@@ -55,6 +55,6 @@ describe('Fälligkeit', () => {
   it('nimmt bei einer lückenhaften Historie die höchste erreichte Stufe', () => {
     const schritte = [schritt('erinnerung', '2026-07-29'), schritt('mahnung_2', '2026-08-20')];
     expect(hoechsteStufe(REGELN, schritte)).toBe('mahnung_2');
-    expect(naechsteStufe(REGELN, schritte)?.schluessel).toBe('uebergabe');
+    expect(naechsteStufe(REGELN, schritte)?.schluessel).toBe('vorlage_leitung');
   });
 });

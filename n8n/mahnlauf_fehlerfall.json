@@ -1,0 +1,55 @@
+{
+  "name": "Mahnlauf, Fehlerfall (Pruefung der Fehlerbehandlung)",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "c3000000-0000-4000-8000-000000000001",
+      "name": "Fehlerfall starten",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -220,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:5789/fehler-test",
+        "options": {
+          "timeout": 15000
+        }
+      },
+      "id": "c3000000-0000-4000-8000-000000000002",
+      "name": "Quelle nicht erreichbar",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        20,
+        0
+      ],
+      "notes": "Antwortet absichtlich mit 503. Dieser Workflow existiert nur, damit die Fehlerbehandlung nachweislich von selbst anspringt."
+    }
+  ],
+  "connections": {
+    "Fehlerfall starten": {
+      "main": [
+        [
+          {
+            "node": "Quelle nicht erreichbar",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "errorWorkflow": "FEHLERBEHANDLUNG"
+  },
+  "active": false,
+  "id": "MAHNLAUFFEHLER",
+  "versionId": "1",
+  "pinData": {}
+}

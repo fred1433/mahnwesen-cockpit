@@ -1,0 +1,35 @@
+# TEST-POSTAUSGANG. Dieser Ordner ist der einzige Empfänger: es geht nichts nach draussen.
+# Vorgang      RE-2026-0288, 1. Mahnung
+# Freigabe     Mensch, Fassung quelle_v1
+# Nachprüfung  10 von 10 Kontrollen auf Quelle quelle_v2 bestanden
+# Abgelegt     2026-09-16T11:10:00+02:00
+# ------------------------------------------------------------------------
+Musterbetrieb Heizung und Sanitär GmbH
+Beispielweg 4 · 82000 Musterort
+
+
+Familie Brunnbauer
+Ahornstraße 18
+82000 Musterort
+
+
+Musterort, 16.09.2026
+
+1. Mahnung zur Rechnung RE-2026-0288
+
+Sehr geehrte Familie Brunnbauer,
+
+unsere Zahlungserinnerung vom 23.08.2026 zur Rechnung RE-2026-0288 vom
+04.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über
+2.480,00 EUR (Fußbodenheizung Neubau, 1. Abschlag, Vorgang BV-2026-024)
+war am 18.08.2026 fällig, das sind inzwischen 29 Tage.
+
+Wir bitten Sie um Ausgleich des offenen Betrags.
+
+Falls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei
+uns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.
+
+Mit freundlichen Grüßen
+
+Musterbetrieb Heizung und Sanitär GmbH
+Buchhaltung

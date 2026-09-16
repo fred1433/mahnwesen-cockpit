@@ -1,0 +1,296 @@
+{
+  "name": "Mahnlauf (Beispieldaten)",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "a1000000-0000-4000-8000-000000000001",
+      "name": "Lauf starten",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -420,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:5789/lauf",
+        "options": {
+          "timeout": 60000
+        }
+      },
+      "id": "a1000000-0000-4000-8000-000000000002",
+      "name": "Offene Posten pruefen und Entwuerfe vorbereiten",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        -200,
+        0
+      ],
+      "notes": "Ruft den Pruefcode dieses Repositories auf (npm run dienst, nur 127.0.0.1). n8n orchestriert, die Kontrollen stehen im Code. Keine Zugangsdaten, kein Versand."
+    },
+    {
+      "parameters": {
+        "jsCode": "// Der Lauf kommt als JSON aus dem Dienst. Hier wird er nur aufgeteilt;\n// entschieden wird nichts, jede Entscheidung steht im geprueften Code.\nconst lauf = $input.first().json;\nreturn lauf.vorgaenge.map((v) => ({ json: {\n  nummer: v.entwurf.nummer,\n  stufe: v.entwurf.stufe.name,\n  betrag: v.entwurf.briefbetrag,\n  warteschlange: v.warteschlange,\n  grund: v.grund,\n  verantwortlich: v.verantwortlich,\n  naechsteAktion: v.naechsteAktion,\n  kontrollen: v.befunde.length,\n  bestanden: v.befunde.filter((b) => b.bestanden).length,\n  imPostausgang: lauf.postausgang.some((p) => p.nummer === v.entwurf.nummer),\n} }));\n"
+      },
+      "id": "a1000000-0000-4000-8000-000000000003",
+      "name": "Vorgaenge aufteilen",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        20,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "c0",
+                    "leftValue": "={{ $json.warteschlange }}",
+                    "rightValue": "zur_freigabe",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Zur Freigabe"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "c1",
+                    "leftValue": "={{ $json.warteschlange }}",
+                    "rightValue": "klaerung",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Klaerung erforderlich"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "c2",
+                    "leftValue": "={{ $json.warteschlange }}",
+                    "rightValue": "daten_pruefen",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Daten pruefen"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "c3",
+                    "leftValue": "={{ $json.warteschlange }}",
+                    "rightValue": "erledigt",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Erledigt / Keine Mahnung"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000004",
+      "name": "Warteschlange",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        240,
+        0
+      ],
+      "notes": "Vier Warteschlangen. Ein angehaltener Vorgang ist kein Brief, den man trotzdem freigeben kann."
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={{ { warteschlange: $json.warteschlange, nummer: $json.nummer, grund: $json.grund, verantwortlich: $json.verantwortlich, naechsteAktion: $json.naechsteAktion } }}",
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000010",
+      "name": "Zur Freigabe",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        480,
+        -180
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={{ { warteschlange: $json.warteschlange, nummer: $json.nummer, grund: $json.grund, verantwortlich: $json.verantwortlich, naechsteAktion: $json.naechsteAktion } }}",
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000011",
+      "name": "Klaerung erforderlich",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        480,
+        -60
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={{ { warteschlange: $json.warteschlange, nummer: $json.nummer, grund: $json.grund, verantwortlich: $json.verantwortlich, naechsteAktion: $json.naechsteAktion } }}",
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000012",
+      "name": "Daten pruefen",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        480,
+        60
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={{ { warteschlange: $json.warteschlange, nummer: $json.nummer, grund: $json.grund, verantwortlich: $json.verantwortlich, naechsteAktion: $json.naechsteAktion } }}",
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000013",
+      "name": "Erledigt / Keine Mahnung",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.5,
+      "position": [
+        480,
+        180
+      ]
+    }
+  ],
+  "connections": {
+    "Lauf starten": {
+      "main": [
+        [
+          {
+            "node": "Offene Posten pruefen und Entwuerfe vorbereiten",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Offene Posten pruefen und Entwuerfe vorbereiten": {
+      "main": [
+        [
+          {
+            "node": "Vorgaenge aufteilen",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Vorgaenge aufteilen": {
+      "main": [
+        [
+          {
+            "node": "Warteschlange",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Warteschlange": {
+      "main": [
+        [
+          {
+            "node": "Zur Freigabe",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Klaerung erforderlich",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Daten pruefen",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Erledigt / Keine Mahnung",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "errorWorkflow": "FEHLERBEHANDLUNG"
+  },
+  "active": false,
+  "id": "MAHNLAUF",
+  "versionId": "1",
+  "pinData": {}
+}

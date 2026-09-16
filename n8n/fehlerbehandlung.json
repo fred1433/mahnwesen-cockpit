@@ -1,0 +1,59 @@
+{
+  "name": "Fehlerbehandlung Mahnlauf",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "b2000000-0000-4000-8000-000000000001",
+      "name": "Fehler im Mahnlauf",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        -220,
+        0
+      ],
+      "notes": "Faengt jede fehlgeschlagene Ausfuehrung der verknuepften Workflows ab, ohne dass jemand etwas anstoesst."
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:5789/fehlerprotokoll",
+        "sendBody": true,
+        "contentType": "raw",
+        "rawContentType": "text/plain",
+        "body": "={{ $json.workflow.name }} fehlgeschlagen, Knoten {{ $json.execution.lastNodeExecuted }}: {{ $json.execution.error.message }}",
+        "options": {
+          "timeout": 15000
+        }
+      },
+      "id": "b2000000-0000-4000-8000-000000000002",
+      "name": "In das Fehlerprotokoll schreiben",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.5,
+      "position": [
+        20,
+        0
+      ],
+      "notes": "Kein Versand, keine Zugangsdaten: der Fehler landet in n8n/ausfuehrungen/fehlerprotokoll.txt."
+    }
+  ],
+  "connections": {
+    "Fehler im Mahnlauf": {
+      "main": [
+        [
+          {
+            "node": "In das Fehlerprotokoll schreiben",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "active": false,
+  "id": "FEHLERBEHANDLUNG",
+  "versionId": "1",
+  "pinData": {}
+}

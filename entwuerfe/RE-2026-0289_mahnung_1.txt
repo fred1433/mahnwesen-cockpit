@@ -1,0 +1,36 @@
+# ENTWURF, NICHT VERSENDET. Fiktiver Absender, fiktiver Empfänger, erfundene Beträge.
+# Vorgang    RE-2026-0289, Bad-Sanierung, 1. Abschlag
+# Stufe      1. Mahnung
+# Kontrollen 9 von 10 bestanden
+# Ergebnis   ANGEHALTEN durch die Kontrolle Agentenausgabe, Warteschlange Daten prüfen
+# Erzeugt    npm run lauf, ohne Modellaufruf
+# ------------------------------------------------------------------------
+Musterbetrieb Heizung und Sanitär GmbH
+Beispielweg 4 · 82000 Musterort
+
+
+Frau Obermaier
+Beispielweg 41
+82001 Beispielried
+
+
+Musterort, 16.09.2026
+
+1. Mahnung zur Rechnung RE-2026-0289
+
+Sehr geehrte Frau Obermaier,
+
+unsere Zahlungserinnerung vom 22.08.2026 zur Rechnung RE-2026-0289 vom
+03.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über
+1.330,00 EUR (Bad-Sanierung, 1. Abschlag, Vorgang BV-2026-041) war am
+17.08.2026 fällig, das sind inzwischen 30 Tage.
+
+Wir bitten Sie um Ausgleich des offenen Betrags.
+
+Falls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei
+uns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.
+
+Mit freundlichen Grüßen
+
+Musterbetrieb Heizung und Sanitär GmbH
+Buchhaltung

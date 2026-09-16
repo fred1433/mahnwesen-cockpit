@@ -1,0 +1,37 @@
+# ENTWURF, NICHT VERSENDET. Fiktiver Absender, fiktiver Empfänger, erfundene Beträge.
+# Vorgang    RE-2026-0274, Sanitärbereich Ausstellung, Montage
+# Stufe      2. Mahnung
+# Kontrollen 10 von 10 bestanden
+# Ergebnis   Alle Kontrollen bestanden, liegt einem Menschen zur Freigabe vor
+# Erzeugt    npm run lauf, ohne Modellaufruf
+# ------------------------------------------------------------------------
+Musterbetrieb Heizung und Sanitär GmbH
+Beispielweg 4 · 82000 Musterort
+
+
+Möbelhaus Naderer KG
+Industriestraße 17
+82002 Musterau
+
+
+Musterort, 16.09.2026
+
+2. Mahnung zur Rechnung RE-2026-0274
+
+Sehr geehrte Damen und Herren,
+
+zur Rechnung RE-2026-0274 vom 25.07.2026 über 1.805,00 EUR
+(Sanitärbereich Ausstellung, Montage, Vorgang BV-2026-026) haben wir
+Ihnen am 13.08.2026 eine Zahlungserinnerung und am 22.08.2026 eine erste
+Mahnung geschickt. Ein Zahlungseingang ist bis heute nicht verbucht, die
+Rechnung ist seit 39 Tagen überfällig.
+
+Wir bitten Sie um Ausgleich des offenen Betrags.
+
+Hören wir nichts von Ihnen, legen wir den Vorgang unserer
+Geschäftsführung vor. Ein Anruf genügt, wenn Sie das vermeiden möchten.
+
+Mit freundlichen Grüßen
+
+Musterbetrieb Heizung und Sanitär GmbH
+Buchhaltung

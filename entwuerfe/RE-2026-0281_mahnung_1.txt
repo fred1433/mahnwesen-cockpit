@@ -1,0 +1,36 @@
+# ENTWURF, NICHT VERSENDET. Fiktiver Absender, fiktiver Empfänger, erfundene Beträge.
+# Vorgang    RE-2026-0281, Wärmepumpe Altbau, 1. Abschlag
+# Stufe      1. Mahnung
+# Kontrollen 10 von 10 bestanden
+# Ergebnis   Alle Kontrollen bestanden, liegt einem Menschen zur Freigabe vor
+# Erzeugt    npm run lauf, ohne Modellaufruf
+# ------------------------------------------------------------------------
+Musterbetrieb Heizung und Sanitär GmbH
+Beispielweg 4 · 82000 Musterort
+
+
+Familie Eichinger
+Beispielweg 24
+82001 Beispielried
+
+
+Musterort, 16.09.2026
+
+1. Mahnung zur Rechnung RE-2026-0281
+
+Sehr geehrte Familie Eichinger,
+
+unsere Zahlungserinnerung vom 02.09.2026 zur Rechnung RE-2026-0281 vom
+14.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über
+2.380,00 EUR (Wärmepumpe Altbau, 1. Abschlag, Vorgang BV-2026-012) war
+am 28.08.2026 fällig, das sind inzwischen 19 Tage.
+
+Wir bitten Sie um Ausgleich des offenen Betrags.
+
+Falls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei
+uns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.
+
+Mit freundlichen Grüßen
+
+Musterbetrieb Heizung und Sanitär GmbH
+Buchhaltung

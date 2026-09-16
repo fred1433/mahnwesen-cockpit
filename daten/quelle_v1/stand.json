@@ -1,0 +1,7 @@
+{
+  "version": "quelle_v1",
+  "gelesenAm": "2026-09-16T06:30:00+02:00",
+  "erwartet": 42,
+  "uebernommen": 41,
+  "hinweis": "Die Quelle hat 42 Belege angekuendigt und 41 geliefert. Der fehlende Beleg ist kein \"nichts offen\", sondern ein unbekannter Stand."
+}

@@ -1,0 +1,2 @@
+Mahnlauf, Fehlerfall (Pruefung der Fehlerbehandlung) fehlgeschlagen, Knoten Quelle nicht erreichbar: Service unavailable - try again later or consider setting this node to retry automatically (in the node settings)
+Mahnlauf, Fehlerfall (Pruefung der Fehlerbehandlung) fehlgeschlagen, Knoten Quelle nicht erreichbar: Service unavailable - try again later or consider setting this node to retry automatically (in the node settings)

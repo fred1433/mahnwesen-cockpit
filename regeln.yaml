@@ -2,69 +2,92 @@
 # Hausregeln für den Mahnlauf.
 #
 # ACHTUNG: Alle Werte hier sind BEISPIELWERTE einer Demonstration und KEINE
-# Rechtsauskunft. Fristen, Stufen und Gebühren legt jeder Betrieb selbst fest,
-# in Abstimmung mit seiner Steuerberatung oder seinem Anwalt. Diese Datei ist
-# der einzige Ort, an dem sie stehen: im Code steht keine Frist und kein Betrag.
+# Rechtsauskunft. Diese Datei berechnet KEINE Gebühr, KEINEN Zins und KEINE
+# Frist gegenüber einem Kunden. Die Tage steuern ausschließlich INTERNE
+# Aufgaben: wann ein Vorgang wieder auf den Tisch kommt und welche Vorlage
+# vorgeschlagen wird. Was ein Betrieb seinen Kunden gegenüber tut, entscheidet
+# er mit seiner Steuerberatung oder seinem Anwalt, nicht dieses Programm.
+#
+# Sie ist der einzige Ort, an dem diese Werte stehen: im Code steht keine Frist.
 # ---------------------------------------------------------------------------
 
 stichtag: "2026-09-16"
 
+# Zeitpunkt der Pruefung. Steuert nur, wie alt der Stand der Quelle sein darf.
+pruefzeitpunkt: "2026-09-16T11:10:00+02:00"
+
 waehrung: EUR
 
+# Vorlagen des Hausprozesses. "ab_tagen_nach_faelligkeit" ist der interne
+# Auslöser, ab dem der Vorgang zur Bearbeitung vorgeschlagen wird.
+# "wiedervorlage_in_tagen" ist die interne Wiedervorlage danach, kein Datum,
+# das jemandem gesetzt wird.
 stufen:
   - schluessel: erinnerung
     name: "Zahlungserinnerung"
     ab_tagen_nach_faelligkeit: 5
-    gebuehr: 0.00
-    zahlbar_in_tagen: 7
+    wiedervorlage_in_tagen: 7
     kanal: email
-    freigabe: automatisch_nach_pruefung
 
   - schluessel: mahnung_1
     name: "1. Mahnung"
     ab_tagen_nach_faelligkeit: 14
-    gebuehr: 5.00
-    zahlbar_in_tagen: 7
+    wiedervorlage_in_tagen: 7
     kanal: email
-    freigabe: automatisch_nach_pruefung
 
   - schluessel: mahnung_2
     name: "2. Mahnung"
     ab_tagen_nach_faelligkeit: 28
-    gebuehr: 10.00
-    zahlbar_in_tagen: 14
+    wiedervorlage_in_tagen: 14
     kanal: brief
-    freigabe: mensch
 
-  - schluessel: uebergabe
-    name: "Übergabe vorbereiten"
+  # Eigener Zweig, kein weiterer Schritt derselben Leiter: hier entscheidet ein
+  # Mensch, ob und wie es weitergeht, einschließlich der Frage, ob jemand
+  # Fachkundiges eingeschaltet wird. Der Lauf legt nur die Akte an.
+  - schluessel: vorlage_leitung
+    name: "Der Leitung vorlegen"
     ab_tagen_nach_faelligkeit: 45
-    gebuehr: 0.00
-    zahlbar_in_tagen: 0
-    # Die Übergabe entscheidet immer ein Mensch. Der Lauf legt nur die Akte an
-    # und verschickt nichts.
+    wiedervorlage_in_tagen: 0
     kanal: keiner
-    freigabe: mensch
 
 sperren:
-  # Unter diesem offenen Betrag wird nicht gemahnt.
+  # Unter diesem offenen Betrag wird nichts vorbereitet.
   mindestbetrag: 15.00
-  # So viel Zeit muss zwischen zwei Stufen desselben Vorgangs liegen.
+  # So viel Zeit muss zwischen zwei Schreiben desselben Vorgangs liegen.
   wartezeit_zwischen_stufen_tage: 7
-  # Größte erlaubte Abweichung zwischen Briefbetrag und Zahlungsstand.
+  # Größte erlaubte Abweichung zwischen Entwurfsbetrag und Quelle.
   toleranz_betrag: 0.01
-  # Offene Reklamation auf derselben Baustelle stoppt den Vorgang.
+  # Offene Reklamation auf derselben Baustelle hält den Vorgang an.
   reklamation_stoppt: true
-  # Keine Stufe darf übersprungen werden.
+  # Keine Vorlage darf übersprungen werden.
   reihenfolge_erzwingen: true
-  # Diese Kunden werden nie automatisch gemahnt, sondern immer vorgelegt.
+  # Diese Kunden gehen immer über den Schreibtisch.
   kulanzliste:
     - K-1042
     - K-1057
+  # Älter als das darf der Stand der Quelle beim Prüfen nicht sein.
+  quelle_hoechstalter_stunden: 24
 
 eskalation:
   # Ab hier bekommt die Geschäftsführung den Vorgang auf den Tisch.
   an_geschaeftsfuehrung_ab_tagen: 45
+  # Interne Aufgabe ohne Bearbeitung: nach so vielen Tagen wird eskaliert.
+  offene_aufgabe_nach_tagen: 5
   # Tägliche Zusammenfassung.
   zusammenfassung_um: "07:30"
   zusammenfassung_an: "Buchhaltung"
+
+# Was ein Entwurf enthalten darf und was ausschließlich aus der Quelle kommt.
+# Betrag, Rechnungsnummer, Empfänger und Bankverbindung werden nie aus einem
+# Modelltext übernommen, sondern gegen die Quelle geprüft.
+entwurf:
+  gesperrte_woerter:
+    - "Verzug"
+    - "Verzugszinsen"
+    - "gesetzlich"
+    - "Inkasso"
+    - "Rechtsanwalt"
+    - "gerichtlich"
+    - "Mahnbescheid"
+    - "rechtssicher"
+  erlaubte_bankverbindung: "DE00 0000 0000 0000 0000 00"

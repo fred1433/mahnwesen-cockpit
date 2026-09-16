@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": false,
   "type": "module",
-  "description": "Mahnlauf mit deterministischer Pruefung vor dem Versand. Beispieldaten, keine echten Kundendaten.",
+  "description": "Vorgeschlagener Mahnwesen-Prozess: n8n orchestriert, der Code traegt zehn Kontrollen, eine Zahlung nach der Freigabe stoppt den Versand. Fiktive Beispieldaten, kein Versand.",
   "license": "MIT",
   "engines": {
     "node": ">=22.18"
@@ -12,7 +12,8 @@
     "lauf": "node src/lauf.ts",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "pruefen": "npm run typecheck && npm run test && npm run lauf"
+    "pruefen": "npm run typecheck && npm run test && npm run lauf",
+    "dienst": "node src/dienst.ts"
   },
   "dependencies": {
     "yaml": "^2.6.1"

@@ -1,0 +1,20 @@
+# ENTWURF, NICHT VERSENDET. Fiktiver Absender, fiktiver Empfänger, erfundene Beträge.
+# Vorgang    RE-2026-0262, Notdienst, Heizungsausfall
+# Stufe      Der Leitung vorlegen
+# Kontrollen 9 von 10 bestanden
+# Ergebnis   ANGEHALTEN durch die Kontrolle Reihenfolge, Warteschlange Daten prüfen
+# Erzeugt    npm run lauf, ohne Modellaufruf
+# ------------------------------------------------------------------------
+Interne Aktennotiz. Kein Schreiben an den Kunden.
+
+Vorgang            RE-2026-0262, Notdienst, Heizungsausfall
+Kunde              Familie Zehetmair (K-1034)
+Bauvorhaben        N-2026-048
+Offener Betrag     1.275,00 EUR
+Fällig seit        24.07.2026 (54 Tage)
+Historie           Zahlungserinnerung am 29.07.2026, 2. Mahnung am 20.08.2026
+
+Über das weitere Vorgehen entscheidet die Geschäftsführung,
+einschließlich der Frage, ob dafür jemand Fachkundiges hinzugezogen
+wird. Diese Notiz bereitet die Akte vor, sie verschickt nichts und sie
+beauftragt niemanden.

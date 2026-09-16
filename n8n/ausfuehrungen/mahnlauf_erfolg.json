@@ -1,0 +1,105 @@
+{
+  "_hinweis": "Spur einer TATSAECHLICHEN Ausfuehrung auf einer lokalen n8n-Installation, nicht von Hand geschrieben. Die Nutzdaten sind gekuerzt; Status, Zeiten und Knoten stehen unveraendert.",
+  "titel": "Mahnlauf, vollstaendig durchgelaufen",
+  "n8n": "2.39.6",
+  "workflow": null,
+  "modus": "cli",
+  "status": "success",
+  "gestartet": "2026-09-16T14:06:54.327Z",
+  "beendet": "2026-09-16T14:06:54.881Z",
+  "knoten": {
+    "Lauf starten": {
+      "status": "success",
+      "dauer_ms": 0,
+      "ausgegebene_elemente": 1,
+      "erstes_element": {}
+    },
+    "Offene Posten pruefen und Entwuerfe vorbereiten": {
+      "status": "success",
+      "dauer_ms": 24,
+      "ausgegebene_elemente": 1
+    },
+    "Vorgaenge aufteilen": {
+      "status": "success",
+      "dauer_ms": 455,
+      "ausgegebene_elemente": 28,
+      "erstes_element": {
+        "nummer": "RE-2026-0262",
+        "stufe": "Der Leitung vorlegen",
+        "betrag": 1275,
+        "warteschlange": "daten_pruefen",
+        "grund": "Reihenfolge",
+        "verantwortlich": "Geschäftsführung",
+        "naechsteAktion": "Daten richtigstellen: Reihenfolge. Danach läuft der Vorgang erneut durch alle Kontrollen.",
+        "kontrollen": 10,
+        "bestanden": 9,
+        "imPostausgang": false
+      }
+    },
+    "Warteschlange": {
+      "status": "success",
+      "dauer_ms": 56,
+      "ausgegebene_elemente": 15,
+      "erstes_element": {
+        "nummer": "RE-2026-0261",
+        "stufe": "Der Leitung vorlegen",
+        "betrag": 3115,
+        "warteschlange": "zur_freigabe",
+        "grund": "10 von 10 Kontrollen bestanden",
+        "verantwortlich": "Geschäftsführung",
+        "naechsteAktion": "Akte liegt der Geschäftsführung vor, es geht nichts hinaus.",
+        "kontrollen": 10,
+        "bestanden": 10,
+        "imPostausgang": false
+      }
+    },
+    "Zur Freigabe": {
+      "status": "success",
+      "dauer_ms": 11,
+      "ausgegebene_elemente": 15,
+      "erstes_element": {
+        "warteschlange": "zur_freigabe",
+        "nummer": "RE-2026-0261",
+        "grund": "10 von 10 Kontrollen bestanden",
+        "verantwortlich": "Geschäftsführung",
+        "naechsteAktion": "Akte liegt der Geschäftsführung vor, es geht nichts hinaus."
+      }
+    },
+    "Klaerung erforderlich": {
+      "status": "success",
+      "dauer_ms": 1,
+      "ausgegebene_elemente": 3,
+      "erstes_element": {
+        "warteschlange": "klaerung",
+        "nummer": "RE-2026-0286",
+        "grund": "Kulanzliste",
+        "verantwortlich": "Geschäftsführung",
+        "naechsteAktion": "Klären: Kulanzliste. Wiedervorlage am 23.09.2026."
+      }
+    },
+    "Daten pruefen": {
+      "status": "success",
+      "dauer_ms": 1,
+      "ausgegebene_elemente": 7,
+      "erstes_element": {
+        "warteschlange": "daten_pruefen",
+        "nummer": "RE-2026-0262",
+        "grund": "Reihenfolge",
+        "verantwortlich": "Geschäftsführung",
+        "naechsteAktion": "Daten richtigstellen: Reihenfolge. Danach läuft der Vorgang erneut durch alle Kontrollen."
+      }
+    },
+    "Erledigt / Keine Mahnung": {
+      "status": "success",
+      "dauer_ms": 1,
+      "ausgegebene_elemente": 3,
+      "erstes_element": {
+        "warteschlange": "erledigt",
+        "nummer": "RE-2026-0291",
+        "grund": "Zahlungsstand",
+        "verantwortlich": "Niemand, der Vorgang ist zu",
+        "naechsteAktion": "Kein Schreiben. Zahlungsstand, der Vorgang ist zu."
+      }
+    }
+  }
+}

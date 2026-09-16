@@ -1,0 +1,39 @@
+# ENTWURF, NICHT VERSENDET. Fiktiver Absender, fiktiver Empfänger, erfundene Beträge.
+# Vorgang    RE-2026-0293, Austausch Gastherme
+# Stufe      Zahlungserinnerung
+# Kontrollen 9 von 10 bestanden
+# Ergebnis   ANGEHALTEN durch die Kontrolle Kontaktdaten, Warteschlange Daten prüfen
+# Erzeugt    npm run lauf, ohne Modellaufruf
+# ------------------------------------------------------------------------
+Musterbetrieb Heizung und Sanitär GmbH
+Beispielweg 4 · 82000 Musterort
+
+
+Herr Dorfmeister
+Am Bachgrund 2
+82001 Beispielried
+
+
+Musterort, 16.09.2026
+
+Zahlungserinnerung zur Rechnung RE-2026-0293
+
+Sehr geehrter Herr Dorfmeister,
+
+zu unserer Rechnung RE-2026-0293 vom 19.08.2026 über 655,00 EUR
+(Austausch Gastherme, Vorgang BV-2026-034) ist bei uns bis heute kein
+Zahlungseingang verbucht. Fällig war der Betrag am 02.09.2026.
+
+Vermutlich ist die Rechnung im Alltag untergegangen. Wir bitten Sie um
+Ausgleich des offenen Betrags.
+
+Sollte sich Ihre Zahlung mit diesem Schreiben überschnitten haben,
+betrachten Sie es bitte als gegenstandslos.
+
+Wenn an der Rechnung oder an unserer Arbeit etwas nicht stimmt, rufen
+Sie uns an. Das klären wir am Telefon schneller als auf dem Postweg.
+
+Mit freundlichen Grüßen
+
+Musterbetrieb Heizung und Sanitär GmbH
+Buchhaltung

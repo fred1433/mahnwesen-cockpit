@@ -1,0 +1,23 @@
+{
+  "_hinweis": "BEISPIELDATEN. Freigaben, die ein Mensch in der Demonstration erteilt hat. Eine Freigabe gilt fuer eine bestimmte FASSUNG des Entwurfs. Aendert sich die Quelle danach, verfaellt sie und der Vorgang laeuft erneut durch alle Kontrollen.",
+  "freigaben": [
+    {
+      "nummer": "RE-2026-0281",
+      "fassung": "quelle_v1",
+      "freigegebenVon": "Buchhaltung (Beispiel)",
+      "freigegebenAm": "2026-09-16T09:40:00+02:00"
+    },
+    {
+      "nummer": "RE-2026-0282",
+      "fassung": "quelle_v1",
+      "freigegebenVon": "Buchhaltung (Beispiel)",
+      "freigegebenAm": "2026-09-16T09:41:00+02:00"
+    },
+    {
+      "nummer": "RE-2026-0288",
+      "fassung": "quelle_v1",
+      "freigegebenVon": "Buchhaltung (Beispiel)",
+      "freigegebenAm": "2026-09-16T09:43:00+02:00"
+    }
+  ]
+}

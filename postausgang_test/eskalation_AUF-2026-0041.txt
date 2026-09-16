@@ -1,0 +1,11 @@
+# TEST-ESKALATION. Interne Nachricht, fiktive Daten, kein Versand nach draussen.
+# An           Test-Eskalation an die Geschaeftsfuehrung
+# ------------------------------------------------------------------------
+
+Aufgabe AUF-2026-0041 zum Vorgang RE-2026-0285 ist seit dem 05.09.2026 offen,
+das sind 11 Tage. Zuständig: Bauleitung.
+
+Betreff: Reklamation REK-2026-017 mit der Bauleitung klaeren
+
+Diese Nachricht entsteht, weil die Aufgabe liegen geblieben ist, nicht weil
+jemand daran gedacht hat.

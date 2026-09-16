@@ -1,0 +1,37 @@
+# ENTWURF, NICHT VERSENDET. Fiktiver Absender, fiktiver Empfänger, erfundene Beträge.
+# Vorgang    RE-2026-0271, Heizungstausch, Restbetrag
+# Stufe      2. Mahnung
+# Kontrollen 10 von 10 bestanden
+# Ergebnis   Alle Kontrollen bestanden, liegt einem Menschen zur Freigabe vor
+# Erzeugt    npm run lauf, ohne Modellaufruf
+# ------------------------------------------------------------------------
+Musterbetrieb Heizung und Sanitär GmbH
+Beispielweg 4 · 82000 Musterort
+
+
+Familie Hasenöhrl
+Kirchfeldweg 11
+82002 Musterau
+
+
+Musterort, 16.09.2026
+
+2. Mahnung zur Rechnung RE-2026-0271
+
+Sehr geehrte Familie Hasenöhrl,
+
+zur Rechnung RE-2026-0271 vom 01.08.2026 über 1.690,00 EUR
+(Heizungstausch, Restbetrag, Vorgang BV-2026-004) haben wir Ihnen am
+20.08.2026 eine Zahlungserinnerung und am 29.08.2026 eine erste Mahnung
+geschickt. Ein Zahlungseingang ist bis heute nicht verbucht, die
+Rechnung ist seit 32 Tagen überfällig.
+
+Wir bitten Sie um Ausgleich des offenen Betrags.
+
+Hören wir nichts von Ihnen, legen wir den Vorgang unserer
+Geschäftsführung vor. Ein Anruf genügt, wenn Sie das vermeiden möchten.
+
+Mit freundlichen Grüßen
+
+Musterbetrieb Heizung und Sanitär GmbH
+Buchhaltung

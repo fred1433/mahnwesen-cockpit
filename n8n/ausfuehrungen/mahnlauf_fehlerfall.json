@@ -1,0 +1,27 @@
+{
+  "_hinweis": "Spur einer TATSAECHLICHEN Ausfuehrung auf einer lokalen n8n-Installation, nicht von Hand geschrieben. Die Nutzdaten sind gekuerzt; Status, Zeiten und Knoten stehen unveraendert.",
+  "titel": "Fehlerfall: die Fehlerbehandlung springt von selbst an",
+  "n8n": "2.39.6",
+  "workflow": null,
+  "modus": "cli",
+  "status": "error",
+  "gestartet": "2026-09-16T14:06:56.501Z",
+  "beendet": "2026-09-16T14:06:56.527Z",
+  "knoten": {
+    "Fehlerfall starten": {
+      "status": "success",
+      "dauer_ms": 1,
+      "ausgegebene_elemente": 1,
+      "erstes_element": {}
+    },
+    "Quelle nicht erreichbar": {
+      "status": "error",
+      "dauer_ms": 22,
+      "fehler": "Service unavailable - try again later or consider setting this node to retry automatically (in the node settings)"
+    }
+  },
+  "fehler": {
+    "nachricht": "Service unavailable - try again later or consider setting this node to retry automatically (in the node settings)",
+    "knoten": "Quelle nicht erreichbar"
+  }
+}

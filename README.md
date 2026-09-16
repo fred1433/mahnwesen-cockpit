@@ -1,98 +1,211 @@
 # Mahnwesen-Cockpit
 
-**Ein Mahnlauf, aus dem keine Mahnung herausgeht, die nicht vorher maschinell geprüft wurde.**
-Vorbereitung der Schreiben, deterministische Prüfung vor dem Versand, Freigabeliste mit Begründung,
-Eskalation für das, was liegen bleibt.
+**Ein vorgeschlagener Mahnwesen-Prozess, in dem kein Schreiben hinausgeht, das nicht unmittelbar
+vorher maschinell geprüft wurde.** n8n orchestriert, der Code in diesem Repository trägt die
+Kontrollen, eine statische Seite zeigt das Ergebnis.
 
 Ansicht des Laufs: <https://wimmer-mahnwesen.theaipipe.com>
 
-> **Beispieldaten.** Alle Kunden, Rechnungen, Beträge, Baustellen und Reklamationen in diesem
-> Repository sind erfunden. Absender und Empfänger der Briefe sind ein fiktiver Betrieb und fiktive
-> Kunden. Es sind keine Daten eines echten Unternehmens enthalten.
+> **Fiktive Beispieldaten. Keine Verbindung zu Ihren Systemen. Kein Versand.**
+> Alle Kunden, Rechnungen, Beträge, Baustellen und Reklamationen sind erfunden. Absender und
+> Empfänger sind ein fiktiver Betrieb und fiktive Kunden. Der "Postausgang" ist ein Ordner in
+> diesem Repository.
 >
-> **Keine Rechtsauskunft.** Fristen, Stufen und Mahngebühren stehen in `regeln.yaml` und sind
-> Beispielwerte eines Hausprozesses. Was für einen bestimmten Betrieb gilt, entscheidet dieser mit
-> seiner Steuerberatung oder seinem Anwalt, nicht dieses Programm.
+> **Was das hier ist und was nicht.** Es ist die Demonstration eines VORGESCHLAGENEN Prozesses,
+> aufgebaut aus öffentlich formulierten Anforderungen. Es ist nicht die Abbildung eines bestehenden
+> Prozesses: welche Schritte ein Betrieb heute geht und wer sie verantwortet, ist zu bestätigen.
 >
-> **Kein Modellaufruf.** Der Lauf, die Briefe und die Webseite kommen ohne Netzzugriff und ohne
-> Sprachmodell aus. Die Brieftexte sind von Hand geschrieben und werden beim Lauf mit den Daten des
-> Vorgangs gefüllt. Im Betrieb kann ein Sprachmodell die Entwürfe schreiben. Was hier gezeigt wird,
-> ist die Stufe danach: die Prüfung ist Code, kein zweites Modell.
+> **Keine Rechtsauskunft.** Dieser Prozess berechnet keine Mahngebühr, keinen Zins und keinen
+> Verzugseintritt, und er behauptet keine Rechtsfolge. Die Tage in `regeln.yaml` steuern INTERNE
+> Aufgaben: wann ein Vorgang wieder auf den Tisch kommt. Was ein Betrieb seinen Kunden gegenüber
+> tut, entscheidet er mit seiner Steuerberatung oder seinem Anwalt.
+>
+> **Kein Modellaufruf.** Lauf, Entwürfe und Webseite kommen ohne Netzzugriff und ohne Sprachmodell
+> aus. Die Vorlagen sind von Hand geschrieben: eine Standarderinnerung setzt sich deterministisch
+> zusammen, dafür braucht es kein Modell. Wo ein Agent im Betrieb sinnvoll wäre, liegen hier
+> **eingefrorene Beispielausgaben** in `daten/agentenausgaben.json`, und sie werden genauso geprüft,
+> wie eine echte Modellausgabe geprüft würde.
 
-## Was der Lauf macht
+## Der Kern: eine Zahlung kommt herein, nachdem alles schon freigegeben war
 
-1. **Fällige Stufe bestimmen.** Je Rechnung: wie viele Tage über die Fälligkeit, welche Stufe wurde
-   zuletzt dokumentiert, welche wäre als nächste dran. Keine Stufe wird übersprungen.
-2. **Entwurf schreiben.** Zahlungserinnerung, 1. Mahnung, 2. Mahnung oder interne Aktennotiz zur
-   Übergabe, mit Betrag, Gebühr und Zahlungsziel aus den Hausregeln. Alle Entwürfe liegen in
-   [`briefe/`](briefe/).
-3. **Prüfen.** Acht Kontrollen, jede eine Funktion mit einem Ja oder Nein. Fällt eine durch, geht der
-   Entwurf nicht hinaus, sondern mit Begründung in die Freigabeliste. Nichts wird still verworfen.
-4. **Ablegen.** Der vollständige Lauf samt Protokoll steht in [`out/lauf.json`](out/lauf.json).
+Das ist der Fall, an dem sich zeigt, ob eine Prüfung echt ist oder nur ein Haken.
 
-## Die acht Kontrollen
+| | |
+|---|---|
+| **Ausgangslage** | `RE-2026-0282`, 1.140,00 EUR offen laut Rechnungsliste, Quellfassung `quelle_v1` |
+| **Entwurf** | 1. Mahnung vorbereitet, alle zehn Kontrollen bestanden, Warteschlange **Zur Freigabe** |
+| **Freigabe** | von einem Menschen erteilt, `daten/freigaben.json`, gültig für die Fassung `quelle_v1` |
+| **Ereignis** | in `quelle_v2` steht ein Zahlungseingang über 1.140,00 EUR vom 16.09.2026 |
+| **Kontrolle** | die Nachprüfung liest die Quelle erneut, `ZAHLUNGSSTAND` schlägt an |
+| **Wirkung** | die Freigabe verfällt, in `postausgang_test/` liegt **nichts** zu diesem Vorgang, er geht nach **Erledigt / Keine Mahnung** |
 
-| Kontrolle | Frage | Stoppt, wenn |
+Nachzulesen in [`out/lauf.json`](out/lauf.json) unter `nachpruefungen`, geprüft in
+[`tests/nachpruefung.test.ts`](tests/nachpruefung.test.ts). Der Gegenbeweis steht daneben: schaltet
+man die Kontrolle `ZAHLUNGSSTAND` ab, landet genau dieser Vorgang im Postausgang, und
+[`tests/neutralisierung.test.ts`](tests/neutralisierung.test.ts) wird rot.
+
+## Der Prozess
+
+```
+Offene Posten prüfen  →  Entwurf vorbereiten  →  Freigabe oder Klärung  →  Nachverfolgen
+                                                          │
+                                                          └─ eigener Zweig: ob ein Vorgang
+                                                             weitergegeben wird, entscheidet
+                                                             ein Mensch, nicht dieser Prozess
+```
+
+Vier Warteschlangen, und keine davon ist ein Papierkorb:
+
+| Warteschlange | Wofür | Wer |
 |---|---|---|
-| `ZAHLUNGSSTAND` | Ist die Rechnung inzwischen ausgeglichen? | Der Zahlungsstand meldet null offen, die Rechnungsliste noch einen Betrag |
-| `BETRAGSABGLEICH` | Stimmt der Briefbetrag mit dem Zahlungsstand? | Eine Teilzahlung ist eingegangen, die im Brief nicht steht |
-| `MINDESTBETRAG` | Lohnt der offene Betrag eine Mahnung? | Der offene Betrag liegt unter dem Mindestbetrag der Hausregeln |
-| `REKLAMATION` | Läuft auf dieser Baustelle etwas Offenes? | Eine Reklamation zum selben Vorgang ist offen |
-| `KULANZLISTE` | Ist der Kunde ein Fall für den Schreibtisch? | Der Kunde steht auf der Kulanzliste |
-| `WARTEZEIT` | Liegt genug Zeit seit der letzten Stufe? | Die letzte Stufe ging vor weniger als der Wartezeit hinaus |
-| `REIHENFOLGE` | Ist jede Stufe davor dokumentiert? | In der Historie fehlt eine Vorstufe |
-| `KONTAKTDATEN` | Kann der Kanal überhaupt bedient werden? | Keine E-Mail-Adresse für eine E-Mail-Stufe, keine Anschrift für einen Brief |
+| **Erledigt / Keine Mahnung** | Beleg ausgeglichen oder storniert, Betrag unter dem Mindestbetrag. Zu, ohne dass ein Mensch etwas bestätigen muss | niemand |
+| **Klärung erforderlich** | offene Reklamation, Kulanzfall, Abstand zum letzten Schreiben. Mit Verantwortlichem, nächster Aktion und Wiedervorlage | Geschäftsführung |
+| **Daten prüfen** | Quelle unvollständig oder widersprüchlich, fehlende Kontaktdaten, Lücke in der Historie, zurückgewiesene Agentenausgabe | Buchhaltung |
+| **Zur Freigabe** | Entwurf hält allen Kontrollen stand, ein Mensch gibt frei | Buchhaltung |
 
-Die Kontrollen stehen in [`src/pruefung.ts`](src/pruefung.ts), die Tests dazu in
-[`tests/pruefung.test.ts`](tests/pruefung.test.ts). Jede Kontrolle wird zweimal getestet: an einem
-Fall, den sie stoppen muss, und an einem, den sie durchlassen muss. Eine Sperre, die alles stoppt,
-ist genauso kaputt wie eine, die nichts stoppt.
+Ein angehaltener Vorgang ist **kein Brief, den man trotzdem freigeben kann**: eine Freigabe auf
+einem angehaltenen Vorgang lässt den Lauf abbrechen. Nach der Korrektur läuft der Vorgang erneut
+durch alle Kontrollen.
+
+## Die zehn Kontrollen
+
+| Kontrolle | Frage | Hält an, wenn | Geht nach |
+|---|---|---|---|
+| `QUELLE` | Ist der Stand aus der Buchhaltung da und frisch genug? | Der Beleg fehlt im Import oder der Stand ist zu alt | Daten prüfen |
+| `ZAHLUNGSSTAND` | Ausgeglichen oder storniert? | Die Quelle meldet null offen oder `storniert` | Erledigt |
+| `BETRAGSABGLEICH` | Stimmt der Entwurfsbetrag mit der Quelle? | Eine Teilzahlung fehlt in der Rechnungsliste | Daten prüfen |
+| `MINDESTBETRAG` | Lohnt der Betrag ein Schreiben? | Unter dem Mindestbetrag der Hausregeln | Erledigt |
+| `REKLAMATION` | Läuft auf der Baustelle etwas Offenes? | Eine Reklamation zum selben Vorgang ist offen | Klärung |
+| `KULANZLISTE` | Fall für den Schreibtisch? | Der Kunde steht auf der Kulanzliste | Klärung |
+| `WARTEZEIT` | Genug Abstand zum letzten Schreiben? | Kürzer als die Wartezeit der Hausregeln | Klärung |
+| `REIHENFOLGE` | Ist jeder Schritt davor dokumentiert? | In der Historie fehlt eine Vorstufe | Daten prüfen |
+| `KONTAKTDATEN` | Kann der Kanal bedient werden? | Keine E-Mail für eine E-Mail-Stufe, keine Anschrift für einen Brief | Daten prüfen |
+| `AGENTENAUSGABE` | Hält die Ausgabe des Entwurfsagenten dem Abgleich stand? | Betrag, Empfänger, Bankverbindung oder Wortlaut passen nicht | Daten prüfen |
+
+Jede Kontrolle wird **zweimal** geprüft: an einem Fall, den sie anhalten muss, und an einem, den
+sie durchlassen muss. Eine Sperre, die alles anhält, ist genauso kaputt wie eine, die nichts anhält.
+Und jede Kontrolle wird **einzeln abgeschaltet**: ändert sich das Ergebnis des Laufs dadurch nicht,
+trägt sie nichts und der Test wird rot ([`tests/neutralisierung.test.ts`](tests/neutralisierung.test.ts)).
+
+Der Betrag, die Rechnungsnummer, der Empfänger und die Bankverbindung stammen immer aus der Quelle
+oder aus den Stammdaten, nie aus einem Modelltext. `AGENTENAUSGABE` weist in diesem Lauf drei von
+vier eingefrorenen Ausgaben zurück: einen erfundenen Betrag, eine fremde Bankverbindung und einen
+Satz mit gesperrten Wörtern.
 
 ## Der Lauf vom 16.09.2026
 
 | | |
 |---|---|
 | Rechnungen im Bestand | 42 |
+| Belege, die die Quelle geliefert hat | 41 von 42 angekündigten |
 | Entwürfe vorbereitet | 28 |
-| Nach Prüfung freigegeben | 15 |
-| Einem Menschen vorgelegt | 5 |
-| **Gestoppt** | **8** |
-| An die Geschäftsführung eskaliert | 2 |
-| Ausgeführte Kontrollen | 224 |
+| Zur Freigabe | 15 |
+| Klärung erforderlich | 3 |
+| Daten prüfen | 7 |
+| Erledigt / Keine Mahnung | 3 |
+| Ausgeführte Kontrollen | 280 |
+| Nach der Nachprüfung im Test-Postausgang | 2 |
+| Verfallene Freigaben | 1 |
+| Eskalierte interne Aufgaben | 1 |
 
-Die Beispieldaten sind so gebaut, dass jede der acht Kontrollen in diesem Lauf genau einmal
-anschlägt. Im Alltag greift eine Sperre seltener; hier soll jede einmal zu sehen sein.
+Die Beispieldaten sind so gebaut, dass jede der zehn Kontrollen in diesem Lauf mindestens einmal
+anschlägt. Die 42 Rechnungen sind kein Beweis für sich; sie zeigen einen Import über mehrere Seiten,
+bei dem kein Vorgang verloren geht, auch der nicht, dessen Stand fehlt.
 
-## Selbst nachrechnen
+## n8n: orchestriert wirklich, nicht nur auf dem Papier
+
+Die drei Workflows in [`n8n/`](n8n/) wurden auf einer lokalen n8n-Installation **importiert und
+ausgeführt**, nicht von Hand gezeichnet. Die Spuren dieser Ausführungen liegen in
+[`n8n/ausfuehrungen/`](n8n/ausfuehrungen/).
+
+| Datei | Was drin ist |
+|---|---|
+| `mahnlauf.json` | Manueller Start, HTTP Request auf den Prüfcode, Code-Knoten zum Aufteilen, Switch in die vier Warteschlangen |
+| `fehlerbehandlung.json` | Error Trigger, schreibt jeden Fehlschlag ins Protokoll |
+| `mahnlauf_fehlerfall.json` | Bricht absichtlich ab, damit die Fehlerbehandlung nachweislich **von selbst** anspringt |
+| `ausfuehrungen/mahnlauf_erfolg.json` | Spur des erfolgreichen Laufs: 28 Elemente, aufgeteilt in 15 / 3 / 7 / 3 |
+| `ausfuehrungen/mahnlauf_fehlerfall.json` | Spur des Fehlschlags |
+| `ausfuehrungen/fehlerprotokoll.txt` | Was die Fehlerbehandlung geschrieben hat, ohne dass jemand sie angestoßen hat |
+
+Zwei Dinge, die beim Ausführen auf einer frischen Installation aufgefallen sind und die ein
+Workflow, den niemand laufen lässt, nicht zeigt (gemessen an **n8n 2.39.6**):
+
+1. **`n8n-nodes-base.executeCommand` ist in n8n 2.x standardmäßig abgeschaltet.** Die Voreinstellung
+   von `NODES_EXCLUDE` enthält den Knoten; eine Ausführung endet mit `Unrecognized node type`.
+   Deshalb ruft der Workflow den Prüfcode über **HTTP Request** auf, einen Knoten, der immer da ist.
+2. **Ein Error Workflow muss aktiv sein.** Ist er es nicht, meldet n8n
+   `Workflow ... is not active and cannot be executed` und der Fehler versandet. Nach dem Import
+   also aktivieren, sonst ist die Fehlerbehandlung nur Dekoration.
+
+Dazu: `$env` ist in Ausdrücken standardmäßig gesperrt (`access to env vars denied`), deshalb steht
+die lokale Adresse direkt im Workflow. In den Exporten stehen **keine Zugangsdaten, keine
+Auth-Header und keine Pfade**; die CI prüft das bei jedem Commit. Es gibt keinen proprietären Knoten
+und keine Oberfläche zum Verwalten.
+
+Der Prüfcode ist über einen kleinen Dienst erreichbar ([`src/dienst.ts`](src/dienst.ts), nur
+`127.0.0.1`, ohne Zugangsdaten): `POST /lauf`, `GET /gesundheit`, `POST /fehlerprotokoll`,
+`POST /fehler-test`.
 
 ```bash
 npm ci
-npm run pruefen      # Typen, Tests, Lauf
+npm run dienst      # Terminal 1
+npm run pruefen     # Terminal 2: Typen, Tests, Lauf
+
+# n8n dazu
+npx n8n import:workflow --separate --input=./n8n
+npx n8n update:workflow --id=FEHLERBEHANDLUNG --active=true
+npx n8n execute --id=MAHNLAUF
+npx n8n execute --id=MAHNLAUFFEHLER   # muss fehlschlagen und ins Protokoll schreiben
 ```
 
-`npm run lauf` schreibt `briefe/` und `out/lauf.json` neu. Die CI führt denselben Befehl aus und
-vergleicht das Ergebnis mit dem, was im Repository liegt: weicht ein Zeichen ab, wird sie rot. Die
-abgelegten Briefe sind also nachweislich genau das, was der Code erzeugt, und keine Handarbeit.
+`npm run lauf` schreibt `entwuerfe/`, `postausgang_test/` und `out/lauf.json` neu. Die CI führt
+denselben Befehl aus und vergleicht das Ergebnis mit dem, was im Repository liegt: weicht ein
+Zeichen ab, wird sie rot. Die abgelegten Dateien sind also nachweislich das, was der Code erzeugt.
+
+## Woher jedes Feld käme
+
+Nicht alles, was dieser Prozess braucht, steht in der Buchhaltung. Was fehlt, ist hier benannt
+statt stillschweigend erfunden.
+
+| Feld | Vermutete Quelle | Abgleich | Wenn es fehlt |
+|---|---|---|---|
+| offener Betrag, Belegstatus, Zahlungseingänge | Buchhaltung (`GET /v1/payments/{voucherId}`: `openAmount`, `voucherStatus`, `paymentItems`) | Belegnummer | Vorgang anhalten, **Daten prüfen**, nie "nichts zu tun" |
+| Rechnungsliste, Fälligkeit | Buchhaltung oder Handwerkersystem, je nachdem wo fakturiert wird | Belegnummer | Vorgang anhalten |
+| Kunde, Anschrift, E-Mail | Stammdaten des führenden Systems | Kundennummer | `KONTAKTDATEN` hält an |
+| Baustelle, Vorgang, **Reklamation** | Handwerkersystem. **Kein Feld der Buchhaltungs-API** | Projektnummer | `REKLAMATION` kann nicht greifen: der Vorgang gehört dann in **Klärung**, nicht in den Versand |
+| **Kulanzliste** | Kaufmännische Entscheidung, heute meist im Kopf. **In keinem System ein Feld** | Kundennummer | ohne Liste keine Sperre, deshalb steht sie in `regeln.yaml` |
+| **Freigabe** | Der Mensch, der freigibt. Kein Feld einer API | Belegnummer plus Fassung | ohne Freigabe geht nichts in den Postausgang |
+| Mahnhistorie | Handwerkersystem oder Buchhaltung, oft von Hand geführt | Belegnummer | `REIHENFOLGE` hält an |
+
+Ein offener Betrag von null ist übrigens nicht immer eine Zahlung: er kann auch eine stornierte
+Rechnung sein. Deshalb liest `ZAHLUNGSSTAND` den Belegstatus mit und sagt beides getrennt an.
 
 ## Anschluss an vorhandene Systeme
 
-Was hier über fremde Software steht, stammt aus deren öffentlicher Dokumentation. Was dort nicht
-steht, steht hier auch nicht.
+Was hier über fremde Software steht, stammt aus deren öffentlicher Dokumentation, mit URL. Was dort
+nicht steht, steht hier auch nicht.
 
-**Lexware Office**, <https://developers.lexware.io/docs/>
+**Lexware Office**, <https://developers.lexware.io/docs/> und <https://help.lexware.de/>
 
 - Der `payments`-Endpunkt „provides read access to the payment status of (bookkeeping or sales)
   vouchers, including invoices and credit notes“ und liefert unter anderem `openAmount`,
-  `paymentStatus`, `paidDate`. Genau darauf zielt die Kontrolle `ZAHLUNGSSTAND`: der maßgebliche
-  Stand wird unmittelbar vor dem Versand gelesen, nicht der Stand von gestern Nacht.
-- Der `voucherlist`-Endpunkt lässt sich nach `voucherType` und `voucherStatus` filtern, also die
-  offenen Rechnungen holen.
+  `voucherStatus`, `paidDate`. Genau darauf zielt `ZAHLUNGSSTAND`: der maßgebliche Stand wird
+  unmittelbar vor dem Versand gelesen, nicht der Stand von gestern Nacht.
+- Der `voucherlist`-Endpunkt lässt sich nach `voucherType` und `voucherStatus` filtern.
 - Es gibt Webhooks („Event Subscriptions“) mit den Ereignissen `payment.changed` und
-  `invoice.status.changed`. Damit muss kein Mahnlauf raten, ob inzwischen bezahlt wurde.
-- Für die Mahnung selbst gibt es einen `dunnings`-Endpunkt mit „Create a dunning“ und „Pursue to a
-  dunning“.
+  `invoice.status.changed`. Damit muss kein Lauf raten, ob inzwischen bezahlt wurde.
 - Das Tempo ist dokumentiert begrenzt: „A client can make up to 2 requests per second to the Lexware
-  API.“ Ein Lauf über einige hundert Rechnungen muss sich danach richten.
+  API.“
+- **Lexware Office mahnt bereits selbst**, und zwar mit zwei dokumentierten Einschränkungen
+  ([Hilfeartikel 547985](https://help.lexware.de/de-form/articles/547985-zahlungserinnerungen-und-mahnungen-erstellen)):
+  „Die Option **Mahnen** steht nur für Belege zur Verfügung, die direkt in Lexware Office erstellt
+  wurden. Für importierte oder extern erstellte Belege ist diese Funktion nicht verfügbar.“ Und:
+  „Lexware Office bietet derzeit keine automatische Funktion für den Versand von Mahnungen. Jede
+  Mahnung muss manuell ausgelöst werden.“
+  **Daraus folgt eine Frage, keine Diagnose**: Werden die Rechnungen im Handwerkersystem oder in der
+  Buchhaltung erstellt, und wie kommen sie in die Buchhaltung? Der Vorschlag hier ist deshalb
+  ausdrücklich, **Fakturierung und Buchhaltung zu lassen, wo sie sind**, und dazwischen den
+  Abgleich, die Ausnahmen und die Überwachung zu bauen.
 
 **HERO Software**, <https://hero-software.de/api-doku/graphql-guide>
 
@@ -101,26 +214,43 @@ steht, steht hier auch nicht.
 - Endpunkt `https://login.hero-software.de/api/external/v7/graphql`, Authentifizierung über
   `Authorization: Bearer YOUR_API_KEY`, den Schlüssel gibt es laut Dokumentation über den Support.
 - Dokumentierte Abfragen unter anderem `contacts`, `project_matches`, `customer_documents`,
-  Mutationen unter anderem `create_contact`, `create_project_match`, `add_logbook_entry`. Für die
-  Kontrolle `REKLAMATION` ist `project_matches` die naheliegende Quelle, für die Aktenlage
-  `add_logbook_entry` der naheliegende Rückweg.
+  Mutationen unter anderem `create_contact`, `create_project_match`, `add_logbook_entry`. Für
+  `REKLAMATION` ist `project_matches` die naheliegende Quelle, für die Aktenlage `add_logbook_entry`
+  der naheliegende Rückweg.
+
+**Hermes.** Es gibt öffentlich ein Projekt „Hermes Agent“, die Anforderung nennt aber weder
+Repository noch Version. Deshalb wird hier keine Integration behauptet. Die Rolle, die ein Agent in
+diesem Prozess sinnvoll ausfüllt, ist eng und austauschbar: einen Vorgang entgegennehmen und einen
+strukturierten Entwurf vorschlagen. Über den offenen Betrag entscheidet er nicht, und versenden kann
+er nichts.
 
 Ob diese Wege im konkreten Konto freigeschaltet und sinnvoll sind, klärt ein Blick in das jeweilige
 System. Dieses Repository behauptet dazu nichts.
 
+## Was überwacht wird, auch wenn nichts passiert
+
+`out/lauf.json` führt unter `ueberwachung`: wann die Quelle zuletzt gelesen wurde, ob der Import
+vollständig war (hier: 41 von 42), wie viele Aufgaben ohne Verantwortliche sind (hier: 0), wie viele
+überfällig sind, und wann der nächste Lauf erwartet wird. Eine interne Aufgabe, die zu lange liegt,
+erzeugt eine Eskalation mit Empfänger und Spur, ohne dass jemand daran denken muss.
+
 ## Aufbau
 
 ```
-regeln.yaml          Hausregeln: Stufen, Fristen, Gebühren, Sperren, Eskalation
-daten/               Beispieldaten: Kunden, Rechnungen, Zahlungsstand, Reklamationen, Historie
-src/regeln.ts        Regeln laden und auf Widersprüche prüfen
-src/faellig.ts       Welche Stufe ist heute dran
-src/entwurf.ts       Brieftexte
-src/pruefung.ts      Die acht Kontrollen
-src/lauf.ts          Der Lauf, schreibt briefe/ und out/lauf.json
-tests/               47 Tests
-briefe/              Die 28 Entwürfe dieses Laufs, mit Kopfzeile je Ergebnis
-out/lauf.json        Vollständiger Lauf samt Protokoll aller 224 Kontrollen
+regeln.yaml                 Hausregeln: Vorlagen, interne Fristen, Sperren, Eskalation, gesperrte Wörter
+daten/quelle_v1/            Buchhaltungsquelle, erste Abfrage
+daten/quelle_v2/            dieselbe Quelle, zweite Abfrage: eine Zahlung ist eingegangen
+daten/freigaben.json        Freigaben eines Menschen, gültig je Fassung
+daten/agentenausgaben.json  eingefrorene Agentenausgaben, drei davon absichtlich fehlerhaft
+daten/aufgaben.json         interne Aufgaben aus früheren Läufen
+src/pruefung.ts             die zehn Kontrollen
+src/lauf.ts                 der Lauf in drei Abschnitten, Nachprüfung, Eskalation, Überwachung
+src/dienst.ts               der lokale HTTP-Dienst, über den n8n den Prüfcode aufruft
+n8n/                        drei Workflows plus die Spuren ihrer echten Ausführungen
+tests/                      89 Tests, darunter die Neutralisierung jeder einzelnen Kontrolle
+entwuerfe/                  die 28 Entwürfe dieses Laufs, mit Kopfzeile je Ergebnis
+postausgang_test/           was tatsächlich abgelegt wurde: 2 Schreiben, 1 Eskalation
+out/lauf.json               vollständiger Lauf samt Protokoll aller 280 Kontrollen
 ```
 
 Lizenz: MIT.
@@ -129,72 +259,94 @@ Lizenz: MIT.
 
 # Mahnwesen-Cockpit (English)
 
-**A dunning run where no reminder leaves the building without passing a machine check first.**
-Letters prepared, a deterministic check before anything is sent, an approval queue with reasons, and
-escalation for whatever is left.
+**A proposed dunning process in which nothing leaves the building without being machine checked
+immediately beforehand.** n8n orchestrates, the code in this repository carries the controls, a
+static page shows the result.
 
 View of the run: <https://wimmer-mahnwesen.theaipipe.com>
 
-> **Sample data.** Every customer, invoice, amount, site and complaint in this repository is
-> invented. The sender and the recipients of the letters are a fictional company and fictional
-> customers. No data from a real business is included.
+> **Fictional sample data. No connection to your systems. Nothing is sent.** Every customer,
+> invoice, amount, site and complaint is invented, and the "outbox" is a folder in this repository.
 >
-> **Not legal advice.** Deadlines, stages and dunning fees live in `regeln.yaml` and are example
-> values of a house process. What applies to a given company is for that company and its tax adviser
-> or lawyer to decide, not for this program.
+> **What this is and is not.** It is a demonstration of a PROPOSED process, built from publicly
+> stated requirements. It is not a picture of an existing process: which steps a company takes today
+> and who owns them is for that company to confirm.
 >
-> **No model call.** The run, the letters and the web page work without network access and without a
-> language model. The letter texts were written by hand and are filled with the data of each case at
-> build time. In production a language model can draft them. What is shown here is the stage after
-> that: the check is code, not a second model.
+> **Not legal advice.** This process computes no dunning fee, no interest and no legal status, and
+> it asserts no legal consequence. The days in `regeln.yaml` drive INTERNAL tasks only: when a case
+> comes back onto someone's desk.
+>
+> **No model call.** The run, the drafts and the web page work without network access and without a
+> language model. Where an agent would make sense in production, this repository holds **frozen
+> sample outputs** and checks them exactly as a live model output would be checked.
 
-## What the run does
+## The point: a payment lands after everything was already approved
 
-1. **Decide which stage is due.** Per invoice: how many days past the due date, which stage was last
-   documented, which one is next. No stage is skipped.
-2. **Draft.** Payment reminder, first reminder, second reminder, or an internal handover note, with
-   amount, fee and payment window taken from the house rules. All drafts are in [`briefe/`](briefe/).
-3. **Check.** Eight controls, each a function returning yes or no. If one fails, the draft does not
-   go out; it goes to the approval queue with its reason. Nothing is dropped silently.
-4. **Record.** The full run including the journal is in [`out/lauf.json`](out/lauf.json).
+`RE-2026-0282` was prepared, passed all ten controls and was approved by a human on source version
+`quelle_v1`. In `quelle_v2` a payment of 1,140.00 EUR appears. The re-check reads the source again,
+`ZAHLUNGSSTAND` fires, the approval lapses, and nothing for that case is in `postausgang_test/`.
+Turn that one control off and the case does land in the outbox, which is why
+`tests/neutralisierung.test.ts` goes red when any control is neutralised.
 
-## The eight controls
+## The process
 
-| Control | Question | Stops when |
-|---|---|---|
-| `ZAHLUNGSSTAND` | Has the invoice been settled meanwhile? | The payment ledger says nothing is open while the invoice list still shows an amount |
-| `BETRAGSABGLEICH` | Does the amount in the letter match the ledger? | A part payment arrived that the letter does not reflect |
-| `MINDESTBETRAG` | Is the open amount worth a reminder? | It is below the minimum in the house rules |
-| `REKLAMATION` | Is something open on this site? | A complaint on the same job is open |
-| `KULANZLISTE` | Is this customer a desk decision? | The customer is on the courtesy list |
-| `WARTEZEIT` | Has enough time passed since the last stage? | The previous stage went out less than the waiting period ago |
-| `REIHENFOLGE` | Is every earlier stage documented? | A preceding stage is missing from the history |
-| `KONTAKTDATEN` | Can the channel be served at all? | No email address for an email stage, no postal address for a letter |
+`Check open items → prepare draft → approve or clarify → follow up`, with a separate branch for the
+decision to take a case further, which a person makes and this process does not.
 
-Each control is tested twice: on a case it must stop, and on a case it must let through. A guard that
-stops everything is as broken as one that stops nothing.
+Four queues, none of them a bin: **Done / no reminder** (settled or cancelled, closes itself),
+**Needs clarification** (complaint, courtesy case, spacing; with an owner, a next action and a
+review date), **Check the data** (incomplete or contradictory source, missing contact details, gap
+in the history, rejected agent output), **For approval** (a draft that withstands every control).
+A stopped case is not an approvable letter: an approval placed on a stopped case aborts the run.
 
-## The run of 16 September 2026
+## The ten controls
 
-42 invoices, 28 drafts prepared, 15 released after the checks, 5 put in front of a human, **8
-stopped**, 2 escalated to management, 224 controls executed. The sample data is built so that each of
-the eight controls fires exactly once in this run.
+Source freshness and completeness, payment status (settled or cancelled), amount against the source,
+minimum amount, open complaint, courtesy list, spacing since the last letter, documented sequence,
+contact details, and agent output (amount, recipient, bank details and wording checked against the
+source and the house rules).
+
+Each control is tested twice, on a case it must stop and on a case it must let through, and each one
+is then **neutralised in turn**: if switching it off does not change the run, it carries nothing and
+the suite goes red.
+
+## n8n really orchestrates
+
+The three workflows in `n8n/` were imported and executed on a local n8n (2.39.6); the traces are in
+`n8n/ausfuehrungen/`. Two things a workflow nobody runs would not reveal: in n8n 2.x
+`n8n-nodes-base.executeCommand` is excluded by default (`Unrecognized node type`), so the workflow
+calls the checking code over **HTTP Request**; and an error workflow must be **active**, otherwise
+n8n reports `Workflow ... is not active and cannot be executed` and the failure goes nowhere. The
+exports contain no credentials, no auth headers and no paths, and CI checks that on every commit.
 
 ## Reproduce it
 
 ```bash
 npm ci
-npm run pruefen      # types, tests, run
+npm run dienst      # terminal 1
+npm run pruefen     # terminal 2: types, tests, run
 ```
 
 CI runs the same command and compares the result with what is committed. If a single character
-differs, it turns red, so the letters in the repository are provably what the code produces.
+differs it turns red, so the files in the repository are provably what the code produces.
+
+## Where each field would come from
+
+Not everything this process needs lives in the accounting system. Complaints come from the trade
+software, the courtesy list and the approval are not a field in any API, and a zero open amount can
+mean a cancelled document rather than a payment. The German provenance table above names each field,
+its assumed source, the key it is matched on, and what happens when it is missing. Nothing defaults
+to "no reminder needed".
 
 ## Connecting to existing systems
 
 Everything said here about third party software comes from its public documentation, quoted with its
-URL. What is not documented there is not claimed here. See the German section above for the exact
-quotes from the Lexware Office API documentation (<https://developers.lexware.io/docs/>) and the HERO
-Software GraphQL guide (<https://hero-software.de/api-doku/graphql-guide>).
+URL. Notably, Lexware Office already dunns by itself, with two documented limits: the **Mahnen**
+action exists only for documents created in Lexware Office, not for imported ones, and there is
+currently no automatic sending, every reminder is triggered by hand
+([help article 547985](https://help.lexware.de/de-form/articles/547985-zahlungserinnerungen-und-mahnungen-erstellen)).
+That raises a question rather than a diagnosis: where are invoices created, and how do they reach
+the books? The proposal here is therefore to **leave invoicing and accounting where they are** and
+to build the cross-check, the exception handling and the monitoring between the tools.
 
 License: MIT.

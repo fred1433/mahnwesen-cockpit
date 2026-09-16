@@ -1,0 +1,381 @@
+{
+  "_hinweis": "BEISPIELDATEN. Buchhaltungsquelle, Fassung v1. Die Feldnamen folgen dem oeffentlich dokumentierten Datenmodell von Lexware Office: GET /v1/payments/{voucherId} liefert openAmount, voucherStatus und paymentItems. Quelle: https://developers.lexware.io/docs/ . belegstatus bildet voucherStatus ab: ein offener Betrag von null kann auch eine stornierte Rechnung sein und nicht nur eine bezahlte.",
+  "zahlungen": [
+    {
+      "nummer": "RE-2026-0261",
+      "offenerBetrag": 3115.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0262",
+      "offenerBetrag": 1275.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0271",
+      "offenerBetrag": 1690.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0272",
+      "offenerBetrag": 2940.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0273",
+      "offenerBetrag": 515.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0274",
+      "offenerBetrag": 1805.0,
+      "waehrung": "EUR",
+      "belegstatus": "teilweise",
+      "bezahltAm": null,
+      "eingaenge": [
+        {
+          "datum": "2026-08-05",
+          "betrag": 300.0,
+          "art": "Überweisung"
+        }
+      ]
+    },
+    {
+      "nummer": "RE-2026-0281",
+      "offenerBetrag": 2380.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0282",
+      "offenerBetrag": 1140.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0283",
+      "offenerBetrag": 4260.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0284",
+      "offenerBetrag": 780.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0285",
+      "offenerBetrag": 3320.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0286",
+      "offenerBetrag": 6850.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0287",
+      "offenerBetrag": 995.0,
+      "waehrung": "EUR",
+      "belegstatus": "teilweise",
+      "bezahltAm": null,
+      "eingaenge": [
+        {
+          "datum": "2026-08-10",
+          "betrag": 250.0,
+          "art": "Überweisung"
+        }
+      ]
+    },
+    {
+      "nummer": "RE-2026-0288",
+      "offenerBetrag": 2480.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0289",
+      "offenerBetrag": 1330.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0291",
+      "offenerBetrag": 0.0,
+      "waehrung": "EUR",
+      "belegstatus": "storniert",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0292",
+      "offenerBetrag": 1560.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0293",
+      "offenerBetrag": 655.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0294",
+      "offenerBetrag": 760.0,
+      "waehrung": "EUR",
+      "belegstatus": "teilweise",
+      "bezahltAm": null,
+      "eingaenge": [
+        {
+          "datum": "2026-09-14",
+          "betrag": 1200.0,
+          "art": "SEPA-Überweisung"
+        }
+      ]
+    },
+    {
+      "nummer": "RE-2026-0295",
+      "offenerBetrag": 0.0,
+      "waehrung": "EUR",
+      "belegstatus": "bezahlt",
+      "bezahltAm": "2026-09-15",
+      "eingaenge": [
+        {
+          "datum": "2026-09-15",
+          "betrag": 890.0,
+          "art": "SEPA-Überweisung"
+        }
+      ]
+    },
+    {
+      "nummer": "RE-2026-0296",
+      "offenerBetrag": 1480.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0297",
+      "offenerBetrag": 312.4,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0298",
+      "offenerBetrag": 2145.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0299",
+      "offenerBetrag": 12.4,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0300",
+      "offenerBetrag": 0.0,
+      "waehrung": "EUR",
+      "belegstatus": "bezahlt",
+      "bezahltAm": "2026-09-09",
+      "eingaenge": [
+        {
+          "datum": "2026-09-09",
+          "betrag": 745.0,
+          "art": "Überweisung"
+        }
+      ]
+    },
+    {
+      "nummer": "RE-2026-0301",
+      "offenerBetrag": 0.0,
+      "waehrung": "EUR",
+      "belegstatus": "bezahlt",
+      "bezahltAm": "2026-08-28",
+      "eingaenge": [
+        {
+          "datum": "2026-08-28",
+          "betrag": 189.0,
+          "art": "Lastschrift"
+        }
+      ]
+    },
+    {
+      "nummer": "RE-2026-0302",
+      "offenerBetrag": 0.0,
+      "waehrung": "EUR",
+      "belegstatus": "bezahlt",
+      "bezahltAm": "2026-09-02",
+      "eingaenge": [
+        {
+          "datum": "2026-09-02",
+          "betrag": 860.0,
+          "art": "Überweisung"
+        }
+      ]
+    },
+    {
+      "nummer": "RE-2026-0303",
+      "offenerBetrag": 0.0,
+      "waehrung": "EUR",
+      "belegstatus": "bezahlt",
+      "bezahltAm": "2026-09-11",
+      "eingaenge": [
+        {
+          "datum": "2026-09-11",
+          "betrag": 1395.0,
+          "art": "Überweisung"
+        }
+      ]
+    },
+    {
+      "nummer": "RE-2026-0304",
+      "offenerBetrag": 2870.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0305",
+      "offenerBetrag": 415.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0306",
+      "offenerBetrag": 3640.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0308",
+      "offenerBetrag": 640.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0309",
+      "offenerBetrag": 1870.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0310",
+      "offenerBetrag": 224.9,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0311",
+      "offenerBetrag": 1240.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0312",
+      "offenerBetrag": 486.5,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0313",
+      "offenerBetrag": 3980.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0314",
+      "offenerBetrag": 742.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0315",
+      "offenerBetrag": 1115.3,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0316",
+      "offenerBetrag": 298.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    },
+    {
+      "nummer": "RE-2026-0317",
+      "offenerBetrag": 5420.0,
+      "waehrung": "EUR",
+      "belegstatus": "offen",
+      "bezahltAm": null,
+      "eingaenge": []
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+# ENTWURF, NICHT VERSENDET. Fiktiver Absender, fiktiver Empfänger, erfundene Beträge.
+# Vorgang    RE-2026-0285, Sanitärinstallation Pflegebad
+# Stufe      1. Mahnung
+# Kontrollen 9 von 10 bestanden
+# Ergebnis   ANGEHALTEN durch die Kontrolle Reklamation, Warteschlange Klärung erforderlich
+# Erzeugt    npm run lauf, ohne Modellaufruf
+# ------------------------------------------------------------------------
+Musterbetrieb Heizung und Sanitär GmbH
+Beispielweg 4 · 82000 Musterort
+
+
+Seniorenresidenz Musterau gGmbH
+Rosenweg 20
+82002 Musterau
+
+
+Musterort, 16.09.2026
+
+1. Mahnung zur Rechnung RE-2026-0285
+
+Sehr geehrte Damen und Herren,
+
+unsere Zahlungserinnerung vom 26.08.2026 zur Rechnung RE-2026-0285 vom
+07.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über
+3.320,00 EUR (Sanitärinstallation Pflegebad, Vorgang BV-2026-029) war am
+21.08.2026 fällig, das sind inzwischen 26 Tage.
+
+Wir bitten Sie um Ausgleich des offenen Betrags.
+
+Falls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei
+uns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.
+
+Mit freundlichen Grüßen
+
+Musterbetrieb Heizung und Sanitär GmbH
+Buchhaltung

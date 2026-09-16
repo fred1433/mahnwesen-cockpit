@@ -1,0 +1,36 @@
+# ENTWURF, NICHT VERSENDET. Fiktiver Absender, fiktiver Empfänger, erfundene Beträge.
+# Vorgang    RE-2026-0290, Reparatur Warmwasserleitung
+# Stufe      1. Mahnung
+# Kontrollen 9 von 10 bestanden
+# Ergebnis   ANGEHALTEN durch die Kontrolle Quelle, Warteschlange Daten prüfen
+# Erzeugt    npm run lauf, ohne Modellaufruf
+# ------------------------------------------------------------------------
+Musterbetrieb Heizung und Sanitär GmbH
+Beispielweg 4 · 82000 Musterort
+
+
+Gasthof zur Alten Post
+Marktplatz 1
+82001 Beispielried
+
+
+Musterort, 16.09.2026
+
+1. Mahnung zur Rechnung RE-2026-0290
+
+Sehr geehrte Damen und Herren,
+
+unsere Zahlungserinnerung vom 21.08.2026 zur Rechnung RE-2026-0290 vom
+02.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über 648,00
+EUR (Reparatur Warmwasserleitung, Vorgang N-2026-051) war am 16.08.2026
+fällig, das sind inzwischen 31 Tage.
+
+Wir bitten Sie um Ausgleich des offenen Betrags.
+
+Falls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei
+uns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.
+
+Mit freundlichen Grüßen
+
+Musterbetrieb Heizung und Sanitär GmbH
+Buchhaltung

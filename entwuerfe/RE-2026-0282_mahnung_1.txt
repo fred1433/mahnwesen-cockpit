@@ -1,0 +1,36 @@
+# ENTWURF, NICHT VERSENDET. Fiktiver Absender, fiktiver Empfänger, erfundene Beträge.
+# Vorgang    RE-2026-0282, Austausch Duschwanne
+# Stufe      1. Mahnung
+# Kontrollen 10 von 10 bestanden
+# Ergebnis   Alle Kontrollen bestanden, liegt einem Menschen zur Freigabe vor
+# Erzeugt    npm run lauf, ohne Modellaufruf
+# ------------------------------------------------------------------------
+Musterbetrieb Heizung und Sanitär GmbH
+Beispielweg 4 · 82000 Musterort
+
+
+Frau Grabmeier
+Mustergasse 5
+82000 Musterort
+
+
+Musterort, 16.09.2026
+
+1. Mahnung zur Rechnung RE-2026-0282
+
+Sehr geehrte Frau Grabmeier,
+
+unsere Zahlungserinnerung vom 31.08.2026 zur Rechnung RE-2026-0282 vom
+12.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über
+1.140,00 EUR (Austausch Duschwanne, Vorgang BV-2026-016) war am
+26.08.2026 fällig, das sind inzwischen 21 Tage.
+
+Wir bitten Sie um Ausgleich des offenen Betrags.
+
+Falls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei
+uns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.
+
+Mit freundlichen Grüßen
+
+Musterbetrieb Heizung und Sanitär GmbH
+Buchhaltung

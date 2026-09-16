@@ -1,0 +1,40 @@
+# ENTWURF, NICHT VERSENDET. Fiktiver Absender, fiktiver Empfänger, erfundene Beträge.
+# Vorgang    RE-2026-0304, Strangsanierung, 2. Abschlag
+# Stufe      Zahlungserinnerung
+# Kontrollen 9 von 10 bestanden
+# Ergebnis   ANGEHALTEN durch die Kontrolle Agentenausgabe, Warteschlange Daten prüfen
+# Erzeugt    npm run lauf, ohne Modellaufruf
+# ------------------------------------------------------------------------
+Musterbetrieb Heizung und Sanitär GmbH
+Beispielweg 4 · 82000 Musterort
+
+
+Bauzentrum Aigner GmbH
+Gewerbering 2
+82000 Musterort
+
+
+Musterort, 16.09.2026
+
+Zahlungserinnerung zur Rechnung RE-2026-0304
+
+Sehr geehrte Damen und Herren,
+
+zu unserer Rechnung RE-2026-0304 vom 27.08.2026 über 2.870,00 EUR
+(Strangsanierung, 2. Abschlag, Vorgang BV-2026-021) ist bei uns bis
+heute kein Zahlungseingang verbucht. Fällig war der Betrag am
+10.09.2026.
+
+Erfahrungsgemäß hängt das am Rechnungslauf und nicht an unserer Arbeit.
+Wir bitten Sie um Ausgleich des offenen Betrags.
+
+Sollte sich Ihre Zahlung mit diesem Schreiben überschnitten haben,
+betrachten Sie es bitte als gegenstandslos.
+
+Wenn an der Rechnung oder an unserer Arbeit etwas nicht stimmt, rufen
+Sie uns an. Das klären wir am Telefon schneller als auf dem Postweg.
+
+Mit freundlichen Grüßen
+
+Musterbetrieb Heizung und Sanitär GmbH
+Buchhaltung

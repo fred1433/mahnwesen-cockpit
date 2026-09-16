@@ -1,0 +1,39 @@
+# ENTWURF, NICHT VERSENDET. Fiktiver Absender, fiktiver Empfänger, erfundene Beträge.
+# Vorgang    RE-2026-0305, Reparatur Druckminderer
+# Stufe      Zahlungserinnerung
+# Kontrollen 10 von 10 bestanden
+# Ergebnis   Alle Kontrollen bestanden, liegt einem Menschen zur Freigabe vor
+# Erzeugt    npm run lauf, ohne Modellaufruf
+# ------------------------------------------------------------------------
+Musterbetrieb Heizung und Sanitär GmbH
+Beispielweg 4 · 82000 Musterort
+
+
+Autohaus Riedlbauer GmbH
+Gewerbering 15
+82000 Musterort
+
+
+Musterort, 16.09.2026
+
+Zahlungserinnerung zur Rechnung RE-2026-0305
+
+Sehr geehrte Damen und Herren,
+
+zu unserer Rechnung RE-2026-0305 vom 28.08.2026 über 415,00 EUR
+(Reparatur Druckminderer, Vorgang N-2026-057) ist bei uns bis heute kein
+Zahlungseingang verbucht. Fällig war der Betrag am 11.09.2026.
+
+Erfahrungsgemäß hängt das am Rechnungslauf und nicht an unserer Arbeit.
+Wir bitten Sie um Ausgleich des offenen Betrags.
+
+Sollte sich Ihre Zahlung mit diesem Schreiben überschnitten haben,
+betrachten Sie es bitte als gegenstandslos.
+
+Wenn an der Rechnung oder an unserer Arbeit etwas nicht stimmt, rufen
+Sie uns an. Das klären wir am Telefon schneller als auf dem Postweg.
+
+Mit freundlichen Grüßen
+
+Musterbetrieb Heizung und Sanitär GmbH
+Buchhaltung

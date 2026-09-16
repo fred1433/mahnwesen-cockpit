@@ -1,0 +1,36 @@
+# ENTWURF, NICHT VERSENDET. Fiktiver Absender, fiktiver Empfänger, erfundene Beträge.
+# Vorgang    RE-2026-0291, Wartung Solarthermie
+# Stufe      1. Mahnung
+# Kontrollen 9 von 10 bestanden
+# Ergebnis   ANGEHALTEN durch die Kontrolle Zahlungsstand, Warteschlange Erledigt / Keine Mahnung
+# Erzeugt    npm run lauf, ohne Modellaufruf
+# ------------------------------------------------------------------------
+Musterbetrieb Heizung und Sanitär GmbH
+Beispielweg 4 · 82000 Musterort
+
+
+Familie Achleitner
+Lindenweg 7
+82000 Musterort
+
+
+Musterort, 16.09.2026
+
+1. Mahnung zur Rechnung RE-2026-0291
+
+Sehr geehrte Familie Achleitner,
+
+unsere Zahlungserinnerung vom 06.09.2026 zur Rechnung RE-2026-0291 vom
+18.08.2026 ist ohne Zahlungseingang geblieben. Die Rechnung über 430,00
+EUR (Wartung Solarthermie, Vorgang W-2026-102) war am 01.09.2026 fällig,
+das sind inzwischen 15 Tage.
+
+Wir bitten Sie um Ausgleich des offenen Betrags.
+
+Falls es einen Grund für die Verzögerung gibt, melden Sie sich bitte bei
+uns. Eine Ratenzahlung lässt sich in den meisten Fällen vereinbaren.
+
+Mit freundlichen Grüßen
+
+Musterbetrieb Heizung und Sanitär GmbH
+Buchhaltung
